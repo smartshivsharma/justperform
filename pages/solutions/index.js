@@ -129,7 +129,7 @@ const Solutions = () => {
                         title='Consolidation'
                         description='Simplify your financial closing with the help of ready-to-use Consolidation Pro Apps that are IFRS and Multi-GAAP compliant. Meet your external reporting needs faster and more easily with 40+ inbuilt audit proof reports and granular reporting for management and CXO needs.'
                         buttonText='LEARN MORE'
-                        buttonLink='#'
+                        buttonLink='./solutions/consolidation'
                     />
 
 
@@ -138,7 +138,7 @@ const Solutions = () => {
                         title='Profitability Analysis'
                         description='Perform in-depth analysis of profitability measures across your products/projects with the help of business centric profitability reference models. Make real-time decisions thanks to insights and visibility into real profitability drivers.'
                         buttonText='LEARN MORE'
-                        buttonLink='#'
+                        buttonLink='./solutions/profitability-analysis'
                     />
 
                     <UseCaseLeft className="mb-5"
@@ -146,7 +146,7 @@ const Solutions = () => {
                         title='Intelligent Forecasting'
                         description='Bring confidence and reliability to your planning through the power of artificial intelligence and machine learning. Derive insights and recommendations through built-in AI & ML capabilities in JustPerform or integration with another leading AI and ML platform.'
                         buttonText='LEARN MORE'
-                        buttonLink='#'
+                        buttonLink='./solutions/intelligent-forecasting'
                     />
 
                     <UseCaseRight className="mb-5"
@@ -154,7 +154,7 @@ const Solutions = () => {
                         title='Excel Infinity'
                         description='Cut out the inefficiencies and inconsistencies of isolated Excel sheets exchanged via email or shared drives. Use JustPerform Excel∞ for endless enterprise-wide possibilities to seamlessly connect diverse data sources, collate data, and streamline your processes.  '
                         buttonText='LEARN MORE'
-                        buttonLink='#'
+                        buttonLink='./solutions/excel-infinity'
                     />
 
                     <UseCaseLeft className="mb-5"
@@ -162,7 +162,7 @@ const Solutions = () => {
                         title='Embedded for SAP EPM'
                         description='Manage investments in suites like SAP EPM with simplicity and speed. JustPerform helps you manage existing SAP solutions with visual process design, automated deployment, and robust governance capabilities.'
                         buttonText='LEARN MORE'
-                        buttonLink='#'
+                        buttonLink='./solutions/alm-for-sap-solutions'
                     />
 
                 </Container>
@@ -281,9 +281,6 @@ const Solutions = () => {
 
 
 
-
-            {/** FooterContact Component */}
-            <FooterContact />
 
 
         </>

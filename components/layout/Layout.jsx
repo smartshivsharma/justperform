@@ -4,6 +4,8 @@ import classes from './Layout.module.css'
 import Header from './Header';
 import Footer from './Footer';
 
+import FooterContact from './FooterContact';
+
 
 const Layout = (props) => {
   return (
@@ -13,6 +15,7 @@ const Layout = (props) => {
       <div className={classes.mainLayout}>
         {props.children}
       </div>
+      <FooterContact />
       <Footer />
       {/* </Container> */}
     </>

@@ -23,7 +23,7 @@ const Header = () => {
           <Navbar expand="lg" >
             <Navbar.Brand href="/">
               <div className='logo'>
-                <img src='../../images/logo.png' />
+                <img src='../../images/logo.svg' />
               </div>
             </Navbar.Brand>
             <Navbar.Toggle onClick={handleShow} />

@@ -376,8 +376,8 @@ const HomePage = () => {
 
 
 
-      {/** FooterContact Component */}
-      <FooterContact />
+      {/** FooterContact Component
+      <FooterContact /> */}
 
 
     </>

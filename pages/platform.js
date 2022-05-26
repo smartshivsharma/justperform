@@ -362,10 +362,6 @@ organisation with no compromise on robustness and security.</p>
 
 
 
-            {/** FooterContact Component */}
-            <FooterContact />
-
-
         </>
 
     )

@@ -21,6 +21,9 @@ import UseCaseRight from '../../components/ui/UseCaseRight';
 import Cards from '../../components/ui/Cards';
 import ListCards from '../../components/ui/ListCards';
 
+import PowerCardLeft from '../../components/ui/PowerCardLeft';
+import PowerCardRight from '../../components/ui/PowerCardRight';
+
 import Partners from '../../components/ui/Partners';
 
 
@@ -71,7 +74,8 @@ const ExtendedPlanning = () => {
                         </Col>
                         <Col md={6}>
                             <h2 className='headingBold '>The speed and accuracy of your decision-making are more important than ever. </h2>
-                            <p className='leadpara mt-3'>Disjointed systems, siloed data, and planning in isolation can stop you getting the results you need. These issues obstruct insights and degrade performance, creating gaps between what an organisation should get and what it ends up with. Let JustPerform unite your people, processes, and data in a single platform to bring accuracy and agility to your strategic decision-making.</p>
+                            <p className='leadpara mt-3'>Disjointed systems, siloed data, and planning in isolation can stop you getting the results you need. These issues obstruct insights and degrade performance, creating gaps between what an organisation should get and what it ends up with.</p>
+                            <p className='leadpara'>Let JustPerform unite your people, processes, and data in a single platform to bring accuracy and agility to your strategic decision-making.</p>
                             {/* <p className='mt-3'><Button variant='light' className='btnLight'>LEARM MORE</Button></p> */}
                         </Col>
                     </Row>
@@ -83,12 +87,12 @@ const ExtendedPlanning = () => {
 
             <Section className={`${classes.leadingCompanies} ${['sectionBg-White']}`}>
                 <Container>
-                    <Row>
-                        <Col md={12}>
-                            <h2 className='headingLight'>These leading companies use JustPerform</h2>
-                            <h3 className='headingBold'>Move up to a new league of enterprise performance</h3>
+                    <Row className='justify-content-center'>
+                        <Col lg={9} md={12} className='text-center'>
+                            <h3 className='headingBold'>These leading companies now optimise their planning, thanks to JustPerform</h3>
+                            {/* <h2 className='headingLight'>These leading companies use JustPerform</h2> */}
                         </Col>
-                        <Col md={12}>
+                        <Col lg={12} md={12} className='text-center'>
                             {/* Partners Component*/}
                             <Partners />
                         </Col>
@@ -100,7 +104,7 @@ const ExtendedPlanning = () => {
 
 
 
-            <Section className={`${classes.leadingCompanies} ${['sectionBg-IrisBlue']}`}>
+            <Section className={`${['sectionBg-IrisBlue']}`}>
                 <Container>
                     <Row className='text-center text-white'>
                         <Col md={12}>
@@ -118,17 +122,23 @@ const ExtendedPlanning = () => {
 
 
             {/* Customer Love Section */}
-            <Section className={`${classes.customers} ${['sectionBg-White']}`}>
+            <Section className={`${['sectionBg-Gradient']} ${['pb-0']}`}>
                 <Container>
                     <Row className='justify-content-center'>
                         <Col lg={10} md={12} className='text-center'>
-                            <h2 className='headingBold'>Our customers love JustPerform!</h2>
-                            <p className='leadpara'>Our customers rate us highly on Gartner Peer Insights and we reciprocate. Through constant integration of their feedback, we continue to offer them the most user-centric business performance management platform ever.</p>
-                            <p>
-                                <img src='../../images/imgCustomer.jpg' className='img-fluid' />
-                            </p>
+                            <h2 className='headingBold text-white'>Our customers love JustPerform!</h2>
+                            <p className='leadpara text-white'>Our customers rate us highly on Gartner Peer Insights and we reciprocate. Through constant integration of their feedback, we continue to offer them the most user-centric business performance management platform ever.</p>
                         </Col>
                     </Row>
+
+                    <Row className={`${['justify-content-center']} ${['mt-4']}`}>
+                        <Col lg={8} md={12} className='text-center'>
+                            <Card className={classes.gartnerCard}>
+                                <Card.Body><img src='../../images/imgCustomer.jpg' className='img-fluid' /></Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+
                 </Container>
             </Section>
 
@@ -139,180 +149,91 @@ const ExtendedPlanning = () => {
 
             <Section className={`${classes.platformBanner} ${classes.useCaseSec} ${['sectionBg-White']}`}>
                 <Container>
-                    <Row className='justify-content-center text-center'>
-                        <Col md={12}>
-                            <h2 className='bannerHeading'>Use Cases for a Unified Platform</h2>
+                    <Row className='justify-content-center text-center mb-4'>
+                        <Col lg={8} md={12}>
+                            <h2 className='headingBold'>The power of JustPerform for all your xP&A</h2>
+                            <p className='leadpara'>Imagine one smart, unified, business-user-friendly platform serving all your planning and analysis needs across your enterprise.  </p>
                         </Col>
                     </Row>
 
-                    <UseCaseRight className="mb-5"
-                        image='../../images/img-extendedPlanning.png'
-                        title='Extended Planning & Analysis'
-                        description='Collaborate across your departments to improve accuracy and agility in your planning. Let JustPerform connect your strategy, finance, people, and operational processes to achieve your overall business goals.'
-                        buttonText='LEARN MORE'
-                        buttonLink='./solutions/extended-planning-and-analysis'
-                    />
-
-                    <UseCaseLeft className="mb-5"
-                        image='../../images/img-consolidation.png'
-                        title='Consolidation'
-                        description='Simplify your financial closing with the help of ready-to-use Consolidation Pro Apps that are IFRS and Multi-GAAP compliant. Meet your external reporting needs faster and more easily with 40+ inbuilt audit proof reports and granular reporting for management and CXO needs.'
-                        buttonText='LEARN MORE'
-                        buttonLink='#'
-                    />
 
 
-                    <UseCaseRight className="mb-5"
-                        image='../../images/img-extendedPlanning.png'
-                        title='Profitability Analysis'
-                        description='Perform in-depth analysis of profitability measures across your products/projects with the help of business centric profitability reference models. Make real-time decisions thanks to insights and visibility into real profitability drivers.'
-                        buttonText='LEARN MORE'
-                        buttonLink='#'
+
+                    {/* <Row className={`${['align-items-center']} ${['justify-content-center']} ${['g-0']}`}>
+                        <Col lg={11} md={12}>
+                            <Card className={classes.powerCard}>
+                                <Card.Body className={classes.powerCardBody}>
+                                    <div className='vMid'></div>
+                                        <Row className='align-items-center'>
+                                            <Col lg={5} md={12} className={`${classes.powerCardImage}`}>
+                                                <img src='../../images/img-finance.png' className={`${['img-fluid']}`} />
+                                            </Col>
+                                            <Col lg={7} md={12} className={classes.powerCardDetails}>
+                                                <Card.Title className={classes.powerCardTitle}>Finance</Card.Title>
+                                                <Card.Text className={classes.powerCardText}>
+                                                    Easily collaborate across your FP&A teams to streamline finance processes. Improve results with JustPerform’s inbuilt financial intelligence. Jump start and accelerate to value with ready to use finance apps for all your critical FP&A use cases, including:
+                                                </Card.Text>
+                                                <ul>
+                                                    <li>Revenue planning</li>
+                                                    <li>Operational expense planning</li>
+                                                    <li>Capital expenditure planning</li>
+                                                    <li>Balance sheet, profit & loss, and cash flow planning</li>
+                                                </ul>
+                                            </Col>
+                                        </Row>
+                                    
+                                </Card.Body>
+                            </Card>
+
+                        </Col>
+                    </Row> */}
+
+
+
+                    <PowerCardLeft
+                        image='../../images/img-finance.png'
+                        title='Finance'
+                        description='Easily collaborate across your FP&A teams to streamline finance processes. Improve results with JustPerform’s inbuilt financial intelligence. Jump start and accelerate to value with ready to use finance apps for all your critical FP&A use cases, including:'
                     />
 
-                    <UseCaseLeft className="mb-5"
-                        image='../../images/img-consolidation.png'
-                        title='Intelligent Forecasting'
-                        description='Bring confidence and reliability to your planning through the power of artificial intelligence and machine learning. Derive insights and recommendations through built-in AI & ML capabilities in JustPerform or integration with another leading AI and ML platform.'
-                        buttonText='LEARN MORE'
-                        buttonLink='#'
+
+                    <PowerCardRight
+                        image='../../images/img-sales.png'
+                        title='Sales'
+                        description='Bring stability and certainty to your revenues with insight-based sales planning. Eliminate guesswork and ineffective generic approaches. Instead, drill down into your revenue drivers to transform your incentive plans precisely for success.'
                     />
 
-                    <UseCaseRight className="mb-5"
-                        image='../../images/img-extendedPlanning.png'
-                        title='Excel Infinity'
-                        description='Cut out the inefficiencies and inconsistencies of isolated Excel sheets exchanged via email or shared drives. Use JustPerform Excel∞ for endless enterprise-wide possibilities to seamlessly connect diverse data sources, collate data, and streamline your processes.  '
-                        buttonText='LEARN MORE'
-                        buttonLink='#'
+
+                    <PowerCardLeft
+                        image='../../images/img-supplyChain.png'
+                        title='Supply Chain'
+                        description='Develop a robust supply chain with data-driven insights and a clear understanding of supply-demand drivers. Gauge the impact of external factors with on-the-fly simulations and scenario modelling.'
                     />
 
-                    <UseCaseLeft className="mb-5"
-                        image='../../images/img-consolidation.png'
-                        title='Embedded for SAP EPM'
-                        description='Manage investments in suites like SAP EPM with simplicity and speed. JustPerform helps you manage existing SAP solutions with visual process design, automated deployment, and robust governance capabilities.'
-                        buttonText='LEARN MORE'
-                        buttonLink='#'
+
+                    <PowerCardRight
+                        image='../../images/img-hr.png'
+                        title='HR'
+                        description='Plan your workforce needs by easily assessing and bridging the gap between demand and supply. Create and operationalise accurate compensation plans to assist your retention and acquisition objectives.'
                     />
+
+
+                    <PowerCardLeft
+                        image='../../images/img-marketing.png'
+                        title='Marketing'
+                        description='Optimize resource and budget allocation to improve marketing performance. Bring together sales results and marketing performance in a unified view to drive accuracy in forecasting revenue.'
+                    />
+
+
+
 
                 </Container>
             </Section>
 
 
 
-            <Section className={`${['sectionBg-SkyBlue2']} ${['pb-0']}`}>
-                <Container>
-                    <Row className='justify-content-center text-center'>
-                        <Col lg={7} md={12}>
-                            <h2 className='headingBold'>Experience the true power of xP&A</h2>
-                            <h3 className='headingLight'>Have all your departments plan on one flexible, scalable platform for a single source of truth.</h3>
-                        </Col>
-                    </Row>
-                    <Row className='mt-3'>
-                        <Col md={12}>
-                            <img src='../../images/tabComponent.png' className='img-fluid' />
-                        </Col>
-                    </Row>
-                </Container>
-            </Section>
-
-
-
-
-
-
-            <Section className={`${['sectionBg-Gradient']} ${['mt-5']}`}>
-                <Container>
-                    {/** CustomerSpeak Component */}
-                    <CustomerSpeak />
-
-                </Container>
-            </Section>
-
-
-
-
-            <Section className={`${['sectionBg-White']}`}>
-                <Container>
-                    <Row className='justify-content-center text-center'>
-                        <Col lg={12} md={12}>
-                            <h2 className='headingBold'>From automotive to agriculture, health care to hospitality.</h2>
-                            <p className='leadpara'>JustPerform delivers tailor made planning and budgeting models with industry recognised key drivers and KPIs to drive agile planning.</p>
-                        </Col>
-                    </Row>
-
-
-
-                    <Row className='row-cols-lg-5 justify-content-center mt-5'>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-telecom.png'
-                                title='Telecom'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-manufacturing.png'
-                                title='Manufacturing'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-shipping.png'
-                                title='Shipping & Logistics'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-financialServices.png'
-                                title='Financial Services'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-healthCare.png'
-                                title='Health Care'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-realEstate.png'
-                                title='Real Estate'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-Retail.png'
-                                title='Retail'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-energy.png'
-                                title='Energy & Utilities'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-hospitality.png'
-                                title='Hospitality'
-                            />
-                        </Col>
-                        <Col>
-                            <ListCards
-                                image='../../images/icon-more.png'
-                                title='More'
-                            />
-                        </Col>
-                    </Row>
-
-                </Container>
-            </Section>
-
-
-
-
-            {/** FooterContact Component */}
-            <FooterContact />
+            {/** FooterContact Component 
+            <FooterContact />*/}
 
 
         </>

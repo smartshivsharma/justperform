@@ -26,12 +26,12 @@ const FooterMenu = () => {
                         <Col lg={3} md={6} xs={6}>
                             <h3>Solutions</h3>
                             <ul className="list-unstyled">
-                                <li><Link href="#">xP&A​</Link></li>
-                                <li><Link href="#">Consolidation​ </Link></li>
-                                <li><Link href="#">Profitability Analysis</Link></li>
-                                <li><Link href="#">Intelligent Forecasting​</Link></li>
-                                <li><Link href="#">Excel Infinity​​</Link></li>
-                                <li><Link href="#">ALM for SAP Solutions​</Link></li>
+                                <li><Link href="../solutions/extended-planning-and-analysis">xP&A​</Link></li>
+                                <li><Link href="../solutions/consolidation">Consolidation​ </Link></li>
+                                <li><Link href="../solutions/profitability-analysis">Profitability Analysis</Link></li>
+                                <li><Link href="../solutions/intelligent-forecasting">Intelligent Forecasting​</Link></li>
+                                <li><Link href="../solutions/excel-infinity">Excel Infinity​​</Link></li>
+                                <li><Link href="../solutions/alm-for-sap-solutions">ALM for SAP Solutions​</Link></li>
                             </ul>
                         </Col>
                         <Col lg={3} md={6} xs={6}>
