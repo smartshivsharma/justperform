@@ -71,7 +71,7 @@ const Consolidation = () => {
                 <Container>
                     <Row className='align-items-center justify-content-between'>
                         <Col md={6}>
-                            <h2 className='headingBold'>It's time to end the inefficiencies and the headaches.</h2>
+                            <h2 className='headingBold'>It&apos;s time to end the inefficiencies and the headaches.</h2>
                             <p className='leadpara mt-3'>Consolidation has been a struggle for many companies for too long. Laborious merges from multiple entities of data across account structures are often riddled with complexities. Validation, intercompany eliminations, currency conversion, and reporting can be a nightmare for finance users.</p>
                             <p className='leadpara'>Let JustPerform meet these challenges and streamline your consolidation with speed, accuracy, and auditability.</p>
                         </Col>
