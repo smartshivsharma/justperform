@@ -12,12 +12,14 @@ function ListCards(props) {
     <>
       <Card className={`${classes.card} ${props.className}`}>
         <Card.Body className={classes.cardBody}>
-          <img src={props.image}  />
-          <Card.Title className={classes.cardTitle}>{props.title}</Card.Title>
-          {/* <Card.Title className={classes.cardSubTitle}>{props.subTitle}</Card.Title>
+          <div className={classes.vMid}>
+            <img src={props.image} />
+            <Card.Title className={classes.cardTitle}>{props.title}</Card.Title>
+            {/* <Card.Title className={classes.cardSubTitle}>{props.subTitle}</Card.Title>
           <Card.Text className={classes.cardText}>
             {props.description}
           </Card.Text> */}
+          </div>
         </Card.Body>
       </Card>
     </>

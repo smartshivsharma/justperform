@@ -215,7 +215,7 @@ const Solutions = () => {
 
                     <Row className='row-cols-lg-5 justify-content-center mt-5'>
                         <Col>
-                            <ListCards className='align-items-center my-auto'
+                            <ListCards
                                 image='../../images/icon-telecom.png'
                                 title='Telecom'
                             />
