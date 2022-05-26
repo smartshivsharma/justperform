@@ -22,7 +22,9 @@ const Header = () => {
           {/** For Desktop */}
           <Navbar expand="lg" >
             <Navbar.Brand href="/">
-              <div className='logo'></div>
+              <div className='logo'>
+                <img src='../../images/logo.png' />
+              </div>
             </Navbar.Brand>
             <Navbar.Toggle onClick={handleShow} />
             <Navbar.Collapse id="main-nav" className="justify-content-end d-none d-lg-block">
