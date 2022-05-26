@@ -1,0 +1,53 @@
+.footerLogo{ text-align: center;}
+
+.footerMenus { border-bottom: solid 1px #d9eaf5; padding-top:70px; padding-bottom:30px; margin-bottom:30px;}
+
+.footerMenus h3{ font-size: 15px; font-weight: 900; margin-bottom:15px;}
+.footerMenus h3 a{ color: #304C64; text-decoration: none;}
+.footerMenus h3 a:hover{ color: #000;}
+
+.footerMenus li{ margin-bottom: 6px; font-size: 14px;}
+.footerMenus li a{ color: #304C64; text-decoration: none;}
+.footerMenus li a:hover, .footerMenus li a.active{ color: #000;}
+.footerMenus li:last-child{ margin-bottom: 0px;}
+
+
+.copyright{ font-size:15px; color:#82A4BB; padding: 15px; text-align: center;}
+.copyright a{color:#82A4BB; text-decoration: none;}
+.copyright a:hover{ color: #000;}
+
+.copyright ul li:not(:last-child) { border-right: solid 1px #82A4BB; padding-right: 10px; line-height: 15px;}
+
+
+
+
+
+
+
+@media only screen and (min-device-width:320px) and (max-device-width:767px){
+   .footerLogo{ text-align: left;}
+   .footerMenus { padding-top:30px;}
+   .footerMenus h3{ margin-top: 15px; margin-bottom:15px;} 
+}
+ 
+@media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
+}
+ 
+@media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
+}
+ 
+
+ 
+@media only screen and (min-device-width:768px) and (max-device-width:1024px){
+}
+ 
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
+   .footerMenus { padding-top:30px;}
+   .footerMenus h3{ margin-top: 15px; margin-bottom:15px;} 
+}
+ 
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+}
+ 
+
+
