@@ -10,7 +10,7 @@ body{ color: #1A4969; font-family: 'Lato', sans-serif; }
 .logo {/*background:url(../public/images/logo.png) no-repeat top center; background-size: cover;*/ width: 288px; height:34px;}
 .logo img{ height: 34px; max-width: 100%;}
 
-.navbar{ padding-top: 0.8rem; padding-bottom: 0.8rem;}
+.navbar{ padding-top: 0.8rem; padding-bottom: 0.8rem ;}
 #main-nav .nav-link { color: #1A4969; font-weight: 500; padding: 0.3rem 0.8rem;}
 #main-nav .nav-link:hover{ color: #00ABBD;}
 /*#main-nav .nav-link.active {
