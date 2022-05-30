@@ -184,7 +184,7 @@ const Consolidation = () => {
                     <Row className='mt-5 align-items-center justify-content-between mt-5'>
                         <Col md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>Disclosure Management</h2>
-                            <p className='leadparaBorderd'>Simplify this 'last mile of finance' by streamlining the reporting contribution at department level. Eliminate tedious effort in preparing notes to accounts by using a robust, user-friendly disclosure management framework.</p>
+                            <p className='leadparaBorderd'>Simplify this &apos;last mile of finance&apos; by streamlining the reporting contribution at department level. Eliminate tedious effort in preparing notes to accounts by using a robust, user-friendly disclosure management framework.</p>
                             <Button variant='primary' className='mt-3'>LEARN MORE</Button>
                         </Col>
                         <Col md={5} className='text-center order-1 order-lg-2 order-md-2'>
@@ -226,7 +226,7 @@ const Consolidation = () => {
                                         <img src='../../images/icon-accord1.svg' className='img-fluid' /> Meet all your requirements in one go
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform's Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
+                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform&apos;s Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
                                     </Accordion.Body>
                                 </Accordion.Item>
 
@@ -235,7 +235,7 @@ const Consolidation = () => {
                                         <img src='../../images/icon-accord2.svg' className='img-fluid' /> Accordion Effortlessly collect, prepare, and enrich all your data
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform's Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
+                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform&apos;s Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
@@ -243,7 +243,7 @@ const Consolidation = () => {
                                         <img src='../../images/icon-accord3.svg' className='img-fluid' />Automate all your adjustments in your consolidation
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform's Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
+                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform&apos;s Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
@@ -251,7 +251,7 @@ const Consolidation = () => {
                                         <img src='../../images/icon-accord4.svg' className='img-fluid' /> Move to accurate, audit-friendly results
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform's Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
+                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform&apos;s Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>

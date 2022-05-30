@@ -136,7 +136,7 @@ const AlmSapSolutions = () => {
                                             <div className={classes.vMid}>
                                                 <Card.Title className={classes.powerCardTitle}>Assess and continuously monitor your systems</Card.Title>
                                                 <Card.Text className={classes.powerCardText}>
-                                                    Don't let inefficient processes and non-optimised systems hold you back. Analyse risks and detect problems pro-actively with JustPerform's automated assessment of your SAP EPM systems.
+                                                    Don&apos;t let inefficient processes and non-optimised systems hold you back. Analyse risks and detect problems pro-actively with JustPerform&apos;s automated assessment of your SAP EPM systems.
                                                 </Card.Text>
                                             </div>
 
@@ -356,7 +356,7 @@ const AlmSapSolutions = () => {
                 <Container>
                     <Row className='justify-content-between align-items-center text-white'>
                         <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
-                            <h2 className='bannerHeading'>It's time to look beyond SAP BPC</h2>
+                            <h2 className='bannerHeading'>It&apos;s time to look beyond SAP BPC</h2>
                             <p className='leadpara mt-4'>SAP BPC maintenance will come to an end very soon. The only way out for SAP-based EPM will be a combination of multiple solutions.</p>
                             <p className='leadpara'>With a process-first approach and automated migration, JustPerform, the unified solution, is the smart and most effective choice for your business performance management.</p>
                         </Col>

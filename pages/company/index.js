@@ -55,7 +55,7 @@ const Company = () => {
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={5} md={6}  className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>We empower you for business performance</h1>
-                            <p className='leadpara'>You merit real solutions for business performance management from a company that constantly strives to simplify business users' lives and empower organizations. That's JustPerform. Who else!</p>
+                            <p className='leadpara'>You merit real solutions for business performance management from a company that constantly strives to simplify business users' lives and empower organizations. That&apos;s JustPerform. Who else!</p>
                         </Col>
 
                         <Col lg={7} md={6} className="order-1 order-lg-2 order-md-2">
@@ -71,7 +71,7 @@ const Company = () => {
                 <Container>
                     <Row className='align-items-center justify-content-center'>
                         <Col md={12}>
-                            <h2 className='headingLight text-white text-center'>You deserve more for your EPM than just another tech company's software.</h2>
+                            <h2 className='headingLight text-white text-center'>You deserve more for your EPM than just another tech company&apos;s software.</h2>
                         </Col>
                     </Row>
                 </Container>
@@ -83,12 +83,12 @@ const Company = () => {
                     <Row className='align-items-start justify-content-between'>
                         <Col lg={4} md={12}>
                             <h2 className='bannerHeading'>Where it all began</h2>
-                            <p className='leadparaBorderd mt-5'><b>"JustPerform is all about simplifying business users' lives. We empower them with financial intelligence and the most guided, intuitive user experience ever. The easier it is for users, the better the agility and the results."</b></p>
+                            <p className='leadparaBorderd mt-5'><b>JustPerform is all about simplifying business users&apos; lives. We empower them with financial intelligence and the most guided, intuitive user experience ever. The easier it is for users, the better the agility and the results.</b></p>
                         </Col>
                         <Col lg={7} md={12}>
                             <p className='leadpara'>Today, businesses need agility, accuracy, and scalability like never before. But technological innovation must still offer a better experience to business users.</p>
 
-                            <p className='leadpara'>In over 150+ past budgeting and reporting projects, we've seen the difficulties for organisations to adopt, manage, and monitor EPM systems.</p>
+                            <p className='leadpara'>In over 150+ past budgeting and reporting projects, we&apos;ve seen the difficulties for organisations to adopt, manage, and monitor EPM systems.</p>
 
                             <p className='leadpara'>So, we decided to make EPM simpler, more enjoyable, and more effective for business users by letting them own and drive their performance management the way they want.</p>
 
@@ -106,7 +106,7 @@ const Company = () => {
                 <Container>
                     <Row className='justify-content-center text-center'>
                         <Col md={12}>
-                            <h2 className='headingBold'>The values we live by at JustPerform'</h2>
+                            <h2 className='headingBold'>The values we live by at JustPerform</h2>
                             <p className='leadpara'>With our customers at the heart of all we do, these are the core values that drive us as the team powering JustPerform.</p>
                         </Col>
                     </Row>
@@ -126,7 +126,7 @@ const Company = () => {
                             <p className={classes.expCardText}>We embrace differences to build a united vision of empowering business users </p>
 
                             <h3 className={classes.expCardTitle}>Excellence</h3>
-                            <p className={classes.expCardText}>We’ll only settle for the best, for JustPerform and for you, our customer</p>
+                            <p className={classes.expCardText}>We&apos;ll only settle for the best, for JustPerform and for you, our customer</p>
 
                             <h3 className={classes.expCardTitle}>Simplicity</h3>
                             <p className={classes.expCardText}>We take pride in simplifying even the most complex to optimise results </p>
@@ -178,12 +178,12 @@ const Company = () => {
                 <Container>
                     <Row className='justify-content-center text-center text-white'>
                         <Col md={12}>
-                            <h2 className='headingBold'>Meet the Just'Performers'</h2>
+                            <h2 className='headingBold'>Meet the Just&apos;Performers</h2>
                             <p className='leadpara mt-4'>JustPerform thrives by nurturing an environment that gets the best of everyone. With passion, perseverance, and purpose, we don't just work: we celebrate the journey of empowering business users.</p>
 
-                            <p className='leadpara'>"It's a privilege to be part of the JustPerform team and the vision of 'simplifying business user lives'. Seeing the positive impact of our work for our customers pushes me to give my best in everything I do.” </p>
+                            <p className='leadpara'>It&apos;s a privilege to be part of the JustPerform team and the vision of &apos;simplifying business user lives&apos;. Seeing the positive impact of our work for our customers pushes me to give my best in everything I do. </p>
 
-                            <p className='leadpara'>"JustPerform is one of the most welcoming companies that I have worked in. It encourages innovation and values individuals for their uniqueness. With its energy, focus, commitment, and fun, it's the best thing that ever happened to me!" </p>
+                            <p className='leadpara'>JustPerform is one of the most welcoming companies that I have worked in. It encourages innovation and values individuals for their uniqueness. With its energy, focus, commitment, and fun, it's the best thing that ever happened to me! </p>
 
                         </Col>
                     </Row>
@@ -283,7 +283,7 @@ const Company = () => {
                     <Row className='justify-content-center text-center'>
                         <Col lg={9} md={12}>
                             <h2 className='bannerHeading'>Be a JustPerform partner</h2>
-                            <p className='leadpara'>Experience customer delight for yourself by using JustPerform to solve the planning, financial close, and reporting challenges of your own clients. Improve the productivity of your teams, accelerate your projects, and wow your clients with JustPerform's streamlined performance management.</p>
+                            <p className='leadpara'>Experience customer delight for yourself by using JustPerform to solve the planning, financial close, and reporting challenges of your own clients. Improve the productivity of your teams, accelerate your projects, and wow your clients with JustPerform&apos;s streamlined performance management.</p>
                             <Button variant='primary' className='mt-2'>Become a Partner</Button>
                         </Col>
                     </Row>

@@ -139,7 +139,7 @@ const HomePage = () => {
           <Row className='align-items-center justify-content-between'>
             <Col lg={6} md={6}>
               <h2 className={`${'headingBold'} ${['mb-4']}`}>The cloud xP&A and financial close platform designed for modern business requirements</h2>
-              <p className='leadpara'>Don't let inefficiencies of legacy solutions hold you back. Leverage new thinking and smart technology to enhance your decision-making.</p>
+              <p className='leadpara'>Don&apos;t let inefficiencies of legacy solutions hold you back. Leverage new thinking and smart technology to enhance your decision-making.</p>
               <p className='leadpara'>Experience the power of a process-first approach, an intuitive user experience, and robust governance capabilities for increased performance across your enterprise.</p>
               <Button variant="primary" className={`${['mt-3']} ${['mb-3']}`}>EXPLORE PLATFORM</Button>
             </Col>

@@ -66,7 +66,7 @@ const ExcelInfinity = () => {
                 <Container>
                     <Row className='align-items-center justify-content-center'>
                         <Col lg={10} md={12}>
-                            <h2 className='headingLight text-white text-center'>There are over 1 billion Excel installations globally. <br /> It's the world's third most spoken language!</h2>
+                            <h2 className='headingLight text-white text-center'>There are over 1 billion Excel installations globally. <br /> It&apos;s the world&apos;s third most spoken language!</h2>
                         </Col>
                     </Row>
                 </Container>
@@ -185,7 +185,7 @@ const ExcelInfinity = () => {
                         </Col>
                         <Col lg={6} md={6}>
                             <h2 className='headingBold'>From fragmented tasks to complete collaboration</h2>
-                            <p className='leadpara'>Those flurries of messages you've been exchanging to collaborate on Excel sheets? The're all history when you have JustPerform. Inbuilt collaboration capabilities and guided workflows mean you no longer need to go outside Excel to collaborate inside Excel.</p>
+                            <p className='leadpara'>Those flurries of messages you&apos;ve been exchanging to collaborate on Excel sheets? The&apos;re all history when you have JustPerform. Inbuilt collaboration capabilities and guided workflows mean you no longer need to go outside Excel to collaborate inside Excel.</p>
                             <p className='leadpara'><b>Guided workflows with detailed steps and activities for each user enable streamlined Excel-native co-ordination and collaboration.</b></p>
                         </Col>
                     </Row>
@@ -193,7 +193,7 @@ const ExcelInfinity = () => {
                     <Row className='justify-content-between mt-5'>
                         <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>From manual data processing to automated data transformation</h2>
-                            <p className='leadpara'>VBA, VLOOKUPs, and macros can only take your automation so far. And errors made with these functions can be too difficult to fix by anyone other than an IT expert. Instead, use JustPerform's capabilities to automate all your data processing with no need for complex formulae or coding and no dependency on IT experts.</p>
+                            <p className='leadpara'>VBA, VLOOKUPs, and macros can only take your automation so far. And errors made with these functions can be too difficult to fix by anyone other than an IT expert. Instead, use JustPerform&apos;s capabilities to automate all your data processing with no need for complex formulae or coding and no dependency on IT experts.</p>
                             <p className='leadpara'><b>The Business Rule Library contains an exhaustive list of rules to help you make your data processing simple, effective, and successful.</b></p>
                         </Col>
                         <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
@@ -208,14 +208,14 @@ const ExcelInfinity = () => {
                         <Col lg={6} md={6}>
                             <h2 className='headingBold'>From no governance to fine-grain authorisations</h2>
                             <p className='leadpara'>Still spending your valuable time on creating multiple sheets just to make sure individual users see only the data they should - then spending yet more time to consolidate all the sheets again afterwards? Secure your sensitive information by allowing people to view and perform only what they need to.</p>
-                            <p className='leadpara'><b>JustPerform's inbuilt fine grain authorisations allow you to give specific action access only to the relevant person and make your tracking effortless.</b></p>
+                            <p className='leadpara'><b>JustPerform&apos;s inbuilt fine grain authorisations allow you to give specific action access only to the relevant person and make your tracking effortless.</b></p>
                         </Col>
                     </Row>
 
                     <Row className='justify-content-between mt-5'>
                         <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>From building-from-scratch to time-saving built-in templates</h2>
-                            <p className='leadpara'>Make productive use of your most precious resource. Don't let manual input and reporting activities consume your valuable time. Tap into JustPerform capabilities to kickstart processes while customising as you wish.</p>
+                            <p className='leadpara'>Make productive use of your most precious resource. Don&apos;t let manual input and reporting activities consume your valuable time. Tap into JustPerform capabilities to kickstart processes while customising as you wish.</p>
                             <p className='leadpara'><b>Standard pre-built templates let you save time in your data input, dashboard and report building. They also offer automated conversion of your Excel dashboards into PowerPoint for easier consumption.</b></p>
                         </Col>
                         <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>

@@ -86,7 +86,7 @@ const IntelligentForecasting = () => {
                 <Container>
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={6} md={6}>
-                            <h2 className='headingBold'>JustPerform's ingredients for success in intelligent forecasting</h2>
+                            <h2 className='headingBold'>JustPerformclassNames ingredients for success in intelligent forecasting</h2>
                             <p className='leadpara mt-4'>From traditional manual input and driver-based methods to predictive approaches, forecasting techniques have been evolving continuously.</p>
                             <p className='leadpara'>Traditional forecasts can be time-consuming yet remain ineffective, they may also be influenced by assumptions based on human biases.</p>
                             <p className='leadpara'>TradiForecasting for your organisation needs to be in sync with reality, nimble, and aligned for success in the modern world.</p>
@@ -182,7 +182,7 @@ const IntelligentForecasting = () => {
                                             <p className='leadpara'><b>Start with:</b></p>
                                             <Card.Text className={classes.powerCardText}>
                                                 <ul className={classes.list}>
-                                                    <li>JustPerform's built-in AI and ML business rule library, or</li>
+                                                    <li>JustPerformclassNames built-in AI and ML business rule library, or</li>
                                                     <li>Seamless integration with third party AI and ML platforms if you have existing investments</li>
                                                 </ul>
                                             </Card.Text>

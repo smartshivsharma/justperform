@@ -137,7 +137,7 @@ const ProfitabilityAnalysis = () => {
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={6} md={6}>
                             <h2 className='bannerHeading'>Improve accuracy with transparent allocations, easy driver definition</h2>
-                            <p className='leadpara mt-4'>Allocating resources to profit and cost centres can be challenging, especially if you're battling with unknown drivers and baffling formulae.</p>
+                            <p className='leadpara mt-4'>Allocating resources to profit and cost centres can be challenging, especially if you&apos;re battling with unknown drivers and baffling formulae.</p>
                             <p className='leadpara mt-4'>Use JustPerform instead. JustPerform lets you easily define underlying drivers and allocate necessary costs without any complicated formulae or coding.</p>
                         </Col>
                         <Col lg={6} md={6} className='text-center'>

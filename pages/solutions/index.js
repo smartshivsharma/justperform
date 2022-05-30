@@ -220,13 +220,13 @@ const Solutions = () => {
                                                     <div className='tabPaging'>
                                                         <ul className='list-inline'>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-left"></i>
+                                                                <i className="las la-arrow-left"></i>
                                                             </li>
                                                             <li className='list-inline-item'>
                                                                 <b>01</b> of 05
                                                             </li>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-right"></i>
+                                                                <i className="las la-arrow-right"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -241,13 +241,13 @@ const Solutions = () => {
                                                     <div className='tabPaging'>
                                                         <ul className='list-inline'>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-left"></i>
+                                                                <i className="las la-arrow-left"></i>
                                                             </li>
                                                             <li className='list-inline-item'>
                                                                 <b>02</b> of 05
                                                             </li>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-right"></i>
+                                                                <i className="las la-arrow-right"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -262,13 +262,13 @@ const Solutions = () => {
                                                     <div className='tabPaging'>
                                                         <ul className='list-inline'>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-left"></i>
+                                                                <i className="las la-arrow-left"></i>
                                                             </li>
                                                             <li className='list-inline-item'>
                                                                 <b>03</b> of 05
                                                             </li>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-right"></i>
+                                                                <i className="las la-arrow-right"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -283,13 +283,13 @@ const Solutions = () => {
                                                     <div className='tabPaging'>
                                                         <ul className='list-inline'>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-left"></i>
+                                                                <i className="las la-arrow-left"></i>
                                                             </li>
                                                             <li className='list-inline-item'>
                                                                 <b>04</b> of 05
                                                             </li>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-right"></i>
+                                                                <i className="las la-arrow-right"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -304,13 +304,13 @@ const Solutions = () => {
                                                     <div className='tabPaging'>
                                                         <ul className='list-inline'>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-left"></i>
+                                                                <i className="las la-arrow-left"></i>
                                                             </li>
                                                             <li className='list-inline-item'>
                                                                 <b>05</b> of 05
                                                             </li>
                                                             <li className='list-inline-item'>
-                                                                <i class="las la-arrow-right"></i>
+                                                                <i className="las la-arrow-right"></i>
                                                             </li>
                                                         </ul>
                                                     </div>
