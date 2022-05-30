@@ -296,7 +296,7 @@ const Company = () => {
                 <Container>
                     <Row className='justify-content-center'>
                         <Col lg={9} md={12} className='text-center'>
-                            <h3 className='headingBold'>These major players simplify and speed up statutory reporting with JustPerform</h3>
+                            <h3 className='headingBold'>These major players simplify and speed up statutory reporting with JustPerform </h3>
                             {/* <h2 className='headingLight'>These leading companies use JustPerform</h2> */}
                         </Col>
                         <Col lg={12} md={12} className='text-center'>
