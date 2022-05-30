@@ -21,15 +21,22 @@ body{ color: #1A4969; font-family: 'Lato', sans-serif; }
   color: #00ABBD !important;
 }
 
-#main-nav .dropdown-menu{ padding-left: 10px; padding-right: 10px; min-width: 15rem;}
+/* #main-nav .dropdown-menu{ padding-left: 10px; padding-right: 10px; } */
 #main-nav .dropdown-toggle::after, #main-nav .nav-link .fa{ color: #000;}
-#main-nav .dropdown-item{color: #999;}
+#main-nav .dropdown-item{color: #1A4969; padding-left: 0px;}
+#main-nav .dropdown-item:hover{ background: none; color: #000;}
 #main-nav .dropdown-item.active, #main-nav .dropdown-item:active {
   text-decoration: none;
-  background-color: #e31e25;
-  color: #fff !important;
 }
 
+
+#main-nav .dropdown-menu{ margin-top: 10px; padding: 0px; border: none; min-width: 580px; left: -290px; box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.1) !important;}
+
+.dropNavBoxLeft{padding:30px 15px; font-size: 15px; color: #304C64;}
+.dropNavBoxLeft .bpara{font-weight: 900; margin-bottom: 8px; margin-top: 15px;}
+
+.dropNavBoxRight{ padding:15px 15px;}
+.dropNavBoxRight .navTitle{font-weight: 900; margin-bottom: 8px; color: #00ABBD;}
 
 
 .page{ min-height: 600px;}
@@ -50,6 +57,7 @@ body{ color: #1A4969; font-family: 'Lato', sans-serif; }
 /*********** Heading Styles ************/
 .bannerHeading{font-size: 45px; font-weight: 900;}
 .headingBold{ font-size: 38px; font-weight: 900;}
+.headingBold2{ font-size: 38px; font-weight: 700;}
 .headingLight{font-size: 30px; font-weight: 400;}
 .leadpara{ font-size: 20px;}
 .leadparaBorderd{
@@ -108,6 +116,7 @@ body{ color: #1A4969; font-family: 'Lato', sans-serif; }
 .sectionBg-SkyBlue2{background-color: #F6FCFF;}
 .sectionBg-Gray{background-color: #82a4bb;}
 .sectionBg-Gray2{background-color: #E8F1F7;}
+.sectionBg-Green{background-color: #017038;}
 .sectionBg-Gradient{
   background: linear-gradient(30deg, #FABE3E 0%, #F63966 36%, #007AE8 100%);
   -moz-background: linear-gradient(30deg, #FABE3E 0%, #F63966 36%, #007AE8 100%);
@@ -119,9 +128,11 @@ body{ color: #1A4969; font-family: 'Lato', sans-serif; }
 
 
 /*********** list ************/
-ul.list {margin-left: 0px;}
+ul.list {margin-left: 30px; list-style-type: none;}
 ul.list li{ margin-bottom: 8px;}
-ul.list li::before{ font-family: FontAwesome; content: "\f00c"; padding-right: 10px; color: #e4242b;}
+ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; display: inline-block; position: absolute; left: -30px;
+  font-family: 'Line Awesome Free'; content: "\f058";
+}
 
 
 
@@ -137,6 +148,32 @@ ul.list li::before{ font-family: FontAwesome; content: "\f00c"; padding-right: 1
   background-color: #AECDE1;
 }
 /* .bannerCarousel .carousel-indicators.active { color: red !important;} */
+
+
+
+
+/*********** Accordians ************/
+.accordion-button{ font-family: 'Lato', sans-serif; font-size: 18px; font-weight: 900; color: #1A4969; border-radius: 10px; }
+.accordion-button img{margin-right: 8px;}
+
+.accordion-item:first-of-type .accordion-button{border-top-left-radius:10px; border-top-right-radius:10px}
+.accordion-item:last-of-type .accordion-button.collapsed{border-bottom-right-radius:10px; border-bottom-left-radius:10px}
+
+.accordion-item:first-of-type { border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.accordion-item:last-of-type { border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
+
+.accordion-item{margin-bottom: 15px;  border-radius: 10px; border: none !important;
+  /*box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+.accordion-body{font-size: 15px;}
+
+.accordion-button:not(.collapsed){ background: none; color: #1A4969; box-shadow: none;}
+
+/* .accordion-collapse.show{box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.1);} */
+
+
+
 
 
 
@@ -257,6 +294,10 @@ ul.list li::before{ font-family: FontAwesome; content: "\f00c"; padding-right: 1
   #main-nav .dropdown-toggle::after { float: right;  margin-top: 8px;}
   .offcanvas{overflow: scroll;}
 
+  #main-nav .dropdown-menu{ min-width: 280px;}
+
+  .btn-contact{ margin-left: 0px; margin-top: 15px;}
+
   .carousel-control-prev { left: -10px;}
   .custCarousel .carousel-control-next {right: -10px;}
 
@@ -286,17 +327,24 @@ ul.list li::before{ font-family: FontAwesome; content: "\f00c"; padding-right: 1
   #main-nav .dropdown-menu{position: relative;}
   #main-nav .dropdown-toggle::after { float: right;  margin-top: 8px;}
   .offcanvas{overflow: scroll;}
+
+  #main-nav .dropdown-menu{ min-width: 280px;}
+
+  .btn-contact{ margin-left: 0px; margin-top: 15px;}
   
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
   .logo { background-size: contain; width: 240px;  height: 34px;}
   
-  #main-nav .nav-link{ font-size: 14px; padding-left: 6px; padding-right: 6px;}
+  #main-nav .nav-link{ font-size: 13px; padding-left: 6px; padding-right: 6px;}
+
   .offcanvas{overflow: scroll;}
   .offcanvas-backdrop.show { opacity: 0; display: none;}
 
-  .btn-contact, .btn-login{ padding: 6px 10px;}
+
+  .btn-contact, .btn-login{ padding:3px 8px;}
+
 
 }
 

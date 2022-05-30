@@ -49,7 +49,7 @@ const FooterContact = () => {
                     <Row className='align-items-center'>
                         {DUMMY_DATA.map((crd) => {
                             return (
-                                <Col md={4} key={crd.id}>
+                                <Col lg={4} md={4} key={crd.id}>
                                     <Cards className='text-center'
                                         key={crd.id}
                                         image={crd.image}

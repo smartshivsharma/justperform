@@ -1,0 +1,109 @@
+
+
+
+.smStrip{ padding-top: 40px; padding-bottom: 40px;}
+
+.serviceBanner{ padding-top: 0; padding-bottom: 0;}
+
+.fullBanner{ width: 100%;}
+
+
+
+.card{ padding:30px; border: none; border-radius: 10px; margin-top: 50px;
+   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2); 
+}
+.cardTitle{font-size: 20px; font-weight: 900; margin-top: 10px; margin-bottom: 8px; color: #304C64;}
+.cardSubTitle{font-size: 18px; font-weight: 400; margin-top: 10px; color: #1A4969;}
+.cardText{ font-size: 15px;}
+.cardImage{ border-radius: 8px; position: relative; z-index: 1;}
+
+
+
+.expCard{ margin-bottom: 15px; min-height: 200px; padding-top: 30px; border: none; border-radius: 0px; box-shadow: none; background: none;}
+.expCardTitle{font-size: 20px; font-weight: 900; margin-top: 10px; }
+.expCardText{ font-size: 18px;}
+.expCardFooter{ font-size: 16px; font-weight: 900; color:#00ABBD; background: none; border-top: none; padding-top: 10px; padding-bottom: 30px;}
+.expCardFooter a{color:#00ABBD; text-decoration: none;}
+
+
+.powerCard{ border: none; background: none;}
+.powerCardImage{ padding-top: 30px; padding-bottom: 30px;  margin-right: -50px;}
+.powerCardImage img{border-radius: 10px;  position: relative; z-index: 1;}
+.powerCardDetails{ padding: 30px 30px 30px 120px; margin-left: -50px; border-radius: 10px; background: #fff; min-height: 400px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);  }
+.powerCardTitle{ font-size: 38px; color: #304C64; font-weight: 900;}
+.powerCardText{ font-size: 20px;}
+.powerCardBody{ position: relative; }
+
+
+.vMid {
+    margin: 0; padding-right: 20px;  width: auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+
+
+.powerCardRight{ border: none; background: none;}
+.powerCardRightImage{ padding-top: 30px; padding-bottom: 30px;  margin-left: -50px;}
+.powerCardRightImage img{border-radius: 10px;  position: relative; z-index: 1;}
+.powerCardRightDetails{ padding: 30px 120px 30px 50px; margin-right: -50px; border-radius: 10px;  background: #fff; min-height: 400px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);}
+
+.powerCardRightTitle{ font-size: 38px; color: #304C64; font-weight: 900;}
+.powerCardRightText{ font-size: 20px;}
+
+.powerCardRightBody{ position: relative;}
+
+.vMidRight {
+   margin: 0; padding-right: 100px; 
+   position: absolute;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+ }
+
+
+
+
+ ul.list {margin-left: 0px; list-style-type: none; position: relative;}
+ ul.list li{ margin-bottom: 15px;}
+ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-right: 10px; color: #00ABBD; margin-bottom: 4px; display: inline-block; position: absolute; left: 0px;}
+
+
+
+  
+
+ @media only screen and (min-device-width:320px) and (max-device-width:767px){
+    .powerCardImage{ margin-right: 0px; text-align: center;}
+    .powerCardDetails{ margin-left: 0px; padding: 100px 30px 30px 30px; margin-top: -100px;}
+
+    .powerCardRightImage{ margin-right: 0px; text-align: center;}
+    .powerCardRightDetails{ margin-left: 0px; padding: 100px 30px 30px 30px; margin-top: -100px;}
+ }
+  
+ @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
+
+ }
+  
+ @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
+
+ }
+  
+ 
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px){
+ }
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
+    .powerCardImage{ margin-right: 0px; text-align: center;}
+    .powerCardDetails{ margin-left: 0px; padding: 100px 30px 30px 30px; /*margin-top: -100px;*/}
+
+    .powerCardRightImage{ margin-left: 0px; text-align: center;}
+    .powerCardRightDetails{ margin-left: 0px; padding: 100px 30px 30px 30px;}
+ }
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+    
+ }
+  

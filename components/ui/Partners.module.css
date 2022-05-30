@@ -1,0 +1,2 @@
+.partnersLogo{ position: relative;}
+.partnersLogo li:not(:last-child) { margin-right: 2.2rem;}

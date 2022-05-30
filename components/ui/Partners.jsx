@@ -2,6 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import { Row, Col } from "react-bootstrap";
 
+import classes from './Partners.module.css';
 
 
 
@@ -63,7 +64,7 @@ const Partners = () => {
             </Section> */}
 
 
-            <Row>
+            <Row className={classes.partnersLogo}>
                 <Col md={12}>
                     <ul className='list-inline'>
                         <li className='list-inline-item'>

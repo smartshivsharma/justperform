@@ -1,0 +1,70 @@
+
+
+
+.smStrip{ padding-top: 40px; padding-bottom: 40px;}
+
+.companyBanner{ padding-top: 0; padding-bottom: 0;}
+
+
+.expCard{ margin-bottom: 15px; min-height: 200px; padding-top: 30px; border: none; border-radius: 0px; box-shadow: none; background: none;}
+.expCardTitle{font-size: 20px; font-weight: 900; margin-top: 10px;}
+.expCardText{ font-size: 18px;}
+.expCardFooter{ font-size: 16px; font-weight: 900; color:#00ABBD; background: none; border-top: none; padding-top: 10px; padding-bottom: 30px;}
+.expCardFooter a{color:#00ABBD; text-decoration: none;}
+
+
+
+
+
+
+
+.powerCard{ border: none;}
+.powerCardImage{ padding-top: 30px; padding-bottom: 30px;  margin-right: -50px;}
+.powerCardImage img{border-radius: 10px;  position: relative; z-index: 1;}
+.powerCardDetails{ padding: 30px 30px 30px 120px; margin-left: -50px; border-radius: 10px; min-height: 400px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);  }
+
+.powerCardTitle{ font-size: 38px; color: #304C64; font-weight: 900;}
+.powerCardText{ font-size: 20px;}
+
+.powerCardBody{ position: relative;}
+
+
+.vMid {
+    margin: 0; padding-right: 20px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+
+
+  
+
+ @media only screen and (min-device-width:320px) and (max-device-width:767px){
+    .powerCardImage{ margin-right: 0px; text-align: center;}
+    .powerCardDetails{ margin-left: 0px; padding: 100px 30px 30px 30px; margin-top: -100px;}
+ }
+  
+ @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
+
+ }
+  
+ @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
+
+ }
+  
+ 
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px){
+ }
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
+    .powerCardImage{ margin-right: 0px; text-align: center;}
+    .powerCardDetails{ margin-left: 0px; padding: 100px 30px 30px 30px; margin-top: -100px;}
+ }
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+    
+ }
+  

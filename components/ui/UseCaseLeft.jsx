@@ -7,7 +7,7 @@ function UseCaseLeft(props) {
     return (
         <>
             <Row className={`${['align-items-center']} ${['justify-content-between']} ${props.className}`}>
-                <Col md={5} className='text-center'>
+                <Col md={6} className='text-center'>
                     <img src={props.image} className='img-fluid' />
                 </Col>
                 <Col md={6}>

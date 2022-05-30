@@ -15,5 +15,8 @@
 .foundCardFooter{ font-size: 16px; font-weight: 900; color:#00ABBD; background: none; border-top: none; padding-top: 10px; padding-bottom: 30px; text-align: right;}
 .foundCardFooter a{color:#00ABBD; text-decoration: none;}
 
-.list{ margin-top: 0; font-size: 18px;}
-.list li{ margin-bottom: 15px;}
+
+
+ul.list {margin-left: 0px; list-style-type: none; position: relative;}
+ ul.list li{ margin-bottom: 15px;}
+ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-right: 10px; color: #00ABBD; margin-bottom: 4px; display: inline-block; position: absolute; left: 0px;}

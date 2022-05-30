@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from "next/link";
 import Head from 'next/head';
 
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Container, Row, Col, Button, Card, Accordion } from "react-bootstrap";
 
 import classes from '../../styles/Solutions.module.css';
 
@@ -38,7 +38,7 @@ const Consolidation = () => {
 
 
             <InnerBanner
-                image='../../images/banner-extendedPlanning.png'
+                image='../../images/banner-consolidation.png'
                 title='Let your finance users breathe again.'
                 description='Get easier, faster, more accurate consolidation for all your internal and external reporting needs.
                 Streamline your consolidation process with the purpose-built Consolidation Pro app. Simplify your communication with audit-friendly self-service reporting.'
@@ -121,7 +121,7 @@ const Consolidation = () => {
 
             <Section className={`${['sectionBg-White']} ${['pb-0']}`}>
                 <Container>
-                    <RightImageDesc
+                    {/* <RightImageDesc
                         title='Financial Close'
                         description='Let IFRS and Multi-GAAP compliant apps with inbuilt financial intelligence accelerate your financial close.'
                         image='../../images/img-financialClose2.png'
@@ -137,7 +137,41 @@ const Consolidation = () => {
                         title='Disclosure Management'
                         description='Simplify this ‘last mile of finance’ by streamlining the reporting contribution at department level. Eliminate tedious effort in preparing notes to accounts by using a robust, user-friendly disclosure management framework.'
                         image='../../images/img-disclouser.png'
-                    />
+                    /> */}
+
+
+                    <Row className='mt-5 align-items-center justify-content-between'>
+                        <Col md={6}>
+                            <h2 className='headingBold'>Financial Close</h2>
+                            <p className='leadparaBorderd'>Let IFRS and Multi-GAAP compliant apps with inbuilt financial intelligence accelerate your financial close.</p>
+                            <Button variant='primary' className='mt-3'>LEARN MORE</Button>
+                        </Col>
+                        <Col md={5} className='text-center'>
+                            <img src='../../images/img-financialClose2.png' className='img-fluid' />
+                        </Col>
+                    </Row>
+
+                    <Row className='align-items-center justify-content-between mt-5'>
+                        <Col md={5} className='text-center'>
+                            <img src='../../images/img-managementReport.png' className='img-fluid' />
+                        </Col>
+                        <Col md={6}>
+                            <h2 className='headingBold'>Management Reporting</h2>
+                            <p className='leadparaBorderd'>Get a comprehensive view of business performance with no compromise on flexibility in reporting and speed of management decision making.</p>
+                            <Button variant='primary' className='mt-3'>LEARN MORE</Button>
+                        </Col>
+                    </Row>
+
+                    <Row className='mt-5 align-items-center justify-content-between mt-5'>
+                        <Col md={6}>
+                            <h2 className='headingBold'>Disclosure Management</h2>
+                            <p className='leadparaBorderd'>Simplify this 'last mile of finance' by streamlining the reporting contribution at department level. Eliminate tedious effort in preparing notes to accounts by using a robust, user-friendly disclosure management framework.</p>
+                            <Button variant='primary' className='mt-3'>LEARN MORE</Button>
+                        </Col>
+                        <Col md={5} className='text-center'>
+                            <img src='../../images/img-disclouser.png' className='img-fluid' />
+                        </Col>
+                    </Row>
 
                 </Container>
             </Section>
@@ -163,13 +197,47 @@ const Consolidation = () => {
                         <Col lg={12} md={12} className='text-center'>
                             <h3 className='headingBold'>Consolidate with new levels of speed, efficiency, and confidence </h3>
                         </Col>
-                       
+
                     </Row>
-                    <Row className='justify-content-center align-items-center mt-5'>
-                        <Col lg={6} md={6} className='text-center'>
-                            Accordian
+                    <Row className='justify-content-between align-items-center mt-5'>
+                        <Col lg={6} md={6}>
+                            <Accordion defaultActiveKey="0">
+                                <Accordion.Item eventKey="0">
+                                    <Accordion.Header>
+                                        <img src='../../images/icon-accord1.svg' className='img-fluid' /> Meet all your requirements in one go
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform's Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+
+                                <Accordion.Item eventKey="1">
+                                    <Accordion.Header>
+                                        <img src='../../images/icon-accord2.svg' className='img-fluid' /> Accordion Effortlessly collect, prepare, and enrich all your data
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform's Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header>
+                                        <img src='../../images/icon-accord3.svg' className='img-fluid' />Automate all your adjustments in your consolidation
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform's Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                                <Accordion.Item eventKey="3">
+                                    <Accordion.Header>
+                                        <img src='../../images/icon-accord4.svg' className='img-fluid' /> Move to accurate, audit-friendly results
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        Handle data coming from multiple entities, systems, and locations with ease. Leverage JustPerform's Visual Data Flow layer to easily collate and enrich data as needed for consolidation.
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            </Accordion>
                         </Col>
-                        <Col lg={6} md={6} >
+                        <Col lg={6} md={6} className='text-center'>
                             <img src='../../images/img-accord.svg' />
                         </Col>
                     </Row>

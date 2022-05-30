@@ -60,6 +60,7 @@ const HomePage = () => {
         <title>The Fastest and Most Reliable Way to Deliver SAP BPC Implementations</title>
         <meta name="description"
           content="Red Apricot inspires businesses to transform enterprise performance management processes via an innovative technology-enabled solution methodology" />
+          <link rel="icon" href="/favicon.png" />
       </Head>
 
 

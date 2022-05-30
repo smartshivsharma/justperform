@@ -39,7 +39,11 @@ const Header = () => {
           {/** For Mobile */}
           <Offcanvas show={show} onHide={handleClose} className="d-block d-lg-none">
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title>Menu</Offcanvas.Title>
+              <Offcanvas.Title>
+                <div className='logo'>
+                  <img src='../../images/logo.svg' />
+                </div>
+              </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
 

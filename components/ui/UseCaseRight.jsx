@@ -13,7 +13,7 @@ function UseCaseRight(props) {
                     <p className={`${'leadpara'}`}>{props.description}</p>
                     <p className='learnMore'><Link href={props.buttonLink}><a>{props.buttonText} <i className="las la-arrow-right"></i> </a></Link></p>
                 </Col>
-                <Col md={5} className="text-center order-1 order-md-2">
+                <Col md={6} className="text-center order-1 order-md-2">
                     <img src={props.image} className='img-fluid' />
                 </Col>
             </Row>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Head from 'next/head';
 
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Tabs, Tab } from 'react-bootstrap';
 
 import classes from '../../styles/Solutions.module.css';
 
@@ -104,20 +105,21 @@ const Solutions = () => {
                             </Card>
                         </Col>
                     </Row>
+
                 </Container>
             </Section>
 
 
             <Section className={`${classes.platformBanner} ${classes.useCaseSec} ${['sectionBg-White']}`}>
                 <Container>
-                    <Row className='justify-content-center text-center'>
+                    <Row className='justify-content-center text-center mb-5'>
                         <Col md={12}>
                             <h2 className='bannerHeading'>Use Cases for a Unified Platform</h2>
                         </Col>
                     </Row>
 
                     <UseCaseRight className="mb-5"
-                        image='../../images/banner-extendedPlanning.png'
+                        image='../../images/img-consolidation.png'
                         title='Extended Planning & Analysis'
                         description='Collaborate across your departments to improve accuracy and agility in your planning. Let JustPerform connect your strategy, finance, people, and operational processes to achieve your overall business goals.'
                         buttonText='LEARN MORE'
@@ -182,9 +184,70 @@ const Solutions = () => {
                         <Col md={12}>
                             <img src='../../images/tabComponent.png' className='img-fluid' />
                         </Col>
+                        {/* <Col lg={12} md={12}>
+                            <Card className={classes.powerCard}>
+                                <Card.Body className={classes.powerCardBody}>
+                                    <Row className='align-items-center'>
+                                        <Col lg={5} md={12} className={`${classes.powerCardImage}`}>
+                                            <img src='../../images/img-recog.png' className={`${['img-fluid']}`} />
+                                        </Col>
+                                        <Col lg={7} md={12} className={classes.powerCardDetails}>
+                                            <div className={classes.vMid1}>
+                                                <Card.Title className={classes.powerCardTitle}>Optimizing profitability is more important than ever in this fast-paced business world.</Card.Title>
+                                                <Card.Text className={classes.powerCardText}>
+                                                    However, understanding key profitability drivers can be tough. Other challenges include allocating resources correctly to each product/product group and reducing overheads and costs. Without smarter solutions, manual data exports, consolidation, and presentation for analysis and allocation are all tedious and time-consuming.
+                                                </Card.Text>
+                                                <Card.Text className={classes.powerCardText}>
+                                                    Get quick, efficient results with granular insights and right automation with JustPerform.
+                                                </Card.Text>
+                                            </div>
+                                            <Tabs defaultActiveKey="deven" >
+                                                <Tab eventKey="alex" title="ALEX" >
+                                                    <div className="tab-item-wrapper">
+                                                        <h4>Name : Alex</h4>
+                                                        <h5>Profession : FrontEnd Developer</h5>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                            elit. Maxime libero vitae quia unde ex ducimus
+                                                            qui reiciendis dolore, cumque possimus.</p>
+                                                    </div>
+                                                </Tab>
+
+                                                <Tab eventKey="deven" title="DEVEN" >
+                                                    <div className="tab-item-wrapper">
+                                                        <h4>Name : Deven</h4>
+                                                        <h5>Profession : FullStack Developer</h5>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                            elit. Maxime libero vitae quia unde ex ducimus
+                                                            qui reiciendis dolore, cumque possimus.</p>
+                                                    </div>
+                                                </Tab>
+
+                                                <Tab eventKey="alina" title="ALINA">
+                                                    <div className="tab-item-wrapper">
+                                                        <h5>Contact Info</h5>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                            elit. Possimus, labore dignissimos? Accusantium impedit
+                                                            assumenda quisquam incidunt quibusdam temporibus animi.</p>
+                                                    </div>
+                                                </Tab>
+                                            </Tabs>
+
+                                        </Col>
+                                    </Row>
+
+                                </Card.Body>
+                            </Card>
+
+                        </Col> */}
+
                     </Row>
                 </Container>
             </Section>
+
+
+
+
+
 
 
 
