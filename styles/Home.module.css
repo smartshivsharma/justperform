@@ -61,3 +61,59 @@
     border-right: none; border-top: none; border-bottom: none;
 }
 
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width:320px) and (max-device-width:767px){
+
+.homeBookDemo{ margin-top:0; }
+.homeBookDemo h1{ font-weight: 900; font-size:35px;}
+
+.leadingCompanies h2{ margin-top: 100px;}
+
+.solutionsCard{ min-height: auto;}
+
+.plateformCardTitle{font-size: 18px;}
+.plateformCardText{ font-size: 16px;}
+
+    
+ }
+  
+ @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
+
+ }
+  
+ @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
+
+ }
+  
+ 
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px){
+
+.homeBookDemo{ margin-top:0; }
+.homeBookDemo h1{ font-weight: 900; font-size:35px;}
+
+.leadingCompanies h2{ margin-top: 100px;}
+
+.solutionsCard{ min-height: auto;}
+
+.plateformCardTitle{font-size: 18px;}
+.plateformCardText{ font-size: 16px;}
+
+ }
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
+   
+ }
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+    
+ }
+  

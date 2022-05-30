@@ -67,10 +67,10 @@ const IntelligentForecasting = () => {
             <Section className={`${['sectionBg-Gradient']} ${classes.smStrip}`}>
                 <Container>
                     <Row className='align-items-center justify-content-center'>
-                        <Col lg={2} md={12}>
+                        <Col lg={2} md={4}>
                             <img src='../../images/img-salesChart.svg' className='img-fluid' />
                         </Col>
-                        <Col lg={6} md={12}>
+                        <Col lg={6} md={8}>
                             <h2 className='headingLight text-white'>According to Gartner</h2>
                             <p className='leadpara text-white'>56% of organisations have already adopted Artificial Intelligence*</p>
                         </Col>

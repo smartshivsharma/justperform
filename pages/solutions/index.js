@@ -50,14 +50,31 @@ const Solutions = () => {
                 </Container>
             </Section> */}
 
-            <InnerBanner
+            {/* <InnerBanner
                 image='../../images/banner-solutions.png'
                 title='Bring speed and scalability to your performance'
                 description='Eliminate silos. Enable all departments to work in unison to meet their business goals. Choose JustPerform as your single platform to streamline your business performance management.'
                 buttonText='BOOK A DEMO'
                 onClick={buttonHandler}
-            />
+            /> */}
 
+
+
+            <Section className={`${['sectionBg-White']}`}>
+                <Container>
+                    <Row className='justify-content-between align-items-center'>
+                        <Col lg={5} md={6} className='order-2 order-lg-1 order-md-1'>
+                            <h1 className='bannerHeading'>Bring speed and scalability to your performance</h1>
+                            <p className='leadpara'>Eliminate silos. Enable all departments to work in unison to meet their business goals. Choose JustPerform as your single platform to streamline your business performance management.</p>
+                            <p><Button variant="primary" onClick={buttonHandler}>BOOK A DEMO</Button></p>
+                        </Col>
+
+                        <Col lg={7} md={6} className='order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/banner-plateform.svg' className='img-fluid' />
+                        </Col>
+                    </Row>
+                </Container>
+            </Section>
 
 
             {/* <Section className={`${classes.platformBanner} ${['sectionBg-IrisBlue']}`}></Section> */}
@@ -181,10 +198,10 @@ const Solutions = () => {
                         </Col>
                     </Row>
                     <Row className='mt-3'>
-                        <Col md={12}>
+                        {/* <Col md={12}>
                             <img src='../../images/tabComponent.png' className='img-fluid' />
-                        </Col>
-                        {/* <Col lg={12} md={12}>
+                        </Col> */}
+                        <Col lg={12} md={12}>
                             <Card className={classes.powerCard}>
                                 <Card.Body className={classes.powerCardBody}>
                                     <Row className='align-items-center'>
@@ -192,42 +209,110 @@ const Solutions = () => {
                                             <img src='../../images/img-recog.png' className={`${['img-fluid']}`} />
                                         </Col>
                                         <Col lg={7} md={12} className={classes.powerCardDetails}>
-                                            <div className={classes.vMid1}>
-                                                <Card.Title className={classes.powerCardTitle}>Optimizing profitability is more important than ever in this fast-paced business world.</Card.Title>
-                                                <Card.Text className={classes.powerCardText}>
-                                                    However, understanding key profitability drivers can be tough. Other challenges include allocating resources correctly to each product/product group and reducing overheads and costs. Without smarter solutions, manual data exports, consolidation, and presentation for analysis and allocation are all tedious and time-consuming.
-                                                </Card.Text>
-                                                <Card.Text className={classes.powerCardText}>
-                                                    Get quick, efficient results with granular insights and right automation with JustPerform.
-                                                </Card.Text>
-                                            </div>
-                                            <Tabs defaultActiveKey="deven" >
-                                                <Tab eventKey="alex" title="ALEX" >
+
+                                            <Tabs defaultActiveKey="0" >
+                                                <Tab eventKey="0" title="Finance" >
                                                     <div className="tab-item-wrapper">
-                                                        <h4>Name : Alex</h4>
-                                                        <h5>Profession : FrontEnd Developer</h5>
-                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                                                            elit. Maxime libero vitae quia unde ex ducimus
-                                                            qui reiciendis dolore, cumque possimus.</p>
+                                                        <h2 className='headingBold'>Finance</h2>
+                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
+                                                        <Button variant='primary'>Learn More</Button>
+                                                    </div>
+                                                    <div className='tabPaging'>
+                                                        <ul className='list-inline'>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-left"></i>
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <b>01</b> of 05
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-right"></i>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </Tab>
 
-                                                <Tab eventKey="deven" title="DEVEN" >
+                                                <Tab eventKey="1" title="Sales" >
                                                     <div className="tab-item-wrapper">
-                                                        <h4>Name : Deven</h4>
-                                                        <h5>Profession : FullStack Developer</h5>
-                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                                                            elit. Maxime libero vitae quia unde ex ducimus
-                                                            qui reiciendis dolore, cumque possimus.</p>
+                                                        <h2 className='headingBold'>Sales</h2>
+                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
+                                                        <Button variant='primary'>Learn More</Button>
+                                                    </div>
+                                                    <div className='tabPaging'>
+                                                        <ul className='list-inline'>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-left"></i>
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <b>02</b> of 05
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-right"></i>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </Tab>
 
-                                                <Tab eventKey="alina" title="ALINA">
+                                                <Tab eventKey="2" title="Supply Chain">
                                                     <div className="tab-item-wrapper">
-                                                        <h5>Contact Info</h5>
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                            elit. Possimus, labore dignissimos? Accusantium impedit
-                                                            assumenda quisquam incidunt quibusdam temporibus animi.</p>
+                                                        <h2 className='headingBold'>Supply Chain</h2>
+                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
+                                                        <Button variant='primary'>Learn More</Button>
+                                                    </div>
+                                                    <div className='tabPaging'>
+                                                        <ul className='list-inline'>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-left"></i>
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <b>03</b> of 05
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-right"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </Tab>
+
+                                                <Tab eventKey="3" title="HR">
+                                                    <div className="tab-item-wrapper">
+                                                        <h2 className='headingBold'>HR</h2>
+                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
+                                                        <Button variant='primary'>Learn More</Button>
+                                                    </div>
+                                                    <div className='tabPaging'>
+                                                        <ul className='list-inline'>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-left"></i>
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <b>04</b> of 05
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-right"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </Tab>
+
+                                                <Tab eventKey="4" title="Marketing">
+                                                    <div className="tab-item-wrapper">
+                                                        <h2 className='headingBold'>Marketing</h2>
+                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
+                                                        <Button variant='primary'>Learn More</Button>
+                                                    </div>
+                                                    <div className='tabPaging'>
+                                                        <ul className='list-inline'>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-left"></i>
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <b>05</b> of 05
+                                                            </li>
+                                                            <li className='list-inline-item'>
+                                                                <i class="las la-arrow-right"></i>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </Tab>
                                             </Tabs>
@@ -238,7 +323,7 @@ const Solutions = () => {
                                 </Card.Body>
                             </Card>
 
-                        </Col> */}
+                        </Col>
 
                     </Row>
                 </Container>
@@ -276,8 +361,8 @@ const Solutions = () => {
 
 
 
-                    <Row className='row-cols-lg-5 justify-content-center mt-5'>
-                        <Col>
+                    <Row className='row-cols-lg-5 row-cols-md-3 row-cols-2 justify-content-center mt-5'>
+                        <Col lg>
                             <ListCards
                                 image='../../images/icon-telecom.png'
                                 title='Telecom'

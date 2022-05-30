@@ -174,6 +174,17 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 
 
+.nav-tabs{border-bottom: solid 3px transparent;}
+
+.nav-tabs .nav-link{ border: none; font-size: 20px; color: #1A4969; font-weight: 500;}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{ color:#00ABBD; font-weight: 700; border-bottom: solid 3px #00ABBD;;}
+
+.tab-content{ padding: 50px 15px 15px 15px;}
+
+.tabPaging{ text-align: right; position: absolute; right: 30px; font-size: 20px;}
+.tabPaging .las{ font-size: 22px; color:#00ABBD; vertical-align: middle;}
+
 
 
 
@@ -294,12 +305,19 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
   #main-nav .dropdown-toggle::after { float: right;  margin-top: 8px;}
   .offcanvas{overflow: scroll;}
 
-  #main-nav .dropdown-menu{ min-width: 280px;}
+  #main-nav .dropdown-menu{ min-width: 280px; left: 0;}
 
   .btn-contact{ margin-left: 0px; margin-top: 15px;}
 
   .carousel-control-prev { left: -10px;}
   .custCarousel .carousel-control-next {right: -10px;}
+
+.bannerHeading{font-size: 36px; font-weight: 900;}
+.headingBold{ font-size: 28px; font-weight: 900;}
+.headingBold2{ font-size: 28px; font-weight: 700;}
+.headingLight{font-size: 24px; font-weight: 400;}
+.leadpara{ font-size: 18px;}
+.leadparaBorderd{font-size: 18px;}
 
 
 }
@@ -313,6 +331,15 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px){
+
+.bannerHeading{font-size: 36px; font-weight: 900;}
+.headingBold{ font-size: 28px; font-weight: 900;}
+.headingBold2{ font-size: 28px; font-weight: 700;}
+.headingLight{font-size: 24px; font-weight: 400;}
+.leadpara{ font-size: 18px;}
+.leadparaBorderd{font-size: 18px;}
+  
+
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
@@ -328,10 +355,12 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
   #main-nav .dropdown-toggle::after { float: right;  margin-top: 8px;}
   .offcanvas{overflow: scroll;}
 
-  #main-nav .dropdown-menu{ min-width: 280px;}
+  #main-nav .dropdown-menu{ min-width: 280px; left: 0;}
 
   .btn-contact{ margin-left: 0px; margin-top: 15px;}
-  
+
+
+
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){

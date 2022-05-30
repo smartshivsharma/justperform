@@ -48,12 +48,12 @@ const ExcelInfinity = () => {
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={6} md={12} className="order-2 order-lg-1">
+                        <Col lg={6} md={6} className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>Turn your Excel into an enterprise grade solution </h1>
                             <p className='leadpara'>Streamline and transform your processes running on Excel with endless possibilities provided by JustPerform Excel Infinity.</p>
                         </Col>
 
-                        <Col lg={6} md={12} className="order-1 order-lg-2">
+                        <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
                             <img src='../../images/banner-exelInfinity.png' className='img-fluid' />
                         </Col>
                     </Row>
@@ -149,15 +149,15 @@ const ExcelInfinity = () => {
 
             <Section className={`${['sectionBg-SkyBlue2']}`}>
                 <Container>
-                    <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={6} md={6}>
+                    <Row className='justify-content-between align-items-center'>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>Infinite possibilities with JustPerform Excel Infinity</h2>
                             <p className='leadpara mt-4'>While Excel offers benefits, the lack of validation, the need for complex functions to process data, and the limited scope for automation and collaboration can become serious drawbacks.</p>
                             <p className='leadpara'>So, power up your Excel with the Business Rule Engine, rich modelling, versioning and time dimensions, enterprise grade authorisations, traceability, and scalability.</p>
                             <p className='leadpara'>Let JustPerform Excel Infinity open limitless possibilities to complete your last mile of digital transformation.</p>
                         </Col>
-                        <Col lg={5} md={6}>
-                            <img src='../../images/img-infinity.svg' className='img-fluid' />
+                        <Col lg={5} md={6} className='order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-infinity.svg' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
@@ -168,20 +168,20 @@ const ExcelInfinity = () => {
 
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
-                    <Row className='justify-content-between mt-5'>
-                        <Col lg={6} md={6}>
+                    <Row className='justify-content-between'>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>From error prone to validation driven</h2>
                             <p className='leadpara'>Stop the pain of inaccurate data and the sleepless nights trying to figure out the error so you can fix it. With JustPerform, take these problems out of the equation.</p>
                             <p className='leadpara'><b>Use smart validations at each activity and task level to eliminate incompleteness and inaccuracies in your data.</b></p>
                         </Col>
-                        <Col lg={6} md={6} className='text-center'>
-                            <img src='../../images/img-leverage.svg' className='img-fluid' />
+                        <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-leverage.svg' className='img-fluid mb-3' />
                         </Col>
                     </Row>
 
                     <Row className='justify-content-between mt-5'>
                         <Col lg={6} md={5} className='text-center'>
-                            <img src='../../images/img-leverage.svg' className='img-fluid' />
+                            <img src='../../images/img-leverage.svg' className='img-fluid mb-3' />
                         </Col>
                         <Col lg={6} md={6}>
                             <h2 className='headingBold'>From fragmented tasks to complete collaboration</h2>
@@ -191,19 +191,19 @@ const ExcelInfinity = () => {
                     </Row>
 
                     <Row className='justify-content-between mt-5'>
-                        <Col lg={6} md={6}>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>From manual data processing to automated data transformation</h2>
                             <p className='leadpara'>VBA, VLOOKUPs, and macros can only take your automation so far. And errors made with these functions can be too difficult to fix by anyone other than an IT expert. Instead, use JustPerform's capabilities to automate all your data processing with no need for complex formulae or coding and no dependency on IT experts.</p>
                             <p className='leadpara'><b>The Business Rule Library contains an exhaustive list of rules to help you make your data processing simple, effective, and successful.</b></p>
                         </Col>
-                        <Col lg={6} md={6} className='text-center'>
-                            <img src='../../images/img-leverage.svg' className='img-fluid' />
+                        <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-leverage.svg' className='img-fluid mb-3' />
                         </Col>
                     </Row>
 
                     <Row className='justify-content-between mt-5'>
                         <Col lg={6} md={5} className='text-center'>
-                            <img src='../../images/img-leverage.svg' className='img-fluid' />
+                            <img src='../../images/img-leverage.svg' className='img-fluid mb-3' />
                         </Col>
                         <Col lg={6} md={6}>
                             <h2 className='headingBold'>From no governance to fine-grain authorisations</h2>
@@ -213,13 +213,13 @@ const ExcelInfinity = () => {
                     </Row>
 
                     <Row className='justify-content-between mt-5'>
-                        <Col lg={6} md={6}>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>From building-from-scratch to time-saving built-in templates</h2>
                             <p className='leadpara'>Make productive use of your most precious resource. Don't let manual input and reporting activities consume your valuable time. Tap into JustPerform capabilities to kickstart processes while customising as you wish.</p>
                             <p className='leadpara'><b>Standard pre-built templates let you save time in your data input, dashboard and report building. They also offer automated conversion of your Excel dashboards into PowerPoint for easier consumption.</b></p>
                         </Col>
-                        <Col lg={6} md={6} className='text-center'>
-                            <img src='../../images/img-leverage.svg' className='img-fluid' />
+                        <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-leverage.svg' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
@@ -253,15 +253,15 @@ const ExcelInfinity = () => {
 
             <Section className={`${['sectionBg-SkyBlue']}`}>
                 <Container>
-                    <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={6} md={6}>
+                    <Row className='justify-content-between align-items-center'>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='bannerHeading'>Deploy anywhere and everywhere.</h2>
                             <p className='leadpara mt-4'>Say goodbye to outmoded traditional installations of Excel applications. Deploy Excel Infinity at the click of a button from the Office Add-ins Store.</p>
                             <p className='leadpara'>Start performing from your mobile, tablet, or system with no limitations whatsoever.</p>
                             <Button variant='primary'>INSTALL NOW</Button>
                         </Col>
-                        <Col lg={5} md={6}>
-                            <img src='../../images/img-deploy.svg' className='img-fluid' />
+                        <Col lg={5} md={6} className='order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-deploy.svg' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>

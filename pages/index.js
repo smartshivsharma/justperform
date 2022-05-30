@@ -20,31 +20,31 @@ import RightImageDesc from '../components/ui/RightImageDesc';
 const DUMMY_DATA_EMP = [
   {
     id: 'c1',
-    image: '../../images/solutionsIcon-1.png',
+    image: '../../images/solutionsIcon-1.svg',
     title: 'Extended Planning & Analysis',
     description: 'Agile and scalable planning from strategy to operations',
   },
   {
     id: 'c2',
-    image: '../../images/solutionsIcon-2.png',
+    image: '../../images/solutionsIcon-2.svg',
     title: 'Financial Close',
     description: 'Fast, accurate, and fully compliant consolidated results',
   },
   {
     id: 'c3',
-    image: '../../images/solutionsIcon-3.png',
+    image: '../../images/solutionsIcon-3.svg',
     title: 'Profitability Analysis',
     description: 'In-depth analysis for the right profitability measures',
   },
   {
     id: 'c4',
-    image: '../../images/solutionsIcon-4.png',
+    image: '../../images/solutionsIcon-4.svg',
     title: 'Intelligent Forecasting',
     description: 'AI & ML driven forecasting for confident decision making',
   },
   {
     id: 'c5',
-    image: '../../images/solutionsIcon-5.png',
+    image: '../../images/solutionsIcon-5.svg',
     title: 'Excel Infinity',
     description: 'Leverage and streamline processes running on Excel',
   },
@@ -94,14 +94,14 @@ const HomePage = () => {
               {/* <img src='../../images/demoCarousel-1.png' className='img-fluid' /> */}
               <Carousel variant="dark" indicators={true} controls={false} className='bannerCarousel'>
                 <Carousel.Item>
-                  <img src='../../images/demoCarousel-1.png' className='img-fluid' />
+                  <img src='../../images/banner-home1.svg' className='img-fluid' />
                   {/* <Image src="../../images/demoCarousel-1.png" className='img-fluid' layout='fill' alt="..." /> */}
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src='../../images/demoCarousel-1.png' className='img-fluid' />
+                  <img src='../../images/banner-home2.svg' className='img-fluid' />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src='../../images/demoCarousel-1.png' className='img-fluid' />
+                  <img src='../../images/banner-home3.svg' className='img-fluid' />
                 </Carousel.Item>
 
               </Carousel>
@@ -137,17 +137,17 @@ const HomePage = () => {
       <Section className={`${classes.explorePlateform} ${['sectionBg-White']}`}>
         <Container>
           <Row className='align-items-center justify-content-between'>
-            <Col md={6}>
+            <Col lg={6} md={6}>
               <h2 className={`${'headingBold'} ${['mb-4']}`}>The cloud xP&A and financial close platform designed for modern business requirements</h2>
-              <p className='leadpara'>Don’t let inefficiencies of legacy solutions hold you back. Leverage new thinking and smart technology to enhance your decision-making.</p>
+              <p className='leadpara'>Don't let inefficiencies of legacy solutions hold you back. Leverage new thinking and smart technology to enhance your decision-making.</p>
               <p className='leadpara'>Experience the power of a process-first approach, an intuitive user experience, and robust governance capabilities for increased performance across your enterprise.</p>
-              <Button variant="primary" className={`${['mt-3']}`}>EXPLORE PLATFORM</Button>
+              <Button variant="primary" className={`${['mt-3']} ${['mb-3']}`}>EXPLORE PLATFORM</Button>
             </Col>
 
-            <Col md={5}>
+            <Col lg={5} md={6}>
               <Card className={classes.plateformCard}>
                 <Card.Body>
-                  <img src='../../images/platformIcon-1.png' />
+                  <img src='../../images/icon-processFirst.svg' />
                   <Card.Title className={classes.plateformCardTitle}>Process-First</Card.Title>
                   <Card.Text className={classes.plateformCardText}>
                     Take the simplest, fastest route to results by working directly with your processes
@@ -156,7 +156,7 @@ const HomePage = () => {
               </Card>
               <Card className={classes.plateformCard}>
                 <Card.Body>
-                  <img src='../../images/platformIcon-2.png' />
+                  <img src='../../images/icon-intuitiveUser.svg' />
                   <Card.Title className={classes.plateformCardTitle}>Intuitive User Experience</Card.Title>
                   <Card.Text className={classes.plateformCardText}>
                     Let the platform guide you step by step with prompts and checks to stay error-free and on track
@@ -165,7 +165,7 @@ const HomePage = () => {
               </Card>
               <Card className={classes.plateformCard}>
                 <Card.Body>
-                  <img src='../../images/platformIcon-3.png' />
+                  <img src='../../images/icon-robustGovernance.svg' />
                   <Card.Title className={classes.plateformCardTitle}>Robust Governance</Card.Title>
                   <Card.Text className={classes.plateformCardText}>
                     Empower users to make changes they need, while you keep granular control over authorisations
@@ -193,7 +193,7 @@ const HomePage = () => {
           <Row className='mt-5'>
             {DUMMY_DATA_EMP.map((crd) => {
               return (
-                <Col lg md={4} key={crd.id}>
+                <Col lg md={6} key={crd.id}>
                   <Cards className={classes.solutionsCard}
                     key={crd.id}
                     image={crd.image}
@@ -269,7 +269,7 @@ const HomePage = () => {
           <RightImageDesc className='mt-5'
             title='One solution, multiple uses'
             description='The all-in-one platform for your business performance management and custodian of your planning, financial close, and reporting processes.'
-            image='../../images/empImg1.png'
+            image='../../images/empImg1.svg'
           />
 
         </Container>
@@ -301,14 +301,14 @@ const HomePage = () => {
 
           <LeftImageDesc
             title='Have it your way'
-            description='It’s your EPM platform. Set it up and run it like you want. No more external dependencies. No more uncontrolled complexities. Just you, your users, and enterprise-wide performance.'
-            image='../../images/empImg2.png'
+            description='Its your EPM platform. Set it up and run it like you want. No more external dependencies. No more uncontrolled complexities. Just you, your users, and enterprise-wide performance.'
+            image='../../images/empImg2.svg'
           />
 
           <RightImageDesc className='mt-5'
             title='Get started fast'
-            description='Skip the learning curve. You know Excel? Then you’ll rock with JustPerform. Our smart, high-performance technology also lets everyone accelerate to results.'
-            image='../../images/empImg3.png'
+            description='Skip the learning curve. You know Excel? Then you wll rock with JustPerform. Our smart, high-performance technology also lets everyone accelerate to results.'
+            image='../../images/empImg3.svg'
           />
 
 
@@ -323,8 +323,8 @@ const HomePage = () => {
       <Section className={`${classes.roadMap} ${['sectionBg-Gray']}`}>
         <Container>
           <Row className='align-items-center justify-content-between'>
-            <Col md={6}>
-              <img src='../../images/imgRoadmap.png' className='img-fluid' />
+            <Col md={6} className='text-center'>
+              <img src='../../images/imgRoadmap.svg' className='img-fluid' />
             </Col>
             <Col md={5}>
               <h2 className='headingBold'>Your route map to success</h2>
@@ -362,13 +362,13 @@ const HomePage = () => {
           <RightImageDesc
             title='Built for business teams'
             description='Our EPM experts designed JustPerform, so that your business leaders and users can work with one brilliantly smart and easy-to-use platform for optimal enterprise performance management.'
-            image='../../images/imgRoadmap2.png'
+            image='../../images/imgRoadmap2.svg'
           />
 
           <LeftImageDesc className='mt-5'
             title='Boost ROI. Achieve MORE'
             description='Get higher return on investment. Save time. Wow your stakeholders. Let JustPerform take care of chores like data preparation, configuration, and coding, while you achieve valuable results for your enterprise.'
-            image='../../images/imgRoadmap3.png'
+            image='../../images/imgRoadmap3.svg'
           />
 
         </Container>

@@ -53,12 +53,12 @@ const Company = () => {
             <Section className={`${['sectionBg-SkyBlue2']} ${classes.companyBanner}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={5} md={12}  className="order-2 order-lg-1">
+                        <Col lg={5} md={6}  className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>We empower you for business performance</h1>
                             <p className='leadpara'>You merit real solutions for business performance management from a company that constantly strives to simplify business users' lives and empower organizations. That's JustPerform. Who else!</p>
                         </Col>
 
-                        <Col lg={7} md={12} className="order-1 order-lg-2">
+                        <Col lg={7} md={6} className="order-1 order-lg-2 order-md-2">
                             <img src='../../images/banner-company.png' className='img-fluid' />
                         </Col>
                     </Row>

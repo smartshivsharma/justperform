@@ -9,7 +9,7 @@ const FooterMenu = () => {
         <>
             <Row className="justify-content-between">
                 <Col lg={2} md={2} className={classes.footerLogo}>
-                    <img src='../../images/footerLogo1.png' className="img-fluid" />
+                    <img src='../../images/footerLogo1.svg' className="img-fluid" />
                 </Col>
 
                 <Col lg={8} md={8} >

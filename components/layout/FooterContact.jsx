@@ -9,10 +9,10 @@ import Cards from '../ui/Cards';
 
 
 
-const DUMMY_DATA = [
+const FCONTACT_DATA = [
     {
         id: 'c1',
-        image: '../../images/contactIcon-1.png',
+        image: '../../images/contactIcon-1.svg',
         title: 'Book a Demo',
         description: 'See how JustPerform can transform planning, financial close and reporting for you.',
         linkTitle: 'BOOK A DEMO',
@@ -20,7 +20,7 @@ const DUMMY_DATA = [
     },
     {
         id: 'c2',
-        image: '../../images/contactIcon-2.png',
+        image: '../../images/contactIcon-2.svg',
         title: 'Start a Trial',
         description: 'Request a trial to get your first value-add results with JustPerform',
         linkTitle: 'START A TRIAL',
@@ -28,7 +28,7 @@ const DUMMY_DATA = [
     },
     {
         id: 'c3',
-        image: '../../images/contactIcon-3.png',
+        image: '../../images/contactIcon-3.svg',
         title: 'Contact Us',
         description: 'Ask us all your questions! Get all the answers!',
         linkTitle: 'CONTACT US',
@@ -47,7 +47,7 @@ const FooterContact = () => {
                 {/* <section className={classes.footerContact}></section> */}
                 <Container>
                     <Row className='align-items-center'>
-                        {DUMMY_DATA.map((crd) => {
+                        {FCONTACT_DATA.map((crd) => {
                             return (
                                 <Col lg={4} md={4} key={crd.id}>
                                     <Cards className='text-center'

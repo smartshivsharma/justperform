@@ -11,15 +11,15 @@ const InnerBanner = (props) => {
         <>
             <Section className={`${classes.innerBanner} ${['sectionBg-White']} ${props.className}`}>
                 <Container>
-                    <Row className='justify-content-between align-items-center'>
-                        <Col lg={5} md={6}>
+                    <Row className='justify-content-between align-items-center order-2 order-lg-1 order-md-1'>
+                        <Col lg={6} md={6}>
                             <h1 className='bannerHeading'>{props.title}</h1>
                             <p className='leadpara'>{props.description}</p>
                             
                             <p><Button variant="primary" onClick={props.onClick}>{props.buttonText}</Button></p>
                         </Col>
 
-                        <Col md={6}>
+                        <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
                             <img src={props.image} className='img-fluid' />
                         </Col>
                     </Row>

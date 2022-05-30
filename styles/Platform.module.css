@@ -1,5 +1,5 @@
 
-.platformBanner{ margin-top: 30px; }
+.platformBanner{ margin-top: 0px; }
 
 .expCard{ margin-bottom: 25px; min-height: 270px; padding-top: 30px; border: none; border-radius: 0px; box-shadow: none; background: none;}
 .expCardTitle{font-size: 20px; font-weight: 900; margin-top: 10px;}
@@ -20,3 +20,36 @@
 ul.list {margin-left: 0px; list-style-type: none; position: relative;}
  ul.list li{ margin-bottom: 15px;}
  ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-right: 10px; color: #00ABBD; margin-bottom: 4px; display: inline-block; position: absolute; left: 0px;}
+
+
+
+
+
+
+
+
+ @media only screen and (min-device-width:320px) and (max-device-width:767px){
+    .foundCard{ min-height: auto;}
+ }
+  
+ @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
+
+ }
+  
+ @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
+
+ }
+  
+ 
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px){
+ }
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
+    .foundCard{ min-height: auto;}
+ 
+ }
+  
+ @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+    
+ }

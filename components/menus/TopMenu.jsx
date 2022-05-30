@@ -46,12 +46,12 @@ const TopMenu = () => {
                                 <Row className='g-0'>
                                     <Col lg>
                                         <div className='dropNavBoxRight'>
-                                            <NavDropdown.Item href="../platform">User Experience</NavDropdown.Item>
-                                            <NavDropdown.Item href="../platform">Technology</NavDropdown.Item>
-                                            <NavDropdown.Item href="../platform">Modeling</NavDropdown.Item>
-                                            <NavDropdown.Item href="../platform">Integrations</NavDropdown.Item>
-                                            <NavDropdown.Item href="../platform">Governance</NavDropdown.Item>
-                                            <NavDropdown.Item href="../platform">Analytics & Reporting</NavDropdown.Item>
+                                            <NavDropdown.Item href="../platform/">User Experience</NavDropdown.Item>
+                                            <NavDropdown.Item href="../platform/">Technology</NavDropdown.Item>
+                                            <NavDropdown.Item href="../platform/">Modeling</NavDropdown.Item>
+                                            <NavDropdown.Item href="../platform/">Integrations</NavDropdown.Item>
+                                            <NavDropdown.Item href="../platform/">Governance</NavDropdown.Item>
+                                            <NavDropdown.Item href="../platform/">Analytics & Reporting</NavDropdown.Item>
                                         </div>
                                     </Col>
 

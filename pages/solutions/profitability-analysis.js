@@ -51,13 +51,13 @@ const ProfitabilityAnalysis = () => {
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={6} md={12} className="order-2 order-lg-1">
+                        <Col lg={6} md={6} className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>Keep score on profitability like never before</h1>
                             <p className='leadpara'>Perform detailed analysis of your profitability measures across products, projects, customers, and channels. Act quickly with accurate insights for immediate improvement.</p>
-                            <Button variant='primary'>Book a Demo</Button>
+                            <Button variant='primary' onClick={buttonHandler}>Book a Demo</Button>
                         </Col>
 
-                        <Col lg={6} md={12} className="order-1 order-lg-2">
+                        <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
                             <img src='../../images/banner-profitability.png' className='img-fluid' />
                         </Col>
                     </Row>
@@ -298,7 +298,7 @@ const ProfitabilityAnalysis = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={12}>
+                        <Col md={12} className='text-center'>
                             {/* Partners Component*/}
                             <Partners />
                         </Col>

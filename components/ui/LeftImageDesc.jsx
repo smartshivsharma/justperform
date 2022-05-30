@@ -7,8 +7,8 @@ function LeftImageDesc(props) {
     return (
         <>
             <Row className={`${['align-items-center']} ${['justify-content-between']} ${props.className}`}>
-                <Col md={5}>
-                    <img src={props.image} className='img-fluid' />
+                <Col md={6} className='text-center'>
+                    <img src={props.image} className='img-fluid mb-3' />
                 </Col>
                 <Col md={6}>
                     <h2 className='headingBold'>{props.title}</h2>

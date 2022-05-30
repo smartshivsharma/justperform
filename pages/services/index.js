@@ -53,12 +53,12 @@ const Services = () => {
             <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={5} md={12} className="order-2 order-lg-1">
+                        <Col lg={5} md={6} className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>Business value via co-creation & co-delivery </h1>
                             <p className='leadpara'>With our agile implementation methodology, expert team, and user focused trainings, we go beyond just providing you a service. We align with your business goals to maximise your return on investment in JustPerform.</p>
                         </Col>
 
-                        <Col lg={7} md={12} className="order-1 order-lg-2">
+                        <Col lg={7} md={6} className="order-1 order-lg-2 order-md-2">
                             <img src='../../images/banner-services.png' className='img-fluid' />
                         </Col>
                     </Row>
@@ -105,13 +105,13 @@ const Services = () => {
 
                     </Row>
                     <Row className='justify-content-between mt-5'>
-                        <Col lg={6} md={6}>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>Leverage our knowledgeable customer success team</h2>
                             <p className='leadpara'>Tap into the vast expertise of our customer success owners. With cross-industry process knowledge and complete product know-how, we are here for you. </p>
                             <p className='leadpara'>Meet all your requirements with an expertly guided and implemented solution. </p>
                         </Col>
-                        <Col lg={5} md={6}>
-                            <img src='../../images/img-leverage.svg' className='img-fluid' />
+                        <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-leverage.svg' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
@@ -146,14 +146,14 @@ const Services = () => {
 
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
-                    <Row className='justify-content-between mt-5'>
-                        <Col lg={6} md={6}>
+                    <Row className='justify-content-between'>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>Reap the benefits of agile implementation</h2>
                             <p className='leadpara'>Adopt the JustPerform way in your implementation. Choose this agile, flexible implementation approach based on industry best practices.</p>
                             <p className='leadpara'>We help you uncover any bottlenecks in your existing processes, develop the processes you need, and set up your solution quickly and easily.</p>
                         </Col>
-                        <Col lg={5} md={6}>
-                            <img src='../../images/img-reap.svg' className='img-fluid' />
+                        <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-reap.svg' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
@@ -162,10 +162,10 @@ const Services = () => {
 
 
 
-            <Section className={`${['sectionBg-SkyBlue2']} ${['pt-0']}`}>
+            <Section className={`${['sectionBg-SkyBlue2']}`}>
                 <Container>
-                    <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={5} md={6}>
+                    <Row className='justify-content-between align-items-center'>
+                        <Col lg={5} md={6} className='mb-3'>
                             <img src='../../images/img-adoption.png' className='img-fluid' />
                         </Col>
                         <Col lg={6} md={6}>
@@ -281,12 +281,12 @@ const Services = () => {
                     </Row>
 
 
-                    <Row className={`${['align-items-center']} ${['justify-content-center']} ${['g-0']}  ${['mt-5']}`}>
+                    <Row className={`${['align-items-center']} ${['justify-content-center']} ${['g-0']}  ${['mt-4']}`}>
                         <Col lg={12} md={12}>
                             <Card className={classes.powerCardRight}>
                                 <Card.Body className={classes.powerCardRightBody}>
                                     <Row className='align-items-center'>
-                                        <Col lg={7} md={12} className={classes.powerCardRightDetails}>
+                                        <Col lg={7} md={12} className={`${classes.powerCardRightDetails} ${['order-2 order-lg-1 order-md-2']}`}>
                                             <div className={classes.vMidRight}>
                                                 <Card.Title className={classes.powerCardRightTitle}>Stay ahead and secure with premium support</Card.Title>
                                                 <Card.Text className={classes.powerCardRightText}>
@@ -297,7 +297,7 @@ const Services = () => {
                                                 </Card.Text>
                                             </div>
                                         </Col>
-                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage}`}>
+                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage} ${['order-1 order-lg-2 order-md-1']}`}>
                                             <img src='../../images/img-recog.png' className={`${['img-fluid']}`} />
                                         </Col>
                                     </Row>

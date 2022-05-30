@@ -54,13 +54,31 @@ const ExtendedPlanning = () => {
                 </Container>
             </Section> */}
 
-            <InnerBanner
+            {/* <InnerBanner
                 image='../../images/banner-extendedPlanning.png'
                 title='Break down silos. Plan together. Plan better.'
                 description='Bring collaboration to your enterprise planning. Build business agility and resilience into your organisation by connecting your strategic, financial, and operational plans. Outperform each day as your business and the world changes.'
                 buttonText='BOOK A DEMO'
                 onClick={buttonHandler}
-            />
+            /> */}
+
+
+
+            <Section className={`${['sectionBg-White']}`}>
+                <Container>
+                    <Row className='justify-content-between align-items-center'>
+                        <Col lg={5} md={6} className='order-2 order-lg-1 order-md-1'>
+                            <h1 className='bannerHeading'>Break down silos. Plan together. Plan better.</h1>
+                            <p className='leadpara'>Bring collaboration to your enterprise planning. Build business agility and resilience into your organisation by connecting your strategic, financial, and operational plans. Outperform each day as your business and the world changes.</p>
+                            <p><Button variant="primary" onClick={buttonHandler}>BOOK A DEMO</Button></p>
+                        </Col>
+
+                        <Col lg={7} md={6} className='order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/banner-extendedPlanning.png' className='img-fluid' />
+                        </Col>
+                    </Row>
+                </Container>
+            </Section>
 
 
 
@@ -263,7 +281,7 @@ const ExtendedPlanning = () => {
                             <Card className={classes.powerCardRight}>
                                 <Card.Body className={classes.powerCardRightBody}>
                                     <Row className='align-items-center'>
-                                        <Col lg={7} md={12} className={classes.powerCardRightDetails}>
+                                        <Col lg={7} md={12} className={`${classes.powerCardRightDetails} ${['order-2 order-lg-1 order-md-2']}`}>
                                             <div className={classes.vMidRight2}>
                                                 <Card.Title className={classes.powerCardRightTitle}>Sales</Card.Title>
                                                 <Card.Text className={classes.powerCardRightText}>
@@ -279,7 +297,7 @@ const ExtendedPlanning = () => {
                                                 </Card.Text>
                                             </div>
                                         </Col>
-                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage}`}>
+                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage} ${['order-1 order-lg-2 order-md-1']}`}>
                                             <img src='../../images/img-sales.png' className={`${['img-fluid']}`} />
                                         </Col>
                                     </Row>
@@ -329,7 +347,7 @@ const ExtendedPlanning = () => {
                             <Card className={classes.powerCardRight}>
                                 <Card.Body className={classes.powerCardRightBody}>
                                     <Row className='align-items-center'>
-                                        <Col lg={7} md={12} className={classes.powerCardRightDetails}>
+                                        <Col lg={7} md={12} className={`${classes.powerCardRightDetails} ${['order-2 order-lg-1 order-md-2']}`}>
                                             <div className={classes.vMidRight2}>
                                                 <Card.Title className={classes.powerCardRightTitle}>HR</Card.Title>
                                                 <Card.Text className={classes.powerCardRightText}>
@@ -346,7 +364,7 @@ const ExtendedPlanning = () => {
                                                 </Card.Text>
                                             </div>
                                         </Col>
-                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage}`}>
+                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage} ${['order-1 order-lg-2 order-md-1']}`}>
                                             <img src='../../images/img-hr.png' className={`${['img-fluid']}`} />
                                         </Col>
                                     </Row>

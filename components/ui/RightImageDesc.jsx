@@ -12,8 +12,8 @@ function RightImageDesc(props) {
                     <p className={`${'leadparaBorderd'}`}>{props.description}</p>
                     {/* <p className={`${'leadparaBorderd'} ${props.className}`}>{props.description}</p> */}
                 </Col>
-                <Col md={5} className="order-1 order-md-2">
-                    <img src={props.image} className='img-fluid' />
+                <Col md={6} className="text-center order-1 order-md-2">
+                    <img src={props.image} className='img-fluid mb-3' />
                 </Col>
             </Row>
         </>

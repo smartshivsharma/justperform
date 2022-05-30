@@ -51,13 +51,13 @@ const AlmSapSolutions = () => {
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={6} md={12} className="order-2 order-lg-1">
+                        <Col lg={6} md={6} className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>Got SAP EPM? Safeguard your return on investment</h1>
                             <p className='leadpara'>If you already made an SAP EPM Solution Suite investment for your business performance management then read on.</p>
                             <p className='leadpara'>Now, you can optimise your SAP software, simplify its maintenance, and safeguard your ROI to end-of-life. All thanks to JustPerform embedded for SAP EPM.</p>
                         </Col>
 
-                        <Col lg={6} md={12} className="order-1 order-lg-2">
+                        <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
                             <img src='../../images/banner-alm.png' className='img-fluid' />
                         </Col>
                     </Row>
@@ -84,7 +84,7 @@ const AlmSapSolutions = () => {
                 <Container>
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={5} md={6}>
-                            <img src='../../images/img-legacy.png' className='img-fluid' />
+                            <img src='../../images/img-legacy.png' className='img-fluid mb-3' />
                         </Col>
                         <Col lg={6} md={6}>
                             <h2 className='headingBold'>Legacy solutions built decades ago can slow your business down. Why?</h2>
@@ -150,7 +150,7 @@ const AlmSapSolutions = () => {
                     </Row>
 
                     <Row className='mt-4'>
-                        <Col lg={6} md={6}>
+                        <Col lg={6} md={12}>
                             <Card className={classes.card2}>
                                 <Card.Body>
                                     <Row className='align-items-center g-0'>
@@ -167,7 +167,7 @@ const AlmSapSolutions = () => {
                             </Card>
                         </Col>
 
-                        <Col lg={6} md={6}>
+                        <Col lg={6} md={12}>
                             <Card className={classes.card2}>
                                 <Card.Body>
                                     <Row className='align-items-center g-0'>
@@ -258,7 +258,7 @@ const AlmSapSolutions = () => {
                             <Card className={classes.powerCardRight}>
                                 <Card.Body className={classes.powerCardRightBody}>
                                     <Row className='align-items-center'>
-                                        <Col lg={7} md={12} className={classes.powerCardRightDetails}>
+                                        <Col lg={7} md={12} className={`${classes.powerCardRightDetails} ${['order-2 order-lg-1 order-md-2']}`}>
                                             <div className={classes.vMidRight}>
                                                 <Card.Title className={classes.powerCardRightTitle}>Take control and act in real time </Card.Title>
                                                 <Card.Text className={classes.powerCardRightText}>
@@ -266,7 +266,7 @@ const AlmSapSolutions = () => {
                                                 </Card.Text>
                                             </div>
                                         </Col>
-                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage}`}>
+                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage} ${['order-1 order-lg-2 order-md-1']}`}>
                                             <img src='../../images/img-takecontrol.png' className={`${['img-fluid']}`} />
                                         </Col>
                                     </Row>
@@ -278,7 +278,7 @@ const AlmSapSolutions = () => {
                     </Row>
 
                     <Row className='mt-4'>
-                        <Col lg={6} md={6}>
+                        <Col lg={6} md={12}>
                             <Card className={classes.card2}>
                                 <Card.Body>
                                     <Row className='align-items-center g-0'>
@@ -295,7 +295,7 @@ const AlmSapSolutions = () => {
                             </Card>
                         </Col>
 
-                        <Col lg={6} md={6}>
+                        <Col lg={6} md={12}>
                             <Card className={classes.card2}>
                                 <Card.Body>
                                     <Row className='align-items-center g-0'>
@@ -354,14 +354,14 @@ const AlmSapSolutions = () => {
 
             <Section className={`${['sectionBg-Gradient']}`}>
                 <Container>
-                    <Row className='justify-content-between align-items-center text-white mt-5'>
-                        <Col lg={6} md={6}>
+                    <Row className='justify-content-between align-items-center text-white'>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h2 className='bannerHeading'>It's time to look beyond SAP BPC</h2>
                             <p className='leadpara mt-4'>SAP BPC maintenance will come to an end very soon. The only way out for SAP-based EPM will be a combination of multiple solutions.</p>
                             <p className='leadpara'>With a process-first approach and automated migration, JustPerform, the unified solution, is the smart and most effective choice for your business performance management.</p>
                         </Col>
-                        <Col lg={5} md={6}>
-                            <img src='../../images/img-sapbpc.svg' className='img-fluid' />
+                        <Col lg={5} md={6} className='order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-sapbpc.svg' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
