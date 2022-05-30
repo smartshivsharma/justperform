@@ -55,7 +55,7 @@ const Company = () => {
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={5} md={6}  className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>We empower you for business performance</h1>
-                            <p className='leadpara'>You merit real solutions for business performance management from a company that constantly strives to simplify business users' lives and empower organizations. That&apos;s JustPerform. Who else!</p>
+                            <p className='leadpara'>You merit real solutions for business performance management from a company that constantly strives to simplify business users&apos; lives and empower organizations. That&apos;s JustPerform. Who else!</p>
                         </Col>
 
                         <Col lg={7} md={6} className="order-1 order-lg-2 order-md-2">
@@ -179,11 +179,11 @@ const Company = () => {
                     <Row className='justify-content-center text-center text-white'>
                         <Col md={12}>
                             <h2 className='headingBold'>Meet the Just&apos;Performers</h2>
-                            <p className='leadpara mt-4'>JustPerform thrives by nurturing an environment that gets the best of everyone. With passion, perseverance, and purpose, we don't just work: we celebrate the journey of empowering business users.</p>
+                            <p className='leadpara mt-4'>JustPerform thrives by nurturing an environment that gets the best of everyone. With passion, perseverance, and purpose, we don&apos;t just work: we celebrate the journey of empowering business users.</p>
 
                             <p className='leadpara'>It&apos;s a privilege to be part of the JustPerform team and the vision of &apos;simplifying business user lives&apos;. Seeing the positive impact of our work for our customers pushes me to give my best in everything I do. </p>
 
-                            <p className='leadpara'>JustPerform is one of the most welcoming companies that I have worked in. It encourages innovation and values individuals for their uniqueness. With its energy, focus, commitment, and fun, it's the best thing that ever happened to me! </p>
+                            <p className='leadpara'>JustPerform is one of the most welcoming companies that I have worked in. It encourages innovation and values individuals for their uniqueness. With its energy, focus, commitment, and fun, it&apos;s the best thing that ever happened to me! </p>
 
                         </Col>
                     </Row>
