@@ -140,7 +140,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 /*********** carousels ************/
 .custCarousel .carousel-control-prev, .custCarousel .carousel-control-next{width: auto;}
 .custCarousel .carousel-control-next {right: -40px;}
-.carousel-control-prev { left: -40px;}
+.custCarousel .carousel-control-prev { left: -40px;}
 
 
 .bannerCarousel .carousel-indicators{bottom: -50px;}
