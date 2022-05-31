@@ -312,7 +312,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px){
   .logo { background-size: contain; width: 240px;  height: 34px;}
-  .navbar-toggler{padding: 0px; border: none;}
+  .navbar-toggler{padding: 0px !important; border: none !important;}
 
   .navbar-expand .navbar-nav { flex-direction: column !important; width: 100% !important;}
   #main-nav .nav-link { display: block; padding: 0.8rem 1rem;}
