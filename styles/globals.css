@@ -368,7 +368,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
   .logo { background-size: contain; width: 240px;  height: 34px;}
   .navbar-toggler{padding: 0px !important; border: none !important;}
 
-  .navbar-expand .navbar-nav { flex-direction: column; width: 100%;}
+  .navbar-expand .navbar-nav { flex-direction: column !important; width: 100% !important;}
   #main-nav .nav-link { display: block; padding: 0.8rem 1rem;}
   #main-nav .nav-link .fa { width: 20px; text-align: left; margin-right: 10px; font-size: 18px;}
   #main-nav .nav-link:first-child .fa{ width: 30px;}
