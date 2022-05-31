@@ -9,7 +9,7 @@ import classes from './Partners.module.css';
 // const DUMMY_DATA = [
 //     {
 //         id: 'c1',
-//         image: '../../images/contactIcon-1.png',
+//         image: '../../images/contactIcon-1.svg',
 //         title: 'Book a Demo',
 //         description: 'See how JustPerform can transform planning, financial close and reporting for you.',
 //         linkTitle: 'BOOK A DEMO',
@@ -17,7 +17,7 @@ import classes from './Partners.module.css';
 //     },
 //     {
 //         id: 'c2',
-//         image: '../../images/contactIcon-2.png',
+//         image: '../../images/contactIcon-2.svg',
 //         title: 'Start a Trial',
 //         description: 'Request a trial to get your first value-add results with JustPerform',
 //         linkTitle: 'START A TRIAL',
@@ -25,7 +25,7 @@ import classes from './Partners.module.css';
 //     },
 //     {
 //         id: 'c3',
-//         image: '../../images/contactIcon-3.png',
+//         image: '../../images/contactIcon-3.svg',
 //         title: 'Contact Us',
 //         description: 'Ask us all your questions! Get all the answers!',
 //         linkTitle: 'CONTACT US',
@@ -68,59 +68,59 @@ const Partners = () => {
                 <Col md={12}>
                     <ul className='list-inline'>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-1.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-1.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-2.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-2.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-3.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-3.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-4.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-4.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-5.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-5.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-6.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-6.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-7.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-7.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-8.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-8.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-9.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-9.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-10.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-10.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-11.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-11.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-12.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-12.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-13.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-13.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-14.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-14.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-15.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-15.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-16.png' className='img-fluid' />
+                            <img src='../../images/partnerLogo-16.svg' className='img-fluid' />
+                        </li>
+                        {/* <li className='list-inline-item'>
+                            <img src='../../images/partnerLogo-17.svg' className='img-fluid' />
                         </li>
                         <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-17.png' className='img-fluid' />
-                        </li>
-                        <li className='list-inline-item'>
-                            <img src='../../images/partnerLogo-18.png' className='img-fluid' />
-                        </li>
+                            <img src='../../images/partnerLogo-18.svg' className='img-fluid' />
+                        </li> */}
                     </ul>
                 </Col>
             </Row>
