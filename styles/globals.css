@@ -161,7 +161,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 .bannerCarousel {position: relative; height: 550px;}
 .bannerCarousel .carousel-indicators{bottom: -50px;}
 .bannerCarousel .carousel-indicators [data-bs-target] {
-  background-color: #AECDE1;
+  background-color: #00ABBD !important;
 }
 /* .bannerCarousel .carousel-indicators.active { color: red !important;} */
 
