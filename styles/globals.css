@@ -79,7 +79,7 @@ body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
 
 
 /*********** Buttons ************/
-.btn{border-radius: 20px;}
+.btn{border-radius: 20px !important;}
 
 .btn-primary{
   border: solid 1px transparent; text-transform: uppercase; border-radius: 20px; padding: 0.5rem 1.5rem; font-weight: 600; 
