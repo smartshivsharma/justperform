@@ -366,7 +366,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
   .logo { background-size: contain; width: 240px;  height: 34px;}
-  .navbar-toggler{padding: 0px; border: none;}
+  .navbar-toggler{padding: 0px !important; border: none !important;}
 
   .navbar-expand .navbar-nav { flex-direction: column; width: 100%;}
   #main-nav .nav-link { display: block; padding: 0.8rem 1rem;}
