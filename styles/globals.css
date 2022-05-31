@@ -10,6 +10,11 @@ body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
 .logo {/*background:url(../public/images/logo.png) no-repeat top center; background-size: cover;*/ width: 288px; height:34px;}
 .logo img{ height: 34px; max-width: 100%;}
 
+
+.mainHeader{ position: fixed; top: 0; margin: 0 auto;  width: 100%; background: #fff;  z-index: 1;}
+
+.mainHeaderActive{ position: fixed; top: 0; margin: 0 auto;  width: 100%; background: #fff; z-index: 1; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);}
+
 .navbar{ padding-top: 0.8rem; padding-bottom: 0.8rem ;}
 #main-nav .nav-link { color: #1A4969; font-weight: 500; padding: 0.3rem 0.8rem;}
 #main-nav .nav-link:hover{ color: #00ABBD;}
@@ -36,7 +41,10 @@ body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
 .dropNavBoxLeft .bpara{font-weight: 900; margin-bottom: 8px; margin-top: 15px;}
 
 .dropNavBoxRight{ padding:15px 15px;}
-.dropNavBoxRight .navTitle{font-weight: 900; margin-bottom: 8px; color: #00ABBD;}
+.dropNavBoxRight .navTitle{font-weight: 900; margin-bottom: 8px; color: #00ABBD !important;}
+
+
+
 
 
 .page{ min-height: 600px;}
@@ -311,8 +319,9 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
   #main-nav .dropdown-menu{ min-width: 280px; left: 0;}
 
   .btn-contact{ margin-left: 0px; margin-top: 15px;}
+  .btn-contact, .btn-login{padding: 0.7rem 1.7rem !important;}
 
-  .carousel-control-prev { left: -10px;}
+  .custCarousel .carousel-control-prev { left: -10px;}
   .custCarousel .carousel-control-next {right: -10px;}
 
 .bannerHeading{font-size: 36px; font-weight: 900;}

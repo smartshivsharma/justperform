@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Navbar, Offcanvas } from 'react-bootstrap';
 //import { NavLink } from 'react-bootstrap';
 //import MainMenu from './MainMenu';
 import TopMenu from '../menus/TopMenu';
+
+import classes from './Header.module.css';
 
 
 const Header = () => {
@@ -13,10 +15,22 @@ const Header = () => {
   const handleShow = () => setShow(true);
 
 
+  const [scroll, setScroll] = useState(false)
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 10)
+    })
+  }, [])
+
+
   return (
     <>
       {/* <h1>Header 1</h1> */}
-      <header>
+      {/* <header className={scroll ? "main-header scrolled" : "main-header"}></header> */}
+
+
+      <header className={scroll ? "mainHeaderActive" : "mainHeader"}> 
+
         <Container>
 
           {/** For Desktop */}

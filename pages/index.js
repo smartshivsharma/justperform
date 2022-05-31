@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from "next/link";
 import { Container, Row, Col, Button, Card, Carousel } from "react-bootstrap";
@@ -53,6 +54,13 @@ const DUMMY_DATA_EMP = [
 
 
 const HomePage = () => {
+
+  const router = useRouter();
+
+  function mailtoHandler() {
+    router.push('mailto:shiv@pratyaksh.com');
+  }
+
   return (
     <>
 
@@ -83,7 +91,8 @@ const HomePage = () => {
             <Col lg={10} md={12}>
               <h1>Unleash the performance of your enterprise with one intelligent, easy to use platform</h1>
               <p className={classes.leadpara}>Simplify and streamline your processes. Scale with agility and flexibility as you plan, consolidate, analyse, and report. With JustPerform, move your business performance management into high gear now. </p>
-              <p><Button variant="primary">Book a Demo</Button></p>
+              {/* <Button variant="primary" onClick={() => router.push('mailto:shiv@pratyaksh.com')}>Book a Demo</Button> */}
+              <Button variant="primary" onClick={mailtoHandler}>Book a Demo</Button>
             </Col>
           </Row>
         </Container>
@@ -302,7 +311,7 @@ const HomePage = () => {
           <LeftImageDesc
             title='Have it your way'
             description='Its your EPM platform. Set it up and run it like you want. No more external dependencies. No more uncontrolled complexities. Just you, your users, and enterprise-wide performance.'
-            image='../../images/empImg2.svg'
+            image='../../images/empImg1.png'
           />
 
           <RightImageDesc className='mt-5'

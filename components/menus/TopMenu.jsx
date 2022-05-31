@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import Link from "next/link";
 import { Nav, Button, NavDropdown, Container, Row, Col } from 'react-bootstrap';
 
 
@@ -30,8 +31,8 @@ const TopMenu = () => {
 
 
 
-                {/* <Nav.Link href="../platform" >Platform</Nav.Link> */}
-                <NavDropdown title="Platform">
+                <Nav.Link href="../platform/" >Platform</Nav.Link>
+                {/* <NavDropdown title="Platform">
                     <Container>
                         <Row>
                             <Col lg={6} style={{ backgroundColor: '#E8F1F7' }}>
@@ -59,7 +60,7 @@ const TopMenu = () => {
                             </Col>
                         </Row>
                     </Container>
-                </NavDropdown>
+                </NavDropdown> for second version*/}
 
 
                 <NavDropdown title="Solutions">
@@ -77,8 +78,8 @@ const TopMenu = () => {
                                 <Row className='g-0'>
                                     <Col lg={12}>
                                         <div className='dropNavBoxRight'>
-                                            <p  className='navTitle'>Use Cases</p>
-                                            <NavDropdown.Item href="../solutions/">Solutions</NavDropdown.Item>
+                                            <NavDropdown.Item href="../solutions/" className='navTitle'>SOLUTIONS</NavDropdown.Item>
+                                            {/* <NavDropdown.Item href="../solutions/">Solutions</NavDropdown.Item> */}
                                             <NavDropdown.Item href="../solutions/extended-planning-and-analysis">Extended Planning & Analysis</NavDropdown.Item>
                                             <NavDropdown.Item href="../solutions/consolidation">Consolidation</NavDropdown.Item>
                                             <NavDropdown.Item href="../solutions/profitability-analysis">Profitabilty Analysis</NavDropdown.Item>
@@ -116,11 +117,12 @@ const TopMenu = () => {
 
                 <Nav.Link href="../services/">Services</Nav.Link>
 
-                <Nav.Link href="../customers">Customers</Nav.Link>
+
+                {/* <Nav.Link href="../customers">Customers</Nav.Link> for second version*/}
 
 
-                {/* <Nav.Link href="../resources">Resources</Nav.Link> */}
-                <NavDropdown title="Resources">
+                {/* <Nav.Link href="../resources">Resources</Nav.Link> for second version */}
+                {/* <NavDropdown title="Resources">
                     <Container>
                         <Row>
                             <Col lg={6} style={{ backgroundColor: '#E8F1F7' }}>
@@ -144,11 +146,11 @@ const TopMenu = () => {
                             </Col>
                         </Row>
                     </Container>
-                </NavDropdown>
+                </NavDropdown> for second version*/}
 
 
-                {/* <Nav.Link href="../company/">Company</Nav.Link> */}
-                <NavDropdown title="Company" id='navCompany'>
+                <Nav.Link href="../company/">Company</Nav.Link>
+                {/* <NavDropdown title="Company" id='navCompany'>
                     <Container>
                         <Row>
                             <Col lg={6} style={{ backgroundColor: '#E8F1F7' }}>
@@ -173,7 +175,7 @@ const TopMenu = () => {
                             </Col>
                         </Row>
                     </Container>
-                </NavDropdown>
+                </NavDropdown> for second version */}
 
 
                 <Nav.Link href="../free-trial">Free Trial</Nav.Link>
@@ -181,6 +183,8 @@ const TopMenu = () => {
 
                 <Button variant="outline-info" className='btn-login' onClick={loginNavHandler}>LOGIN</Button>
                 <Button variant="info" className='btn-contact' onClick={contactNavHandler}>CONTACT US</Button>
+                {/* <Link href='mailto:shiv@pratyaksh.com' className='btn btn-outline-info btn-login' onClick={loginNavHandler}>LOGIN</Link>
+                <Link href='mailto:shiv@pratyaksh.com' className='btn btn-info btn-contact' onClick={contactNavHandler}>CONTACT US</Link> */}
             </Nav>
 
 
