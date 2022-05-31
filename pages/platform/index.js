@@ -1,7 +1,10 @@
 import React from 'react';
 import Link from "next/link";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { useRouter } from 'next/router';
 import Head from 'next/head';
+
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
+
 
 import classes from '../../styles/Platform.module.css';
 
@@ -15,10 +18,18 @@ import RightImageDesc from '../../components/ui/RightImageDesc';
 
 const Platform = () => {
 
+
+    const router = useRouter();
+
+    function mailtoHandler() {
+        router.push('mailto:shiv@pratyaksh.com');
+    }
+
+
     return (
         <>
-            
-            
+
+
             {/* <InnerBanner
                 image='../../images/banner-extendedPlanning.png'
                 title='Break down silos. Plan together. Plan better.'
@@ -27,8 +38,8 @@ const Platform = () => {
                 onClick={buttonHandler}
             /> */}
 
-            
-            
+
+
             {/* <section className={classes.platformBanner}> </section> */}
             <Section className={`${classes.platformBanner} ${['sectionBg-White']}`}>
                 <Container>
@@ -46,16 +57,16 @@ const Platform = () => {
                 </Container>
             </Section>
 
-             
+
 
 
             <Section className={`${['sectionBg-Gradient']}`}>
                 <Container>
                     <Row className='justify-content-center text-center'>
                         <Col md={12}>
-                            <h2 className='headingBold text-white'>Free yourself from legacy limitations.</h2>
+                            <h2 className='headingBold2 text-white'>Free yourself from legacy limitations.</h2>
                             <h3 className='headingLight text-white'>The future of your business performance management starts here today with JustPerform.</h3>
-                            <p className='mt-3'><Button variant='light' className='btnLight'>BOOK A DEMO</Button></p>
+                            <p className='mt-3'><Button variant='light' className='btnLight' onClick={mailtoHandler}>BOOK A DEMO</Button></p>
                         </Col>
                     </Row>
                 </Container>
@@ -67,8 +78,8 @@ const Platform = () => {
                 <Container>
                     <Row className='justify-content-center text-center'>
                         <Col md={12}>
-                            <h3 className='headingLight'>Built for Enterprise Performance Management experts</h3>
-                            <h2 className='headingBold'>Move to a new era of simplicity, scalability, and governance.</h2>
+                            <h3 className='headingLight'>Built by enterprise performance management experts</h3>
+                            <h2 className='headingBold2'>Move to a new era of simplicity, scalability, and governance.</h2>
                             <p className='mt-5'>
                                 <img src='../../images/imgEnterprise.svg' className='img-fluid' />
                             </p>
@@ -97,7 +108,7 @@ const Platform = () => {
                         description='Experience the power of the new age software that lets your end users drive their planning, financial close, and reporting. With JustPerform, own your enterprise performance management initiatives. Simplify your EPM processes. Enhance your business performance.'
                         image='../../images/imgEmpower.svg'
                     />
-                    
+
 
                     <Row className='mt-5'>
                         <Col md={12}>
@@ -123,13 +134,13 @@ const Platform = () => {
                                 </Card.Footer>
                             </Card>
                         </Col>
-                        <Col  lg={4} md={12}>
+                        <Col lg={4} md={12}>
                             <Card className={classes.foundCard}>
                                 <Card.Body>
                                     <img src='../../images/icon-pillar2.svg' className='solutionsCardImg' />
                                     <Card.Title className={classes.foundCardTitle}>Intuitive User Experience</Card.Title>
                                     <Card.Title className={classes.foundCardSubTitle}>
-                                        Turn your end users into owners and replace external dependencies by empowerment
+                                        Turn your end users into owners and replace external dependencies by empowerment.
                                     </Card.Title>
                                     <ul className={classes.list}>
                                         <li>Guided process flow and workflows to execute planning and financial close processes</li>
@@ -141,17 +152,17 @@ const Platform = () => {
                                 </Card.Footer>
                             </Card>
                         </Col>
-                        <Col  lg={4} md={12}>
+                        <Col lg={4} md={12}>
                             <Card className={classes.foundCard}>
                                 <Card.Body>
                                     <img src='../../images/icon-pillar3.svg' className='solutionsCardImg' />
                                     <Card.Title className={classes.foundCardTitle}>Governance and Change</Card.Title>
                                     <Card.Title className={classes.foundCardSubTitle}>
-                                        Inbuilt governance in JustPerform allows business users to make the modifications they need to the business process or calculation logic
+                                        Inbuilt governance allows business users to make the modifications they need in business process or calculation logic.
                                     </Card.Title>
                                     <ul className={classes.list}>
-                                        <li>Single source of truth and transparent process flows enable quick, easy updates by users to budgets, forecasts, and consolidated results, all within the platform</li>
-                                        <li>Fine grain authorisations give you precise, secure control over what users can see and do in JustPerform </li>
+                                        <li>Single source of truth and transparent process flows enable quick, easy updates to budgets, forecasts, and consolidated results</li>
+                                        <li>Fine grain authorisations give you precise & secure control</li>
                                     </ul>
                                 </Card.Body>
                                 <Card.Footer className={classes.foundCardFooter}>
@@ -165,13 +176,13 @@ const Platform = () => {
 
 
 
-            <Section className={`${classes.roadMapSub} ${['sectionBg-IrisBlue']}`}>
+            <Section className={`${classes.roadMapSub} ${['sectionBg-IrisBlue']} ${['pb-0']} ${['pt-0']}`}>
                 <Container>
                     <Row className='align-items-center justify-content-between'>
-                        <Col md={5}>
+                        <Col lg={6} md={5}>
                             <img src='../../images/imgNextGen.png' className='img-fluid' />
                         </Col>
-                        <Col md={7}>
+                        <Col lg={6} md={7}>
                             <h2 className='headingBold text-white'>The Next Gen Platform to Future Proof Your Business Performance Management</h2>
                             <p className='leadpara text-white mt-3'>Stay ahead of your competition by leveraging artificial intelligence and machine learning in your planning and reporting. Boost your accuracy and speed of decision making with automated insights and recommendations from AI and ML powered models.</p>
                             <p className='mt-3'><Button variant='light' className='btnLight'>LEARM MORE</Button></p>
@@ -202,38 +213,40 @@ const Platform = () => {
 
             <Section className={`${['sectionBg-SkyBlue2']}`}>
                 <Container>
-                    {/* <Row className='align-items-center justify-content-between'>
-                        <Col md={6}>
-                            <img src='../../images/imgIntegration.png' className='img-fluid' />
+                    <Row className='align-items-center justify-content-between'>
+                        <Col lg={6} md={6}>
+                            <img src='../../images/imgIntegration.svg' className='img-fluid' />
                         </Col>
-                        <Col md={5}>
-                            <h2 className='headingBold'>Integrations</h2>
+                        <Col lg={6} md={6}>
+                            <h2 className='headingBold2'>Integrations</h2>
                             <p className='leadparaBorderd'>Seamlessly integrate with all your ERPs, CRMs, BI systems, and spreadsheets. Eliminate manual collation and consolidation of your data, thanks to direct connections from JustPerform to more than 80 source systems.</p>
                         </Col>
-                    </Row> */}
+                    </Row>
 
-                    <LeftImageDesc className="justify-content-between"
+                    {/* <LeftImageDesc className="justify-content-between"
                         title='Integrations'
                         description='Seamlessly integrate with all your ERPs, CRMs, BI systems, and spreadsheets. Eliminate manual collation and consolidation of your data, thanks to direct connections from JustPerform to more than 80 source systems.'
-                        image='../../images/imgIntegration.png'
-                    />
+                        image='../../images/imgIntegration.svg'
+                    /> */}
 
-                    {/* <Row className='mt-5 align-items-center justify-content-between'>
-                        <Col md={5}>
-                            <h2 className='headingBold'>Don’t just collect data – Examine it, transform it, and enhance it with ease.</h2>
+
+                    <Row className='mt-5 align-items-center justify-content-between'>
+                        <Col md={6}>
+                            <h2 className='headingBold2'>Do not just collect data Examine it, transform it, and enhance it with ease.</h2>
                             <p className='leadparaBorderd'>The unique JustPerform data flow designer helps your users to wrangle and enrich data quickly and simply.</p>
                         </Col>
                         <Col md={6}>
-                            <img src='../../images/imgCollectData.png' className='img-fluid' />
+                            <img src='../../images/imgCollectData.svg' className='img-fluid' />
                         </Col>
-                    </Row> */}
+                    </Row>
 
-                    <RightImageDesc className="justify-content-between"
-                        title='Don’t just collect data – Examine it, transform it, and enhance it with ease.'
+
+                    {/* <RightImageDesc className="justify-content-between"
+                        title='Do not just collect data Examine it, transform it, and enhance it with ease.'
                         description='The unique JustPerform data flow designer helps your users to wrangle and enrich data quickly and simply.'
-                        image='../../images/imgCollectData.png'
-                    />
-                    
+                        image='../../images/imgCollectData.svg'
+                    /> */}
+
 
                     <Row className='mt-5 text-center'>
                         <Col md={12}>
@@ -268,7 +281,7 @@ const Platform = () => {
                                 </Card.Footer>
                             </Card>
                         </Col>
-                        <Col  lg={4} md={6}>
+                        <Col lg={4} md={6}>
                             <Card className={classes.expCard}>
                                 <Card.Body>
                                     <img src='../../images/iconAnalytics.svg' className='solutionsCardImg' />
@@ -349,7 +362,7 @@ const Platform = () => {
                 <Container>
                     {/** CustomerSpeak Component */}
                     <CustomerSpeak />
-                    
+
                 </Container>
             </Section>
 
@@ -360,9 +373,9 @@ const Platform = () => {
                     <Row className='text-center justify-content-center'>
                         <Col lg={8} md={12}>
                             <img src='../../images/logo-JustperformClound.svg' className='img-fluid' />
-                            <h2 className='headingBold mt-4'>Choose what suits you best</h2>
+                            <h2 className='headingBold2 mt-4'>Choose what suits you best</h2>
                             <p className='leadpara'>With both public and private cloud deployment options available, go for the deployment that best fits your
-organisation with no compromise on robustness and security.</p>
+                                organisation with no compromise on robustness and security.</p>
                         </Col>
                     </Row>
                 </Container>

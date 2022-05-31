@@ -8,7 +8,7 @@
 .expCardFooter a{color:#00ABBD; text-decoration: none;}
 
 
-.foundCard{ padding:0 15px; margin-bottom: 25px; min-height: 582px; padding-top: 30px; border: none; border-radius: 10px; box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.1);}
+.foundCard{ padding:0 15px; margin-bottom: 25px; min-height: 482px; padding-top: 30px; border: none; border-radius: 10px; box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.1);}
 .foundCardTitle{font-size: 20px; font-weight: 900; margin-top: 10px;}
 .foundCardSubTitle{font-size: 18px; font-weight: 700; margin-top: 10px; margin-bottom: 15px;}
 .foundCardText{ font-size: 16px;}

@@ -138,6 +138,8 @@ body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
 
 
 
+
+
 /*********** list ************/
 ul.list {margin-left: 30px; list-style-type: none;}
 ul.list li{ margin-bottom: 8px;}
@@ -148,17 +150,22 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 
 
+
+
 /*********** carousels ************/
 .custCarousel .carousel-control-prev, .custCarousel .carousel-control-next{width: auto;}
 .custCarousel .carousel-control-next {right: -40px;}
 .custCarousel .carousel-control-prev { left: -40px;}
 
 
+.bannerCarousel {position: relative; height: 550px;}
 .bannerCarousel .carousel-indicators{bottom: -50px;}
 .bannerCarousel .carousel-indicators [data-bs-target] {
   background-color: #AECDE1;
 }
 /* .bannerCarousel .carousel-indicators.active { color: red !important;} */
+
+
 
 
 
@@ -332,19 +339,22 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 .leadparaBorderd{font-size: 18px;}
 
 
+
 }
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
+
+  .bannerCarousel {height: 180px;}
 }
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
+  .bannerCarousel {height: 250px;}
 }
 
 
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px){
-
-.bannerHeading{font-size: 36px; font-weight: 900;}
+ .bannerHeading{font-size: 36px; font-weight: 900;}
 .headingBold{ font-size: 28px; font-weight: 900;}
 .headingBold2{ font-size: 28px; font-weight: 700;}
 .headingLight{font-size: 24px; font-weight: 400;}
@@ -371,7 +381,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
   .btn-contact{ margin-left: 0px; margin-top: 15px;}
 
-
+  .bannerCarousel {height: 330px;}
 
 }
 
@@ -385,6 +395,8 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 
   .btn-contact, .btn-login{ padding:3px 8px;}
+
+  .bannerCarousel {height: 450px;}
 
 
 }

@@ -68,7 +68,7 @@ const HomePage = () => {
         <title>The Fastest and Most Reliable Way to Deliver SAP BPC Implementations</title>
         <meta name="description"
           content="Red Apricot inspires businesses to transform enterprise performance management processes via an innovative technology-enabled solution methodology" />
-          <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
 
@@ -89,8 +89,8 @@ const HomePage = () => {
         <Container>
           <Row className='justify-content-center'>
             <Col lg={10} md={12}>
-              <h1>Unleash the performance of your enterprise with one intelligent, easy to use platform</h1>
-              <p className={classes.leadpara}>Simplify and streamline your processes. Scale with agility and flexibility as you plan, consolidate, analyse, and report. With JustPerform, move your business performance management into high gear now. </p>
+              <h1>Unleash performance with one intelligent, easy to use platform</h1>
+              <p className={classes.leadpara}>Simplify and streamline your processes. Scale with agility and flexibility as you plan, consolidate, analyse, and report.</p>
               {/* <Button variant="primary" onClick={() => router.push('mailto:shiv@pratyaksh.com')}>Book a Demo</Button> */}
               <Button variant="primary" onClick={mailtoHandler}>Book a Demo</Button>
             </Col>
@@ -128,7 +128,7 @@ const HomePage = () => {
           <Row>
             <Col md={12}>
               <h2 className='headingLight'>These leading companies use JustPerform</h2>
-              <h3 className='headingBold'>Move up to a new league of enterprise performance</h3>
+              <h3 className='headingBold2'>Move up to a new league of enterprise performance</h3>
             </Col>
             <Col md={12}>
               {/* Partners Component*/}
@@ -150,7 +150,7 @@ const HomePage = () => {
               <h2 className={`${'headingBold'} ${['mb-4']}`}>The cloud xP&A and financial close platform designed for modern business requirements</h2>
               <p className='leadpara'>Don&apos;t let inefficiencies of legacy solutions hold you back. Leverage new thinking and smart technology to enhance your decision-making.</p>
               <p className='leadpara'>Experience the power of a process-first approach, an intuitive user experience, and robust governance capabilities for increased performance across your enterprise.</p>
-              <Button variant="primary" className={`${['mt-3']} ${['mb-3']}`}>EXPLORE PLATFORM</Button>
+              <Button variant="primary" className={`${['mt-3']} ${['mb-3']}`} onClick={() => router.push('./platform/')}>EXPLORE PLATFORM</Button>
             </Col>
 
             <Col lg={5} md={6}>
@@ -215,7 +215,7 @@ const HomePage = () => {
           </Row>
           <Row className='mt-3 text-center'>
             <Col md={12}>
-              <Button variant='light' className='btnLight'>SEE OUR SOLUTIONS</Button>
+              <Button variant='light' className='btnLight' onClick={() => router.push('./solutions/')}>SEE OUR SOLUTIONS</Button>
             </Col>
           </Row>
         </Container>
@@ -311,7 +311,7 @@ const HomePage = () => {
           <LeftImageDesc
             title='Have it your way'
             description='Its your EPM platform. Set it up and run it like you want. No more external dependencies. No more uncontrolled complexities. Just you, your users, and enterprise-wide performance.'
-            image='../../images/empImg1.png'
+            image='../../images/empImg2.svg'
           />
 
           <RightImageDesc className='mt-5'
@@ -374,13 +374,40 @@ const HomePage = () => {
             image='../../images/imgRoadmap2.svg'
           />
 
-          <LeftImageDesc className='mt-5'
+
+        </Container>
+      </Section>
+
+
+
+
+      <Section className={`${['sectionBg-Gradient']} ${classes.smStrip}`}>
+        <Container>
+          <Row className='align-items-center justify-content-center'>
+            <Col md={12}>
+              <h2 className='headingLight text-white text-center'>Move your planning, reporting, and close cycles into high gear now.</h2>
+            </Col>
+          </Row>
+        </Container>
+      </Section>
+
+
+
+
+      <Section className={`${classes.epm} ${['sectionBg-SkyBlue2']}`}>
+        <Container>
+          <LeftImageDesc
             title='Boost ROI. Achieve MORE'
             description='Get higher return on investment. Save time. Wow your stakeholders. Let JustPerform take care of chores like data preparation, configuration, and coding, while you achieve valuable results for your enterprise.'
             image='../../images/imgRoadmap3.svg'
           />
-
+          {/* <Row>
+            <Col lg={6}>
+              <Image src="/images/imgRoadmap3.svg" layout='responsive' alt="Vercel Logo" />
+            </Col>
+          </Row> */}
         </Container>
+
       </Section>
 
 
