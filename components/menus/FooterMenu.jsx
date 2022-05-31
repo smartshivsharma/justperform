@@ -54,9 +54,13 @@ const FooterMenu = () => {
                 </Col>
 
                 <Col lg={2} md={2} xs={6}>
-                    <h3><Link href="../contact-us">Contact Us</Link></h3>
+                    {/* <h3><Link href="../contact-us">Contact Us</Link></h3>
                     <h3><Link href="../book-demo">Book a Demo</Link></h3>
-                    <h3><Link href="../free-trial">Free Trial</Link></h3>
+                    <h3><Link href="../free-trial">Free Trial</Link></h3> */}
+
+                    <h3><Link href="mailto:shiv@pratyaksh.com">Contact Us</Link></h3>
+                    <h3><Link href="mailto:shiv@pratyaksh.com">Book a Demo</Link></h3>
+                    <h3><Link href="mailto:shiv@pratyaksh.com">Free Trial</Link></h3>
                 </Col>
             </Row>
         </>

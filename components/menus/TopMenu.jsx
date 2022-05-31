@@ -16,6 +16,11 @@ const TopMenu = () => {
         router.push('../login');
     }
 
+    function mailtoHandler() {
+        router.push('mailto:shiv@pratyaksh.com');
+    }
+    
+
     return (
         <>
             <Nav>
@@ -182,7 +187,9 @@ const TopMenu = () => {
 
 
                 <Button variant="outline-info" className='btn-login' onClick={loginNavHandler}>LOGIN</Button>
-                <Button variant="info" className='btn-contact' onClick={contactNavHandler}>CONTACT US</Button>
+                {/* <Button variant="info" className='btn-contact' onClick={contactNavHandler}>CONTACT US</Button> */}
+                <Button variant="info" className='btn-contact' onClick={mailtoHandler}>CONTACT US</Button>
+                 
                 {/* <Link href='mailto:shiv@pratyaksh.com' className='btn btn-outline-info btn-login' onClick={loginNavHandler}>LOGIN</Link>
                 <Link href='mailto:shiv@pratyaksh.com' className='btn btn-info btn-contact' onClick={contactNavHandler}>CONTACT US</Link> */}
             </Nav>
