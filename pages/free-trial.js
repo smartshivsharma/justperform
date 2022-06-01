@@ -7,7 +7,7 @@ const FreeTrial = () => {
 
     return (
         <>
-            <Container className='mt-5'>
+            <Container style={{marginTop:'100px'}}>
                 <Row>
                     <Col md={12}>
                         <h2>Free Trial</h2>

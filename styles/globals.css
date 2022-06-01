@@ -61,6 +61,21 @@ body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
 
 
 
+.image-container {
+  width: 100%; position: relative; height: 500px;
+}
+
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: auto !important;
+}
+
+
+.navActive{ color: red !important;}
+
 
 /*********** Heading Styles ************/
 .bannerHeading{font-size: 45px; font-weight: 900;}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from "next/link";
 import { Container, Navbar, Offcanvas } from 'react-bootstrap';
 //import { NavLink } from 'react-bootstrap';
 //import MainMenu from './MainMenu';
@@ -37,11 +38,14 @@ const Header = () => {
 
           {/** For Desktop */}
           <Navbar expand="lg" >
-            <Navbar.Brand href="/">
+            <Link  href="/" passHref>
+            <Navbar.Brand>
               <div className='logo'>
                 <img src='../../images/logo.svg' />
               </div>
             </Navbar.Brand>
+            </Link>
+
             <Navbar.Toggle onClick={handleShow} />
             <Navbar.Collapse id="main-nav" className="justify-content-end d-none d-lg-block">
               {/**MainMenu Component */}

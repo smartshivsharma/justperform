@@ -67,13 +67,13 @@ const ExtendedPlanning = () => {
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={5} md={6} className='order-2 order-lg-1 order-md-1'>
+                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h1 className='bannerHeading'>Break down silos. Plan together. Plan better.</h1>
                             <p className='leadpara'>Bring collaboration to your enterprise planning. Build business agility and resilience into your organisation by connecting your strategic, financial, and operational plans. Outperform each day as your business and the world changes.</p>
                             <p><Button variant="primary" onClick={buttonHandler}>BOOK A DEMO</Button></p>
                         </Col>
 
-                        <Col lg={7} md={6} className='order-1 order-lg-2 order-md-2'>
+                        <Col lg={6} md={6} className='order-1 order-lg-2 order-md-2'>
                             <img src='../../images/banner-extendedPlanning.png' className='img-fluid' />
                         </Col>
                     </Row>

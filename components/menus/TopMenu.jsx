@@ -19,12 +19,18 @@ const TopMenu = () => {
     function mailtoHandler() {
         router.push('mailto:shiv@pratyaksh.com');
     }
-    
+
 
     return (
         <>
             <Nav>
                 {/* <Nav.Link href="../platform" className={router.pathname == "/platform" ? "active" : ""}>Platform</Nav.Link> */}
+
+                {/* <Link href="/">
+                    <a className={router.pathname == "/" ? "navActive" : ""}>
+                        Home
+                    </a>
+                </Link> */}
 
                 {/* <Nav.Link href="../platform" >Platform</Nav.Link>
                 <Nav.Link href="../solutions/">Solutions</Nav.Link>
@@ -36,7 +42,9 @@ const TopMenu = () => {
 
 
 
-                <Nav.Link href="../platform/" >Platform</Nav.Link>
+                <Link href="../platform/" passHref>
+                    <Nav.Link >Platform</Nav.Link>
+                </Link>
                 {/* <NavDropdown title="Platform">
                     <Container>
                         <Row>
@@ -83,14 +91,27 @@ const TopMenu = () => {
                                 <Row className='g-0'>
                                     <Col lg={12}>
                                         <div className='dropNavBoxRight'>
-                                            <NavDropdown.Item href="../solutions/" className='navTitle'>SOLUTIONS</NavDropdown.Item>
-                                            {/* <NavDropdown.Item href="../solutions/">Solutions</NavDropdown.Item> */}
-                                            <NavDropdown.Item href="../solutions/extended-planning-and-analysis">Extended Planning & Analysis</NavDropdown.Item>
-                                            <NavDropdown.Item href="../solutions/consolidation">Consolidation</NavDropdown.Item>
-                                            <NavDropdown.Item href="../solutions/profitability-analysis">Profitabilty Analysis</NavDropdown.Item>
-                                            <NavDropdown.Item href="../solutions/intelligent-forecasting">Intelligent Forecasting</NavDropdown.Item>
-                                            <NavDropdown.Item href="../solutions/excel-infinity">Excel Infinity</NavDropdown.Item>
-                                            <NavDropdown.Item href="../solutions/alm-for-sap-solutions">ALM for SAP EPM Suite</NavDropdown.Item>
+                                            <Link href="../solutions/" passHref>
+                                                <NavDropdown.Item className='navTitle'>SOLUTIONS</NavDropdown.Item>
+                                            </Link>
+                                            <Link href="../solutions/extended-planning-and-analysis" passHref>
+                                                <NavDropdown.Item>Extended Planning & Analysis</NavDropdown.Item>
+                                            </Link>
+                                            <Link href="../solutions/consolidation" passHref>
+                                                <NavDropdown.Item>Consolidation</NavDropdown.Item>
+                                            </Link>
+                                            <Link href="../solutions/profitability-analysis" passHref>
+                                                <NavDropdown.Item >Profitabilty Analysis</NavDropdown.Item>
+                                            </Link>
+                                            <Link href="../solutions/intelligent-forecasting" passHref>
+                                                <NavDropdown.Item>Intelligent Forecasting</NavDropdown.Item>
+                                            </Link>
+                                            <Link href="../solutions/excel-infinity" passHref>
+                                                <NavDropdown.Item>Excel Infinity</NavDropdown.Item>
+                                            </Link>
+                                            <Link href="../solutions/alm-for-sap-solutions" passHref>
+                                                <NavDropdown.Item>ALM for SAP EPM Suite</NavDropdown.Item>
+                                            </Link>
                                         </div>
                                     </Col>
                                     {/* <Col lg={4}>
@@ -120,7 +141,9 @@ const TopMenu = () => {
                 </NavDropdown>
 
 
-                <Nav.Link href="../services/">Services</Nav.Link>
+                <Link href="../services/" passHref>
+                    <Nav.Link>Services</Nav.Link>
+                </Link>
 
 
                 {/* <Nav.Link href="../customers">Customers</Nav.Link> for second version*/}
@@ -154,7 +177,9 @@ const TopMenu = () => {
                 </NavDropdown> for second version*/}
 
 
-                <Nav.Link href="../company/">Company</Nav.Link>
+                <Link href="../company/" passHref>
+                    <Nav.Link>Company</Nav.Link>
+                </Link>
                 {/* <NavDropdown title="Company" id='navCompany'>
                     <Container>
                         <Row>
@@ -183,13 +208,15 @@ const TopMenu = () => {
                 </NavDropdown> for second version */}
 
 
-                <Nav.Link href="../free-trial">Free Trial</Nav.Link>
+                <Link href="../free-trial" passHref>
+                    <Nav.Link>Free Trial</Nav.Link>
+                </Link>
 
 
                 <Button variant="outline-info" className='btn-login' onClick={loginNavHandler}>LOGIN</Button>
                 {/* <Button variant="info" className='btn-contact' onClick={contactNavHandler}>CONTACT US</Button> */}
                 <Button variant="info" className='btn-contact' onClick={mailtoHandler}>CONTACT US</Button>
-                 
+
                 {/* <Link href='mailto:shiv@pratyaksh.com' className='btn btn-outline-info btn-login' onClick={loginNavHandler}>LOGIN</Link>
                 <Link href='mailto:shiv@pratyaksh.com' className='btn btn-info btn-contact' onClick={contactNavHandler}>CONTACT US</Link> */}
             </Nav>

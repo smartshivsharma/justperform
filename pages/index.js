@@ -401,14 +401,31 @@ const HomePage = () => {
             description='Get higher return on investment. Save time. Wow your stakeholders. Let JustPerform take care of chores like data preparation, configuration, and coding, while you achieve valuable results for your enterprise.'
             image='../../images/imgRoadmap3.svg'
           />
-          {/* <Row>
-            <Col lg={6}>
-              <Image src="/images/imgRoadmap3.svg" layout='responsive' alt="Vercel Logo" />
-            </Col>
-          </Row> */}
+
+
+
         </Container>
 
       </Section>
+
+
+
+
+      {/*  for image optimization with NEXTjs
+      <Container>
+        <Row className='align-items-center'>
+          <Col md={6}>
+            <div className='image-container'>
+              <Image src='/images/imgRoadmap3.svg' layout="fill" className='image' />
+            </div>
+          </Col>
+          <Col md={6}>
+            <p className='leadpara'>
+              Get higher return on investment. Save time. Wow your stakeholders. Let JustPerform take care of chores like data preparation, configuration, and coding, while you achieve valuable results for your enterprise.
+            </p>
+          </Col>
+        </Row>
+      </Container> */}
 
 
 
