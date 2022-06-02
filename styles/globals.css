@@ -187,9 +187,9 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 .gartnerCarousel .carousel-indicators{ bottom: -40px; }
 
 .gartnerCarousel .carousel-indicators [data-bs-target] {
-   width: 9px !important;   height: 9px !important; background: #CDE2EF; opacity: 1; border-radius: 100%; border: 0px !important;
+   width: 9px !important;   height: 9px !important; background: #CDE2EF !important; opacity: 1; border-radius: 100%; border: 0px !important;
 }
-.gartnerCarousel .carousel-indicators .active{  background: #00ABBD; opacity: 1;}
+.gartnerCarousel .carousel-indicators .active{  background: #00ABBD !important; opacity: 1;}
 
 
 
