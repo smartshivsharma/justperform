@@ -28,7 +28,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{margin-bottom: 0.7rem !impo
 }
 
 /* #main-nav .dropdown-menu{ padding-left: 10px; padding-right: 10px; } */
-#main-nav .dropdown-toggle::after, #main-nav .nav-link .fa{ color: #000;}
+#main-nav .dropdown-toggle::after, #main-nav .nav-link .fa{  vertical-align: middle !important;}
 #main-nav .dropdown-item{color: #1A4969; padding-left: 0px;}
 #main-nav .dropdown-item:hover{ background: none; color: #000;}
 #main-nav .dropdown-item.active, #main-nav .dropdown-item:active {
@@ -36,7 +36,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{margin-bottom: 0.7rem !impo
 }
 
 
-#main-nav .dropdown-menu{ margin-top: 10px; padding: 0px; border: none; min-width: 580px; left: -290px; box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.1) !important;}
+#main-nav .dropdown-menu{ margin-top: 0px; padding: 0px; border: none; min-width: 580px; left: -290px; box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.1) !important;}
 
 .dropNavBoxLeft{padding:30px 15px; font-size: 15px; color: #304C64;}
 .dropNavBoxLeft .bpara{font-weight: 900; margin-bottom: 8px; margin-top: 15px;}
@@ -181,6 +181,8 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 }
 .bannerCarousel .carousel-indicators .active{ border-top: solid 4px #00ABBD !important; opacity: 1;}
 
+
+.bannerCarousel .carousel-control-next-icon{ background-image: none !important; font-family: 'Line Awesome Free' !important; content: "\f06b" !important;}
 
 
 .gartnerCarousel{ position: relative;}
@@ -328,7 +330,9 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 
 
-
+  /* .dropdown:hover .dropdown-menu {
+    display: block;
+    } */
 
 
 

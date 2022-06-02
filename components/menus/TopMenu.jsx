@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import { Nav, Button, NavDropdown, Container, Row, Col } from 'react-bootstrap';
+import { useState } from 'react';
 
 
 const TopMenu = () => {
@@ -19,6 +20,18 @@ const TopMenu = () => {
     function mailtoHandler() {
         router.push('mailto:shiv@pratyaksh.com');
     }
+
+
+    /**************** show menu on mouse hover********************* */
+    const [show, setShow] = useState(false);
+    const showDropdown = (e)=>{
+        setShow(!show);
+    }
+    const hideDropdown = e => {
+        setShow(false);
+    }
+
+
 
 
     return (
@@ -76,7 +89,7 @@ const TopMenu = () => {
                 </NavDropdown> for second version*/}
 
 
-                <NavDropdown title="Solutions">
+                <NavDropdown title="Solutions" show={show}  onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
                     <Container>
                         <Row>
                             <Col lg={6} style={{ backgroundColor: '#E8F1F7' }}>
