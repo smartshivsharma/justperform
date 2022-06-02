@@ -2,6 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import Image from 'next/image';
 
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 
@@ -14,6 +15,20 @@ import CustomerSpeak from '../../components/ui/CustomerSpeak';
 
 import LeftImageDesc from '../../components/ui/LeftImageDesc';
 import RightImageDesc from '../../components/ui/RightImageDesc';
+
+import LegacyModern from '../../components/ui/LegacyModern';
+
+
+import PlatFormBanner from '../../public/images/banner-plateform.png'
+import EmpowerUsers from '../../public/images/imgEmpower.png'
+import MarketPlace from '../../public/images/imgMarketPlace.svg'
+import Integration from '../../public/images/imgIntegration.png'
+import CollectData from '../../public/images/imgCollectData.png'
+
+import ImgNextGen from '../../public/images/imgNextGen.png'
+
+import JustperformClound from '../../public/images/logo-JustperformClound.svg'
+
 
 
 const Platform = () => {
@@ -51,7 +66,8 @@ const Platform = () => {
                         </Col>
 
                         <Col lg={7} md={6} className='order-1 order-lg-2 order-md-2'>
-                            <img src='../../images/banner-plateform.svg' className='img-fluid' />
+                            {/* <img src='../../images/banner-plateform.png' className='img-fluid' /> */}
+                            <Image src={PlatFormBanner} layout='responsive' className='img-fluid' priority />
                         </Col>
                     </Row>
                 </Container>
@@ -65,12 +81,15 @@ const Platform = () => {
                     <Row className='justify-content-center text-center'>
                         <Col md={12}>
                             <h2 className='headingBold2 text-white'>Free yourself from legacy limitations.</h2>
+                        </Col>
+                        <Col lg={9}>
                             <h3 className='headingLight text-white'>The future of your business performance management starts here today with JustPerform.</h3>
-                            <p className='mt-3'><Button variant='light' className='btnLight' onClick={mailtoHandler}>BOOK A DEMO</Button></p>
+                            <p className='mt-4'><Button variant='light' className='btnLight' onClick={mailtoHandler}>BOOK A DEMO</Button></p>
                         </Col>
                     </Row>
                 </Container>
             </Section>
+
 
 
 
@@ -80,37 +99,114 @@ const Platform = () => {
                         <Col md={12}>
                             <h3 className='headingLight'>Built by enterprise performance management experts</h3>
                             <h2 className='headingBold2'>Move to a new era of simplicity, scalability, and governance.</h2>
-                            <p className='mt-5'>
+                            {/* <p className='mt-5'>
                                 <img src='../../images/imgEnterprise.svg' className='img-fluid' />
-                            </p>
+                            </p> */}
                         </Col>
                     </Row>
+
+                    <Row className='justify-content-center mt-5'>
+                        <Col lg={11}>
+                            <Row className='text-center'>
+                                <Col lg={6} md={6}>
+                                    <h2 className='headingLight' style={{ fontWeight: '700' }}>Legacy</h2>
+                                </Col>
+                                <Col lg={6} md={6}>
+                                    <h2 className='headingLight' style={{ fontWeight: '700' }}>Modern</h2>
+                                </Col>
+                            </Row>
+
+                            {/* <Row className='justify-content-center align-items-center'>
+                                <Col lg={5} md={5}>
+                                    <div className={classes.legacyBx}>
+                                        Disjointed planning, financial close, and reporting efforts
+                                    </div>
+                                </Col>
+                                <Col lg={1} md={1} className={classes.leArrow}>
+                                    <i class="las la-angle-right"></i>
+                                </Col>
+                                <Col lg={5} md={5}>
+                                    <Card className={classes.modernCard}>
+                                        <Card.Body>
+                                            <Row className='align-items-center g-0'>
+                                                <Col md={2} xs={2}>
+                                                    <img src='../../images/icon-assess1.svg' className={`${['img-fluid']}`} />
+                                                </Col>
+                                                <Col md={10} xs={10}>
+                                                    <Card.Text> One unified solution for all your EPM use cases </Card.Text>
+                                                </Col>
+                                            </Row>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            </Row> */}
+
+                            <LegacyModern
+                                legacyTitle='Disjointed planning, financial close, and reporting efforts'
+                                modernTitle='One unified solution for all your EPM use cases'
+                                image='../../images/icon-modern1.png'
+                            />
+
+                            <LegacyModern
+                                legacyTitle='Rigid outdated tech constraints'
+                                modernTitle='Flexible business user-driven performance management'
+                                image='../../images/icon-modern2.png'
+                            />
+
+
+                            <LegacyModern
+                                legacyTitle='Fragmented performance handling in silos'
+                                modernTitle='Smart centralised and collaborative performance management'
+                                image='../../images/icon-modern3.png'
+                            />
+
+
+                            <LegacyModern
+                                legacyTitle='Missing governance and audit trails'
+                                modernTitle='High traceability with fine grain authorisations'
+                                image='../../images/icon-modern4.png'
+                            />
+
+                            <LegacyModern
+                                legacyTitle='Chores of non-value-add tasks like coding and configuration'
+                                modernTitle='Effective business process design, analysing and decision-making'
+                                image='../../images/icon-modern5.png'
+                            />
+
+
+
+                        </Col>
+                    </Row>
+
                 </Container>
             </Section>
 
 
 
+
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
-                    {/* <Row className='align-items-center justify-content-between'>
-                        <Col md={6}>
-                            <h3 className='headingBold'>Empower users, transform processes, and develop agility</h3>
-                            <p className='leadpara'>Experience the power of the new age software that lets your end users drive their planning, financial close, and reporting. With JustPerform, own your enterprise performance management initiatives. Simplify your EPM processes. Enhance your business performance.</p>
-                        </Col>
-                        <Col md={5}>
-                            <img src='../../images/imgEmpower.png' className='img-fluid' />
-                        </Col>
-                    </Row> */}
 
-
-                    <RightImageDesc className="justify-content-between leadparaBorderdNo"
+                    {/* <RightImageDesc className="justify-content-between leadparaBorderdNo"
                         title='Empower users, transform processes, and develop agility'
                         description='Experience the power of the new age software that lets your end users drive their planning, financial close, and reporting. With JustPerform, own your enterprise performance management initiatives. Simplify your EPM processes. Enhance your business performance.'
                         image='../../images/imgEmpower.svg'
-                    />
+                    /> */}
 
 
-                    <Row className='mt-5'>
+                    <Row className='align-items-center justify-content-between'>
+                        <Col lg={6} md={6}>
+                            <h3 className='headingBold'>Empower users, transform processes, and develop agility</h3>
+                            <p className='leadpara'>Experience the power of the new age software that lets your end users drive their planning, financial close, and reporting. With JustPerform, own your enterprise performance management initiatives. Simplify your EPM processes. Enhance your business performance.</p>
+                        </Col>
+                        <Col lg={5} md={6}>
+                            {/* <img src='../../images/imgEmpower.png' className='img-fluid' /> */}
+                            <Image src={EmpowerUsers} layout='responsive' className='img-fluid' />
+                        </Col>
+                    </Row>
+
+
+                    <Row className={classes.foundattionRw}>
                         <Col md={12}>
                             <h2 className='headingBold text-center'>Foundational Pillars of JustPerform</h2>
                         </Col>
@@ -130,7 +226,7 @@ const Platform = () => {
                                     </ul>
                                 </Card.Body>
                                 <Card.Footer className={classes.foundCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE &nbsp; <i className="fa fa-chevron-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -148,7 +244,7 @@ const Platform = () => {
                                     </ul>
                                 </Card.Body>
                                 <Card.Footer className={classes.foundCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE &nbsp; <i className="fa fa-chevron-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -166,7 +262,7 @@ const Platform = () => {
                                     </ul>
                                 </Card.Body>
                                 <Card.Footer className={classes.foundCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE &nbsp; <i className="fa fa-chevron-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -176,16 +272,20 @@ const Platform = () => {
 
 
 
+
             <Section className={`${classes.roadMapSub} ${['sectionBg-IrisBlue']} ${['pb-0']} ${['pt-0']}`}>
-                <Container>
-                    <Row className='align-items-center justify-content-between'>
-                        <Col lg={6} md={5}>
-                            <img src='../../images/imgNextGen.png' className='img-fluid' />
+                <Container fluid className='p-0'>
+                    <Row className='align-items-center justify-content-start g-0'>
+                        <Col lg={6} md={12}>
+                            {/* <img src='../../images/imgNextGen.png' className='img-fluid' /> */}
+                            <Image src={ImgNextGen} layout='responsive' className='img-fluid' />
                         </Col>
-                        <Col lg={6} md={7}>
-                            <h2 className='headingBold text-white'>The Next Gen Platform to Future Proof Your Business Performance Management</h2>
-                            <p className='leadpara text-white mt-3'>Stay ahead of your competition by leveraging artificial intelligence and machine learning in your planning and reporting. Boost your accuracy and speed of decision making with automated insights and recommendations from AI and ML powered models.</p>
-                            <p className='mt-3'><Button variant='light' className='btnLight'>LEARM MORE</Button></p>
+                        <Col lg={5} md={12}>
+                            <div className={classes.nextgenText}>
+                                <h2 className='headingBold text-white'>The Next Gen Platform to Future Proof Your Business Performance Management</h2>
+                                <p className='leadpara text-white mt-3'>Stay ahead of your competition by leveraging artificial intelligence and machine learning in your planning and reporting. Boost your accuracy and speed of decision making with automated insights and recommendations from AI and ML powered models.</p>
+                                <p className='mt-3'><Button variant='light' className='btnLight'>LEARM MORE</Button></p>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
@@ -197,13 +297,14 @@ const Platform = () => {
             <Section className={`${classes.roadMapSub} ${['sectionBg-White']}`}>
                 <Container>
                     <Row className='align-items-center justify-content-between'>
-                        <Col md={6} className='order-2 order-lg-1 order-md-1'>
-                            <h2 className='headingBold'>Go further, faster on your EPM journey with JustPerform Marketplace.</h2>
+                        <Col lg={5} md={6} className='order-2 order-lg-1 order-md-1'>
+                            <h2 className='headingBold'>Go further, faster with JustPerform Marketplace.</h2>
                             <p className='leadpara mt-3'>JustPerform applications are designed to accelerate value creation. Tailored to specific sectors, they are built on industry best practices. Deploy these robust apps for your sector in minimal time for quicker planning, closing, and reporting actions.</p>
                             <p className='mt-3'><Button variant='primary'>LEARM MORE</Button></p>
                         </Col>
-                        <Col md={6} className='order-1 order-lg-2 order-md-2 mb-3'>
-                            <img src='../../images/imgMarketPlace.svg' className='img-fluid' />
+                        <Col lg={6} md={6} className='order-1 order-lg-2 order-md-2 mb-3'>
+                            {/* <img src='../../images/imgMarketPlace.png' className='img-fluid' /> */}
+                            <Image src={MarketPlace} layout='responsive' className='img-fluid' />
                         </Col>
                     </Row>
                 </Container>
@@ -215,9 +316,10 @@ const Platform = () => {
                 <Container>
                     <Row className='align-items-center justify-content-between'>
                         <Col lg={6} md={6}>
-                            <img src='../../images/imgIntegration.svg' className='img-fluid' />
+                            {/* <img src='../../images/imgIntegration.png' className='img-fluid' /> */}
+                            <Image src={Integration} layout='responsive' className='img-fluid' />
                         </Col>
-                        <Col lg={6} md={6}>
+                        <Col lg={5} md={6}>
                             <h2 className='headingBold2'>Integrations</h2>
                             <p className='leadparaBorderd'>Seamlessly integrate with all your ERPs, CRMs, BI systems, and spreadsheets. Eliminate manual collation and consolidation of your data, thanks to direct connections from JustPerform to more than 80 source systems.</p>
                         </Col>
@@ -231,12 +333,13 @@ const Platform = () => {
 
 
                     <Row className='mt-5 align-items-center justify-content-between'>
-                        <Col md={6}>
-                            <h2 className='headingBold2'>Do not just collect data Examine it, transform it, and enhance it with ease.</h2>
+                        <Col lg={5} md={6}>
+                            <h2 className='headingBold2'>Do not just collect data &ndash; Examine it, transform it, and enhance it with ease.</h2>
                             <p className='leadparaBorderd'>The unique JustPerform data flow designer helps your users to wrangle and enrich data quickly and simply.</p>
                         </Col>
-                        <Col md={6}>
-                            <img src='../../images/imgCollectData.svg' className='img-fluid' />
+                        <Col lg={6} md={6}>
+                            {/* <img src='../../images/imgCollectData.png' className='img-fluid' /> */}
+                            <Image src={CollectData} layout='responsive' className='img-fluid' />
                         </Col>
                     </Row>
 
@@ -266,7 +369,7 @@ const Platform = () => {
                             <h2 className='headingBold text-center'>Experience the power of JustPerform with endless capabilities</h2>
                         </Col>
                     </Row>
-                    <Row className='mt-4'>
+                    <Row className='mt-5'>
                         <Col lg={4} md={6}>
                             <Card className={classes.expCard}>
                                 <Card.Body>
@@ -277,7 +380,7 @@ const Platform = () => {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className={classes.expCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -291,7 +394,7 @@ const Platform = () => {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className={classes.expCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -305,7 +408,7 @@ const Platform = () => {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className={classes.expCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -319,7 +422,7 @@ const Platform = () => {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className={classes.expCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -333,7 +436,7 @@ const Platform = () => {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className={classes.expCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -347,7 +450,7 @@ const Platform = () => {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className={classes.expCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
+                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right"></i></a></Link>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -372,8 +475,11 @@ const Platform = () => {
                 <Container>
                     <Row className='text-center justify-content-center'>
                         <Col lg={8} md={12}>
-                            <img src='../../images/logo-JustperformClound.svg' className='img-fluid' />
+                            {/* <img src='../../images/logo-JustperformClound.svg' className='img-fluid' /> */}
+                            <Image src={JustperformClound} layout='responsive' className='img-fluid' />
                             <h2 className='headingBold2 mt-4'>Choose what suits you best</h2>
+                        </Col>
+                        <Col lg={9} md={12}>
                             <p className='leadpara'>With both public and private cloud deployment options available, go for the deployment that best fits your
                                 organisation with no compromise on robustness and security.</p>
                         </Col>

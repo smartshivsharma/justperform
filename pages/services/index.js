@@ -82,7 +82,7 @@ const Services = () => {
                 <Container>
                     <Row className='justify-content-center text-white text-center'>
                         <Col lg={10} md={12}>
-                            <h2 className='headingBold'>Your fast track to implementation success </h2>
+                            <h2 className='bannerHeading text-white'>Your fast track to implementation success </h2>
                             <p className='leadpara'>Lack of transparency, complicated configurations, undocumented requirements, and delays are all too common in the industry. They can destroy the effectiveness of a solution. But with an expert EPM team and the unique JustPerform way, you can eliminate all the roadblocks and ensure smooth and successful implementation.</p>
                         </Col>
                     </Row>

@@ -1,2 +1,5 @@
 .partnersLogo{ position: relative;}
 .partnersLogo li:not(:last-child) { margin-right: 2.2rem;}
+
+.partnersLogo li{ width: 120px; height: 130px;}
+.partnersLogo li img{ width: auto; max-height: 130px; vertical-align: middle;}

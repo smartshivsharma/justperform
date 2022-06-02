@@ -4,6 +4,7 @@
 
 body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
 
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{margin-bottom: 0.7rem !important;}
 
 .card{border-radius: 10px;}
 
@@ -11,9 +12,9 @@ body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
 .logo img{ height: 34px; max-width: 100%;}
 
 
-.mainHeader{ position: fixed; top: 0; margin: 0 auto;  width: 100%; background: #fff;  z-index: 1;}
+.mainHeader{ position: fixed; top: 0; margin: 0 auto;  width: 100%; background: #fff;  z-index: 1; padding-top: 6px; padding-bottom: 6px;}
 
-.mainHeaderActive{ position: fixed; top: 0; margin: 0 auto;  width: 100%; background: #fff; z-index: 1; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);}
+.mainHeaderActive{ position: fixed; top: 0; margin: 0 auto;  width: 100%; background: #fff; z-index: 1;  padding-top: 6px; padding-bottom: 6px; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);}
 
 .navbar{ padding-top: 0.8rem; padding-bottom: 0.8rem ;}
 #main-nav .nav-link { color: #1A4969; font-weight: 500; padding: 0.3rem 0.8rem;}
@@ -79,9 +80,9 @@ body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
 
 /*********** Heading Styles ************/
 .bannerHeading{font-size: 45px; font-weight: 900;}
-.headingBold{ font-size: 38px; font-weight: 900;}
-.headingBold2{ font-size: 38px; font-weight: 700;}
-.headingLight{font-size: 30px; font-weight: 400;}
+.headingBold{ font-size: 38px; font-weight: 900; color: #304C64;}
+.headingBold2{ font-size: 38px; font-weight: 700;  color: #304C64;}
+.headingLight{font-size: 30px; font-weight: 400;  color: #1A4969;}
 .leadpara{ font-size: 20px;}
 .leadparaBorderd{
     padding-left: 20px; font-size: 20px;
@@ -173,14 +174,22 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 .custCarousel .carousel-control-prev { left: -40px;}
 
 
-.bannerCarousel {position: relative; height: 550px;}
+.bannerCarousel {position: relative; height: 600px;  margin-top:78px; }
 .bannerCarousel .carousel-indicators{bottom: -50px;}
 .bannerCarousel .carousel-indicators [data-bs-target] {
-  background-color: #00ABBD !important;
+  /*background-color: #00ABBD;*/   width: 97px !important;   height: 4px !important; background: transparent !important; border-top: solid 4px #AECDE1 !important; opacity: 1;
 }
-/* .bannerCarousel .carousel-indicators.active { color: red !important;} */
+.bannerCarousel .carousel-indicators .active{ border-top: solid 4px #00ABBD !important; opacity: 1;}
 
 
+
+.gartnerCarousel{ position: relative;}
+.gartnerCarousel .carousel-indicators{ bottom: -40px; }
+
+.gartnerCarousel .carousel-indicators [data-bs-target] {
+   width: 9px !important;   height: 9px !important; background: #CDE2EF; opacity: 1; border-radius: 100%; border: 0px !important;
+}
+.gartnerCarousel .carousel-indicators .active{  background: #00ABBD; opacity: 1;}
 
 
 

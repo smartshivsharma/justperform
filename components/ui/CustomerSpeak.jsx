@@ -26,7 +26,7 @@ const CustomerSpeak = () => {
                         </Card.Footer>
                     </Card> */}
 
-                    <Carousel variant="dark" indicators={false}>
+                    <Carousel variant="light" indicators={false}>
                         <Carousel.Item>
                             <Card className={classes.custCard}>
                                 <Card.Body>

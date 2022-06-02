@@ -1,0 +1,62 @@
+
+
+
+
+.legacyBx{ position: relative; min-height: 80px; border: solid 2px #82A4BB; padding: 10px 30px; font-size: 20px; font-weight: 400;  border-radius: 10px; -webkit-border-radius: 10px;}
+.leArrow{text-align: center; color: #00ABBD; font-size: 38px;}
+
+.modernCard{ position: relative;  min-height: 80px; border: none; border-radius: 10px; -webkit-border-radius: 10px; font-size: 20px; font-weight: 800;
+   box-shadow: -2px 5px 10px 0 rgba(0, 0, 0, 0.2);  min-height: auto !important;
+}
+
+.modernCardBody{ padding: 9px 15px;}
+
+.modernCardImg{ padding-left: 10px;}
+
+
+
+.vMid {
+  margin: 0;  width: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+@media only screen and (min-device-width:320px) and (max-device-width:767px){
+
+  .leArrow{ transform: rotate(90deg);}
+
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
+
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
+
+}
+
+
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px){
+
+  
+
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
+  .vMid { position: relative;  -ms-transform: translateY(0%); transform: translateY(0%); }
+  .legacyBx{ font-size: 16px;}
+  .modernCard{ font-size: 16px;}
+  .modernCardImg{ padding-left: 0px; }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+  
+}

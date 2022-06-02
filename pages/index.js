@@ -88,29 +88,31 @@ const HomePage = () => {
       <Section className={`${classes.homeBookDemo} ${['sectionBg-White']}`}>
         <Container>
           <Row className='justify-content-center'>
-            <Col lg={10} md={12}>
+            <Col lg={8} md={12}>
               <h1>Unleash performance with one intelligent, easy to use platform</h1>
+            </Col>
+            <Col lg={12} className='mt-2'>
               <p className={classes.leadpara}>Simplify and streamline your processes. Scale with agility and flexibility as you plan, consolidate, analyse, and report.</p>
               {/* <Button variant="primary" onClick={() => router.push('mailto:shiv@pratyaksh.com')}>Book a Demo</Button> */}
-              <Button variant="primary" onClick={mailtoHandler}>Book a Demo</Button>
+              <Button variant="primary" className='mt-2' onClick={mailtoHandler}>Book a Demo</Button>
             </Col>
           </Row>
         </Container>
 
-        <Container className='mt-5 mb-5'>
+        <Container className='mb-5'>
           <Row>
             <Col md={12}>
               {/* <img src='../../images/demoCarousel-1.png' className='img-fluid' /> */}
               <Carousel variant="dark" indicators={true} controls={false} className='bannerCarousel'>
                 <Carousel.Item>
-                  <img src='../../images/banner-home1.svg' className='img-fluid' />
+                  <img src='../../images/banner-home1.png' className='img-fluid' />
                   {/* <Image src="../../images/demoCarousel-1.png" className='img-fluid' layout='fill' alt="..." /> */}
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src='../../images/banner-home2.svg' className='img-fluid' />
+                  <img src='../../images/banner-home2.png' className='img-fluid' />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src='../../images/banner-home3.svg' className='img-fluid' />
+                  <img src='../../images/banner-home3.png' className='img-fluid' />
                 </Carousel.Item>
 
               </Carousel>
@@ -130,7 +132,7 @@ const HomePage = () => {
               <h2 className='headingLight'>These leading companies use JustPerform</h2>
               <h3 className='headingBold2'>Move up to a new league of enterprise performance</h3>
             </Col>
-            <Col md={12}>
+            <Col md={12} className='mt-5'>
               {/* Partners Component*/}
               <Partners />
             </Col>
@@ -146,14 +148,20 @@ const HomePage = () => {
       <Section className={`${classes.explorePlateform} ${['sectionBg-White']}`}>
         <Container>
           <Row className='align-items-center justify-content-between'>
-            <Col lg={6} md={6}>
-              <h2 className={`${'headingBold'} ${['mb-4']}`}>The cloud xP&A and financial close platform designed for modern business requirements</h2>
-              <p className='leadpara'>Don&apos;t let inefficiencies of legacy solutions hold you back. Leverage new thinking and smart technology to enhance your decision-making.</p>
-              <p className='leadpara'>Experience the power of a process-first approach, an intuitive user experience, and robust governance capabilities for increased performance across your enterprise.</p>
-              <Button variant="primary" className={`${['mt-3']} ${['mb-3']}`} onClick={() => router.push('./platform/')}>EXPLORE PLATFORM</Button>
+            <Col lg={7} md={6}>
+              <Row>
+                <Col lg={9}>
+                  <h2 className={`${'headingBold'} ${['mb-4']}`}>The cloud xP&A and financial close platform designed for modern business requirements</h2>
+                </Col>
+                <Col lg={11}>
+                  <p className='leadpara'>Don&apos;t let inefficiencies of legacy solutions hold you back. Leverage new thinking and smart technology to enhance your decision-making.</p>
+                  <p className='leadpara'>Experience the power of a process-first approach, an intuitive user experience, and robust governance capabilities for increased performance across your enterprise.</p>
+                  <Button variant="primary" className={`${['mt-3']} ${['mb-3']}`} onClick={() => router.push('./platform/')}>EXPLORE PLATFORM</Button>
+                </Col>
+              </Row>
             </Col>
 
-            <Col lg={5} md={6}>
+            <Col lg={4} md={6}>
               <Card className={classes.plateformCard}>
                 <Card.Body>
                   <img src='../../images/icon-processFirst.svg' />
@@ -194,9 +202,9 @@ const HomePage = () => {
       <Section className={`${classes.solutions} ${['sectionBg-IrisBlue']}`}>
         <Container>
           <Row>
-            <Col md={12} className='text-center text-white'>
-              <h2 className='headingLight'>Unified Enterprise Performance Management</h2>
-              <h3 className='headingBold'>All your EPM in one place, not all over the place</h3>
+            <Col md={12} className='text-center'>
+              <h2 className='headingLight text-white'>Unified Enterprise Performance Management</h2>
+              <h3 className='headingBold text-white'>All your EPM in one place, not all over the place</h3>
             </Col>
           </Row>
           <Row className='mt-5'>
@@ -231,11 +239,30 @@ const HomePage = () => {
             <Col lg={10} md={12} className='text-center'>
               <h2 className='headingBold'>Our customers love JustPerform!</h2>
               <p className='leadpara'>Our customers rate us highly on Gartner Peer Insights and we reciprocate. Through constant integration of their feedback, we continue to offer them the most user-centric business performance management platform ever.</p>
-              <p>
-                <img src='../../images/imgCustomer.jpg' className='img-fluid' />
-              </p>
             </Col>
           </Row>
+
+          <Row className='justify-content-center align-items-center mt-4'>
+            <Col lg={5}>
+              <img src='../../images/imgCustomer.png' className='img-fluid' />
+            </Col>
+            <Col lg={4}>
+              <Carousel variant="dark" indicators={true} controls={false} className='gartnerCarousel'>
+                <Carousel.Item>
+                  <img src='../../images/carousel-gartner1.png' className='img-fluid' />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src='../../images/carousel-gartner1.png' className='img-fluid' />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src='../../images/carousel-gartner1.png' className='img-fluid' />
+                </Carousel.Item>
+
+              </Carousel>
+
+            </Col>
+          </Row>
+
         </Container>
       </Section>
 
@@ -278,7 +305,7 @@ const HomePage = () => {
           <RightImageDesc className='mt-5'
             title='One solution, multiple uses'
             description='The all-in-one platform for your business performance management and custodian of your planning, financial close, and reporting processes.'
-            image='../../images/empImg1.svg'
+            image='../../images/empImg1.png'
           />
 
         </Container>
@@ -311,13 +338,13 @@ const HomePage = () => {
           <LeftImageDesc
             title='Have it your way'
             description='Its your EPM platform. Set it up and run it like you want. No more external dependencies. No more uncontrolled complexities. Just you, your users, and enterprise-wide performance.'
-            image='../../images/empImg2.svg'
+            image='../../images/empImg2.png'
           />
 
           <RightImageDesc className='mt-5'
             title='Get started fast'
             description='Skip the learning curve. You know Excel? Then you wll rock with JustPerform. Our smart, high-performance technology also lets everyone accelerate to results.'
-            image='../../images/empImg3.svg'
+            image='../../images/empImg3.png'
           />
 
 
@@ -332,11 +359,11 @@ const HomePage = () => {
       <Section className={`${classes.roadMap} ${['sectionBg-Gray']}`}>
         <Container>
           <Row className='align-items-center justify-content-between'>
-            <Col md={6} className='text-center'>
-              <img src='../../images/imgRoadmap.svg' className='img-fluid' />
+            <Col lg={6} md={6} className='text-center'>
+              <img src='../../images/imgRoadmap.png' className='img-fluid' />
             </Col>
-            <Col md={5}>
-              <h2 className='headingBold'>Your route map to success</h2>
+            <Col lg={5} md={6}>
+              <h2 className='headingBold text-white'>Your route map to success</h2>
               <p className={classes.leadpara}>Our guided workflows and process flows show you the quickest, most efficient route to success in budgeting, financial closing, and more.</p>
             </Col>
           </Row>
@@ -371,7 +398,7 @@ const HomePage = () => {
           <RightImageDesc
             title='Built for business teams'
             description='Our EPM experts designed JustPerform, so that your business leaders and users can work with one brilliantly smart and easy-to-use platform for optimal enterprise performance management.'
-            image='../../images/imgRoadmap2.svg'
+            image='../../images/imgRoadmap2.png'
           />
 
 
@@ -399,7 +426,7 @@ const HomePage = () => {
           <LeftImageDesc
             title='Boost ROI. Achieve MORE'
             description='Get higher return on investment. Save time. Wow your stakeholders. Let JustPerform take care of chores like data preparation, configuration, and coding, while you achieve valuable results for your enterprise.'
-            image='../../images/imgRoadmap3.svg'
+            image='../../images/imgRoadmap3.png'
           />
 
 
