@@ -20,7 +20,7 @@ function LegacyModern(props) {
           </div>
         </Col>
         <Col lg={1} md={1} className={classes.leArrow}>
-          <i class="las la-angle-right"></i>
+          <i className="las la-angle-right"></i>
         </Col>
         <Col lg={5} md={5}>
           <Card className={classes.modernCard}>
