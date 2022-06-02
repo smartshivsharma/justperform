@@ -24,7 +24,7 @@ const TopMenu = () => {
 
     /**************** show menu on mouse hover********************* */
     const [show, setShow] = useState(false);
-    const showDropdown = (e)=>{
+    const showDropdown = (e) => {
         setShow(!show);
     }
     const hideDropdown = e => {
@@ -54,6 +54,9 @@ const TopMenu = () => {
                 <Nav.Link href="../free-trial">Free Trial</Nav.Link> */}
 
 
+                {/* <Link href="/" passHref>
+                    <Nav.Link >Home</Nav.Link>
+                </Link> */}
 
                 <Link href="../platform/" passHref>
                     <Nav.Link >Platform</Nav.Link>
@@ -89,7 +92,7 @@ const TopMenu = () => {
                 </NavDropdown> for second version*/}
 
 
-                <NavDropdown title="Solutions" show={show}  onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                <NavDropdown title="Solutions" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
                     <Container>
                         <Row>
                             <Col lg={6} style={{ backgroundColor: '#E8F1F7' }}>

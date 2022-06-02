@@ -16,6 +16,8 @@ const Header = () => {
   const handleShow = () => setShow(true);
 
 
+
+  /**************** show dropshadow header on scroll down ************************* */
   const [scroll, setScroll] = useState(false)
   useEffect(() => {
     window.addEventListener("scroll", () => {
