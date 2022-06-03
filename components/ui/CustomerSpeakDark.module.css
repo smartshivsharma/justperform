@@ -10,19 +10,6 @@
 
 
 
-.custCarousel  .carousel-control-next-icon{ background-image: none; text-decoration: none !important; opacity: 1;}
-.custCarousel  .carousel-control-prev-icon{background-image: none; text-decoration: none !important; text-decoration: none !important; opacity: 1;}
-
-.carousel-control-next-icon:after{ /*font-family: 'Line Awesome Free'; content: "\f061";*/ font-family:'FontAwesome';  content: "\f178"; 
-  font-size: 20px; color: #fff !important; 
-}
-
-.carousel-control-prev-icon:after{ font-family:'FontAwesome';  content: "\f177"; 
-  font-size: 20px; color: #fff !important; 
-}
-
-.custCarousel .carousel-control-next{ text-decoration: none !important; opacity: 1;}
-.custCarousel .carousel-control-prev{ text-decoration: none !important; opacity: 1;}
 
 
 

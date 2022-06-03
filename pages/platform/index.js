@@ -11,7 +11,7 @@ import classes from '../../styles/Platform.module.css';
 
 import FooterContact from '../../components/layout/FooterContact';
 import Section from '../../components/ui/Section';
-import CustomerSpeak from '../../components/ui/CustomerSpeak';
+import CustomerSpeakDark from '../../components/ui/CustomerSpeakDark';
 
 import LeftImageDesc from '../../components/ui/LeftImageDesc';
 import RightImageDesc from '../../components/ui/RightImageDesc';
@@ -464,7 +464,7 @@ const Platform = () => {
             <Section className={`${classes.custCarousel} ${['sectionBg-White']}`}>
                 <Container>
                     {/** CustomerSpeak Component */}
-                    <CustomerSpeak />
+                    <CustomerSpeakDark />
 
                 </Container>
             </Section>

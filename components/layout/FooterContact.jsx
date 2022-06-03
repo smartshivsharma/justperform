@@ -14,7 +14,7 @@ const FCONTACT_DATA = [
         id: 'c1',
         image: '../../images/contactIcon-1.svg',
         title: 'Book a Demo',
-        description: 'See how JustPerform can transform planning, financial close and reporting for you.',
+        description: 'See how JustPerform can transform planning, financial close and reporting for you',
         linkTitle: 'BOOK A DEMO',
         //link: '../book-demo',
         link: 'mailto:shiv@pratyaksh.com',

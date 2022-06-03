@@ -34,19 +34,26 @@ const Header = () => {
       {/* <header className={scroll ? "main-header scrolled" : "main-header"}></header> */}
 
 
-      <header className={scroll ? "mainHeaderActive" : "mainHeader"}> 
+      <header className={scroll ? "mainHeaderActive" : "mainHeader"}>
 
         <Container>
 
           {/** For Desktop */}
           <Navbar expand="lg" >
-            <Link  href="/" passHref>
+            {/* <Link  href="/" passHref>
             <Navbar.Brand>
               <div className='logo'>
                 <img src='../../images/logo.svg' />
               </div>
             </Navbar.Brand>
-            </Link>
+            </Link> will fix later*/}
+
+              <Navbar.Brand href="/">
+                <div className='logo'>
+                  <img src='../../images/logo.svg' />
+                </div>
+              </Navbar.Brand>
+
 
             <Navbar.Toggle onClick={handleShow} />
             <Navbar.Collapse id="main-nav" className="justify-content-end d-none d-lg-block">
