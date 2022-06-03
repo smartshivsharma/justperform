@@ -17,14 +17,14 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{margin-bottom: 0.7rem !impo
 .mainHeaderActive{ position: fixed; top: 0; margin: 0 auto;  width: 100%; background: #fff; z-index: 3;  padding-top: 6px; padding-bottom: 6px; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);}
 
 .navbar{ padding-top: 0.8rem; padding-bottom: 0.8rem ;}
-#main-nav .nav-link { color: #1A4969; font-weight: 500; /*padding: 0.3rem 0.8rem;*/ padding: 0.3rem 1.5rem;}
-#main-nav .nav-link:hover{ color: #00ABBD;}
+#main-nav .nav-link { color: #1A4969; font-weight: 500; /*padding: 0.3rem 0.8rem;*/ padding: 0.3rem 0.5rem; margin-right: 20px; border-bottom: solid 2px transparent;}
+#main-nav .nav-link:hover{ /*color: #00ABBD;*/ color: #1A4969; }
 /*#main-nav .nav-link.active {
   color: #00ABBD !important;
 }
 */
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
-  color: #00ABBD !important;
+  /*color: #00ABBD !important;*/ color: #1A4969 !important; font-weight: 500 !important; border-bottom: solid 2px #00ABBD !important;
 }
 
 /* #main-nav .dropdown-menu{ padding-left: 10px; padding-right: 10px; } */

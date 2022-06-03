@@ -92,7 +92,7 @@ const TopMenu = () => {
                 </NavDropdown> for second version*/}
 
 
-                <NavDropdown title="Solutions" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
+                <NavDropdown title="Solutions" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown} onClick={hideDropdown}>
                     <Container>
                         <Row>
                             <Col lg={6} style={{ backgroundColor: '#E8F1F7' }}>
@@ -126,7 +126,7 @@ const TopMenu = () => {
                                                 <NavDropdown.Item>Excel Infinity</NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/alm-for-sap-solutions" passHref>
-                                                <NavDropdown.Item>ALM for SAP EPM Suite</NavDropdown.Item>
+                                                <NavDropdown.Item>Embeded for SAP EPM</NavDropdown.Item>
                                             </Link>
                                         </div>
                                     </Col>
