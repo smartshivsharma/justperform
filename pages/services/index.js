@@ -50,20 +50,60 @@ const Services = () => {
             /> */}
 
 
-            <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
-                <Container>
-                    <Row className='justify-content-between align-items-center'>
-                        <Col lg={5} md={6} className="order-2 order-lg-1 order-md-1">
-                            <h1 className='bannerHeading'>Business value via co-creation & co-delivery </h1>
+            {/* <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
+                <Container fluid>
+                    <Row className='justify-content-end align-items-center'>
+                        <Col lg={4} md={6} className="order-2 order-lg-1 order-md-1">
+                            <h1 className='bannerHeading'>Business value via <br />co-creation & co-delivery  </h1>
                             <p className='leadpara'>With our agile implementation methodology, expert team, and user focused trainings, we go beyond just providing you a service. We align with your business goals to maximise your return on investment in JustPerform.</p>
                         </Col>
 
-                        <Col lg={7} md={6} className="order-1 order-lg-2 order-md-2">
+                        <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
                             <img src='../../images/banner-services.png' className='img-fluid' />
                         </Col>
                     </Row>
                 </Container>
+            </Section> */}
+
+
+            {/** service banner for desktop */}
+            <div>
+            <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
+                <Container fluid className={classes.bannerContainer}>
+                    <Row className='justify-content-end align-items-center g-0'>
+                        <Col lg={4} md={12} className={`${classes.colBanner} ${['order-2 order-lg-1 order-md-1']} `}>
+                            <div className={classes.bannerText}>
+                                <h1 className='bannerHeading'>Business value via <br />co-creation & co-delivery  </h1>
+                                <p className='leadpara'>With our agile implementation methodology, expert team, and user focused trainings, we go beyond just providing you a service. We align with your business goals to maximise your return on investment in JustPerform.</p>
+                            </div>
+                        </Col>
+                        <Col lg={5} className='offset-lg-1 order-1 order-lg-2 order-md-2'>
+                            <div className={classes.serviceBannerImage}></div>
+                        </Col>
+                    </Row>
+                </Container>
             </Section>
+            </div>
+            
+
+            {/** service banner for Mobile 
+            <div className='d-lg-none'>
+                <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
+                    <Container fluid>
+                        <Row className='justify-content-end align-items-center'>
+                            <Col lg={4} md={6} className="order-2 order-lg-1 order-md-1">
+                                <h1 className='bannerHeading'>Business value via <br />co-creation & co-delivery  </h1>
+                                <p className='leadpara'>With our agile implementation methodology, expert team, and user focused trainings, we go beyond just providing you a service. We align with your business goals to maximise your return on investment in JustPerform.</p>
+                            </Col>
+
+                            <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
+                                <img src='../../images/banner-services.png' className='img-fluid' />
+                            </Col>
+                        </Row>
+                    </Container>
+                </Section>
+            </div>
+            */}
 
 
 
@@ -91,7 +131,7 @@ const Services = () => {
 
 
             <section className={classes.fullBanner}>
-                <img src='../../images/banner-services2.jpg' className='img-fluid' />
+                <img src='../../images/banner-services2.png' className='img-fluid' />
             </section>
 
 
@@ -104,14 +144,14 @@ const Services = () => {
                         </Col>
 
                     </Row>
-                    <Row className='justify-content-between mt-5'>
-                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
-                            <h2 className='headingBold'>Leverage our knowledgeable customer success team</h2>
-                            <p className='leadpara'>Tap into the vast expertise of our customer success owners. With cross-industry process knowledge and complete product know-how, we are here for you. </p>
-                            <p className='leadpara'>Meet all your requirements with an expertly guided and implemented solution. </p>
+                    <Row className='justify-content-between align-items-center mt-5'>
+                        <Col lg={7} md={6} className='order-2 order-lg-1 order-md-1'>
+                            <h2 className='headingBold col-lg-10'>Leverage our knowledgeable customer success team</h2>
+                            <p className='leadpara col-lg-10'>Tap into the vast expertise of our customer success owners. With cross-industry process knowledge and complete product know-how, we are here for you. </p>
+                            <p className='leadpara col-lg-10'>Meet all your requirements with an expertly guided and implemented solution. </p>
                         </Col>
-                        <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
-                            <img src='../../images/img-leverage.svg' className='img-fluid mb-3' />
+                        <Col lg={4} md={6} className='order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-leverage.png' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
@@ -133,7 +173,7 @@ const Services = () => {
                         </Col>
                     </Row>
                     <Row className='justify-content-center text-center mt-4'>
-                        <Col lg={8} md={12}>
+                        <Col lg={10} md={12}>
                             <p className='leadpara'>
                                 <b>Make best use of your internal resources, eliminate dependencies, and leverage opportunities for innovation in your EPM initiatives.</b>
                             </p>
@@ -146,14 +186,14 @@ const Services = () => {
 
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
-                    <Row className='justify-content-between'>
-                        <Col lg={6} md={6} className='order-2 order-lg-1 order-md-1'>
-                            <h2 className='headingBold'>Reap the benefits of agile implementation</h2>
-                            <p className='leadpara'>Adopt the JustPerform way in your implementation. Choose this agile, flexible implementation approach based on industry best practices.</p>
-                            <p className='leadpara'>We help you uncover any bottlenecks in your existing processes, develop the processes you need, and set up your solution quickly and easily.</p>
+                    <Row className='justify-content-between align-items-center'>
+                        <Col lg={7} md={6} className='order-2 order-lg-1 order-md-1'>
+                            <h2 className='headingBold col-lg-11'>Reap the benefits of agile implementation</h2>
+                            <p className='leadpara col-lg-10'>Adopt the JustPerform way in your implementation. Choose this agile, flexible implementation approach based on industry best practices.</p>
+                            <p className='leadpara  col-lg-11'>We help you uncover any bottlenecks in your existing processes, develop the processes you need, and set up your solution quickly and easily.</p>
                         </Col>
-                        <Col lg={6} md={6} className='text-center order-1 order-lg-2 order-md-2'>
-                            <img src='../../images/img-reap.svg' className='img-fluid mb-3' />
+                        <Col lg={4} md={6} className='text-center order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/img-reap.png' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
@@ -165,13 +205,13 @@ const Services = () => {
             <Section className={`${['sectionBg-SkyBlue2']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={5} md={6} className='mb-3'>
+                        <Col lg={4} md={6} className='mb-3'>
                             <img src='../../images/img-adoption.png' className='img-fluid' />
                         </Col>
-                        <Col lg={6} md={6}>
+                        <Col lg={7} md={6}>
                             <h2 className='headingBold'>Accelerate user adoption</h2>
-                            <p className='leadpara'>Empower users with JustPerform learning paths to platform mastery. Our well-structured, carefully crafted learning programs guide users to comprehensive understanding of all the relevant functionalities.</p>
-                            <p className='leadpara'>Let our user-centric training take your users smoothly from newbie to JustPerform pro.</p>
+                            <p className='leadpara col-lg-11'>Empower users with JustPerform learning paths to platform mastery. Our well-structured, carefully crafted learning programs guide users to comprehensive understanding of all the relevant functionalities.</p>
+                            <p className='leadpara col-lg-11'>Let our user-centric training take your users smoothly from newbie to JustPerform pro.</p>
                         </Col>
                     </Row>
                 </Container>
@@ -258,18 +298,22 @@ const Services = () => {
                             <Card className={classes.powerCard}>
                                 <Card.Body className={classes.powerCardBody}>
                                     <Row className='align-items-center'>
-                                        <Col lg={5} md={12} className={`${classes.powerCardImage}`}>
-                                            <img src='../../images/img-recog.png' className={`${['img-fluid']}`} />
+                                        <Col lg={5} md={12}>
+                                            <div className={`${classes.powerCardImage}`}>
+                                                <img src='../../images/img-reliable.png' className={`${['img-fluid']}`} />
+                                            </div>
                                         </Col>
-                                        <Col lg={7} md={12} className={classes.powerCardDetails}>
-                                            <div className={classes.vMid}>
-                                                <Card.Title className={classes.powerCardTitle}>Reliable, effective support</Card.Title>
-                                                <Card.Text className={classes.powerCardText}>
-                                                    Our continuous support ensures your performance management journey is smooth and satisfying.
-                                                </Card.Text>
-                                                <Card.Text className={classes.powerCardText}>
-                                                    With the help of expert customer success owners, inbuilt incident management, and self-help manuals, you can perform at speed.
-                                                </Card.Text>
+                                        <Col lg={7} md={12}>
+                                            <div className={classes.powerCardDetails}>
+                                                <div className={classes.vMid}>
+                                                    <Card.Title className={classes.powerCardTitle}>Reliable, effective support</Card.Title>
+                                                    <Card.Text className={classes.powerCardText}>
+                                                        Our continuous support ensures your performance management journey is smooth and satisfying.
+                                                    </Card.Text>
+                                                    <Card.Text className={classes.powerCardText}>
+                                                        With the help of expert customer success owners, inbuilt incident management, and self-help manuals, you can perform at speed.
+                                                    </Card.Text>
+                                                </div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -286,19 +330,23 @@ const Services = () => {
                             <Card className={classes.powerCardRight}>
                                 <Card.Body className={classes.powerCardRightBody}>
                                     <Row className='align-items-center'>
-                                        <Col lg={7} md={12} className={`${classes.powerCardRightDetails} ${['order-2 order-lg-1 order-md-2']}`}>
-                                            <div className={classes.vMidRight}>
-                                                <Card.Title className={classes.powerCardRightTitle}>Stay ahead and secure with premium support</Card.Title>
-                                                <Card.Text className={classes.powerCardRightText}>
-                                                    JustPerform premium support provides real-time technical assistance, accelerated problem resolution, and prioritized product updates to keep your solution running at its best.
-                                                </Card.Text>
-                                                <Card.Text className={classes.powerCardRightText}>
-                                                    Optimize your performance and enhance your processes with our spot-on product know-how and process expertise.
-                                                </Card.Text>
+                                        <Col lg={7} md={12} className={`${['order-2 order-lg-1 order-md-2']}`}>
+                                            <div className={classes.powerCardRightDetails}>
+                                                <div className={classes.vMidRight}>
+                                                    <Card.Title className={classes.powerCardRightTitle}>Stay ahead and secure with premium support</Card.Title>
+                                                    <Card.Text className={classes.powerCardRightText}>
+                                                        JustPerform premium support provides real-time technical assistance, accelerated problem resolution, and prioritized product updates to keep your solution running at its best.
+                                                    </Card.Text>
+                                                    <Card.Text className={classes.powerCardRightText}>
+                                                        Optimize your performance and enhance your processes with our spot-on product know-how and process expertise.
+                                                    </Card.Text>
+                                                </div>
                                             </div>
                                         </Col>
-                                        <Col lg={5} md={12} className={`${classes.powerCardRightImage} ${['order-1 order-lg-2 order-md-1']}`}>
-                                            <img src='../../images/img-recog.png' className={`${['img-fluid']}`} />
+                                        <Col lg={5} md={12} className={`${['order-1 order-lg-2 order-md-1']}`}>
+                                            <div className={classes.powerCardRightImage}>
+                                                <img src='../../images/img-stayAhead.png' className={`${['img-fluid']}`} />
+                                            </div>
                                         </Col>
                                     </Row>
 

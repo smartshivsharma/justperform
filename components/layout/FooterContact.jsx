@@ -17,7 +17,7 @@ const FCONTACT_DATA = [
         description: 'See how JustPerform can transform planning, financial close and reporting for you',
         linkTitle: 'BOOK A DEMO',
         //link: '../book-demo',
-        link: 'mailto:shiv@pratyaksh.com',
+        link: 'mailto:contact@justperform.com',
     },
     {
         id: 'c2',
@@ -26,7 +26,7 @@ const FCONTACT_DATA = [
         description: 'Request a trial to get your first value-add results with JustPerform',
         linkTitle: 'START A TRIAL',
         //link: '../free-trial',
-        link: 'mailto:shiv@pratyaksh.com',
+        link: 'mailto:contact@justperform.com',
     },
     {
         id: 'c3',
@@ -35,7 +35,7 @@ const FCONTACT_DATA = [
         description: 'Ask us all your questions! Get all the answers!',
         linkTitle: 'CONTACT US',
         //link: '../contact-us',
-        link: 'mailto:shiv@pratyaksh.com',
+        link: 'mailto:contact@justperform.com',
     },
 
 ];

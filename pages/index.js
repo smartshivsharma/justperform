@@ -58,7 +58,7 @@ const HomePage = () => {
   const router = useRouter();
 
   function mailtoHandler() {
-    router.push('mailto:shiv@pratyaksh.com');
+    router.push('mailto:contact@justperform.com');
   }
 
   return (
@@ -93,7 +93,7 @@ const HomePage = () => {
             </Col>
             <Col lg={12} className='mt-2'>
               <p className={classes.leadpara}>Simplify and streamline your processes. Scale with agility and flexibility as you plan, consolidate, analyse, and report.</p>
-              {/* <Button variant="primary" onClick={() => router.push('mailto:shiv@pratyaksh.com')}>Book a Demo</Button> */}
+              {/* <Button variant="primary" onClick={() => router.push('mailto:contact@justperform.com')}>Book a Demo</Button> */}
               <Button variant="primary" className='mt-2' onClick={mailtoHandler}>Book a Demo</Button>
             </Col>
           </Row>

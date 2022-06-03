@@ -1,0 +1,44 @@
+
+.legalRw{ margin-top: 20px;}
+
+.legalRw .headingLight{font-size: 26px;}
+
+.legalRw .leadpara{ margin-bottom: 0.7rem; font-size: 20px;}
+
+
+ul.list {margin-left:0px; list-style-type: none; position: relative;}
+ul.list li{ margin-bottom: 15px;}
+ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-right: 10px; color: #00ABBD; margin-bottom: 4px; display: inline-block; position: absolute; left: 0px;}
+
+
+
+
+  
+
+@media only screen and (min-device-width:320px) and (max-device-width:767px){
+  
+
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
+
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
+
+}
+
+
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px){
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
+
+
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
+  
+}
+  

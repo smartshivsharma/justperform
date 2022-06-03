@@ -37,7 +37,7 @@ const Platform = () => {
     const router = useRouter();
 
     function mailtoHandler() {
-        router.push('mailto:shiv@pratyaksh.com');
+        router.push('mailto:contact@justperform.com');
     }
 
 

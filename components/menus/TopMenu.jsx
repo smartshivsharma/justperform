@@ -18,7 +18,7 @@ const TopMenu = () => {
     }
 
     function mailtoHandler() {
-        router.push('mailto:shiv@pratyaksh.com');
+        router.push('mailto:contact@justperform.com');
     }
 
 
@@ -233,8 +233,8 @@ const TopMenu = () => {
                 {/* <Button variant="info" className='btn-contact' onClick={contactNavHandler}>CONTACT US</Button> */}
                 <Button variant="info" className='btn-contact' onClick={mailtoHandler}>CONTACT US</Button>
 
-                {/* <Link href='mailto:shiv@pratyaksh.com' className='btn btn-outline-info btn-login' onClick={loginNavHandler}>LOGIN</Link>
-                <Link href='mailto:shiv@pratyaksh.com' className='btn btn-info btn-contact' onClick={contactNavHandler}>CONTACT US</Link> */}
+                {/* <Link href='mailto:contact@justperform.com' className='btn btn-outline-info btn-login' onClick={loginNavHandler}>LOGIN</Link>
+                <Link href='mailto:contact@justperform.com' className='btn btn-info btn-contact' onClick={contactNavHandler}>CONTACT US</Link> */}
             </Nav>
 
 

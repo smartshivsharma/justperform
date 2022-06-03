@@ -157,11 +157,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{margin-bottom: 0.7rem !impo
 
 
 /*********** list ************/
-ul.list {margin-left: 30px; list-style-type: none;}
+ul.list {margin-left: 30px; list-style-type: none; position: relative;}
 ul.list li{ margin-bottom: 8px;}
 ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; display: inline-block; position: absolute; left: -30px;
   font-family: 'Line Awesome Free'; content: "\f058";
-}
+} 
 
 
 
@@ -400,6 +400,10 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
 
   .bannerCarousel {height: 180px;}
+
+.custCarousel .carousel-control-next {right: -30px;}
+.custCarousel .carousel-control-prev { left: -30px;}
+
 }
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:landscape){
@@ -435,8 +439,12 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
   #main-nav .dropdown-menu{ min-width: 280px; left: 0;}
 
   .btn-contact{ margin-left: 0px; margin-top: 15px;}
+  .btn-login{ margin-left: 0px;}
 
   .bannerCarousel {height: 330px;}
+
+.custCarousel .carousel-control-next {right: -30px;}
+.custCarousel .carousel-control-prev { left: -30px;}
 
 }
 
