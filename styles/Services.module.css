@@ -134,7 +134,7 @@
 
    /* .serviceBanner{ padding-top: 30px; padding-bottom: 30px; height: 700px;}
    .bannerText{ margin-top:420px;} */
-   .bannerText{ padding: 30px 15px; margin-top: 30px;}
+   .bannerText{ padding: 30px 15px;}
     .serviceBannerImage{ height: 350px;}
  }
   
@@ -148,6 +148,9 @@
    .vMid, .vMidRight{ position: relative; padding-left: 0px; padding-right: 0px; transform: translateY(0%);}
     
    .powerCardDetails, .powerCardRightDetails{ min-height: auto;}
+
+   .bannerText{ margin-left: -33%; margin-top: 20px; }
+   .serviceBannerImage{ height: 350px;}
 
  }
   

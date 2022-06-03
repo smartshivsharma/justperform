@@ -71,13 +71,13 @@ const Services = () => {
             <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
                 <Container fluid className={classes.bannerContainer}>
                     <Row className='justify-content-end align-items-center g-0'>
-                        <Col lg={4} md={12} className={`${classes.colBanner} ${['order-2 order-lg-1 order-md-1']} `}>
+                        <Col lg={4} md={12} className={`${classes.colBanner} ${['order-2 order-lg-1 order-md-2']} `}>
                             <div className={classes.bannerText}>
                                 <h1 className='bannerHeading'>Business value via <br />co-creation & co-delivery  </h1>
                                 <p className='leadpara'>With our agile implementation methodology, expert team, and user focused trainings, we go beyond just providing you a service. We align with your business goals to maximise your return on investment in JustPerform.</p>
                             </div>
                         </Col>
-                        <Col lg={5} className='offset-lg-1 order-1 order-lg-2 order-md-2'>
+                        <Col lg={5} className='offset-lg-1 order-1 order-lg-2 order-md-1'>
                             <div className={classes.serviceBannerImage}></div>
                         </Col>
                     </Row>
