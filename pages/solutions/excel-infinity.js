@@ -50,12 +50,12 @@ const ExcelInfinity = () => {
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={5} md={6} className="order-2 order-lg-1 order-md-2">
+                        <Col lg={5} md={6} className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading col-lg-11'>Turn your Excel into an enterprise grade solution </h1>
                             <p className='leadpara col-lg-11'>Streamline and transform your processes running on Excel with endless possibilities provided by JustPerform Excel Infinity.</p>
                         </Col>
 
-                        <Col lg={6} md={6} className="order-1 order-lg-2 order-md-1">
+                        <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
                             <img src='../../images/banner-exelInfinity.png' className='img-fluid mb-3' />
                         </Col>
                     </Row>
