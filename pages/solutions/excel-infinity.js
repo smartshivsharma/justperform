@@ -23,6 +23,8 @@ import ListCards from '../../components/ui/ListCards';
 
 import Partners from '../../components/ui/Partners';
 
+import GartnerCarousel from '../../components/ui/GartnerCarousel';
+
 
 const ExcelInfinity = () => {
 
@@ -182,15 +184,16 @@ const ExcelInfinity = () => {
 
 
                     <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={4} md={5} className='text-center order-2 order-lg-2 order-md-2'>
+                        <Col lg={4} md={5} className='text-center order-2 order-lg-1 order-md-2'>
                             <img src='../../images/img-fragmented.png' className='img-fluid mb-3' />
                         </Col>
-                        <Col lg={7} md={6}  className='order-1 order-lg-1 order-md-1'>
+                        <Col lg={7} md={6}  className='order-1 order-lg-2 order-md-1'>
                             <h2 className='headingBold col-lg-8'>From fragmented tasks to complete collaboration</h2>
                             <p className='col-lg-11'>Those flurries of messages you&apos;ve been exchanging to collaborate on Excel sheets? The&apos;re all history when you have JustPerform. Inbuilt collaboration capabilities and guided workflows mean you no longer need to go outside Excel to collaborate inside Excel.</p>
                             <p className='leadpara2 col-lg-10'><b>Guided workflows with detailed steps and activities for each user enable streamlined Excel-native co-ordination and collaboration.</b></p>
                         </Col>
                     </Row>
+
 
                     <Row className='justify-content-between align-items-center mt-5'>
                         <Col lg={7} md={6} className='order-1 order-lg-1 order-md-1'>
@@ -205,10 +208,10 @@ const ExcelInfinity = () => {
 
 
                     <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={4} md={5} className='text-center order-2 order-lg-2 order-md-2'>
+                        <Col lg={4} md={5} className='text-center order-1 order-lg-2 order-md-2'>
                             <img src='../../images/img-noGovernance.png' className='img-fluid mb-3' />
                         </Col>
-                        <Col lg={7} md={6} className='col-lg-11 order-1 order-lg-1 order-md-1'>
+                        <Col lg={7} md={6} className='order-1 order-lg-2 order-md-1'>
                             <h2 className='headingBold'>From no governance to fine-grain authorisations</h2>
                             <p className='col-lg-11'>Still spending your valuable time on creating multiple sheets just to make sure individual users see only the data they should - then spending yet more time to consolidate all the sheets again afterwards? Secure your sensitive information by allowing people to view and perform only what they need to.</p>
                             <p className='leadpara2 col-lg-11'><b>JustPerform&apos;s inbuilt fine grain authorisations allow you to give specific action access only to the relevant person and make your tracking effortless.</b></p>
@@ -216,7 +219,7 @@ const ExcelInfinity = () => {
                     </Row>
 
                     <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={7} md={6} className='col-lg-11 order-1 order-lg-1 order-md-1'>
+                        <Col lg={7} md={6} className='order-1 order-lg-1 order-md-1'>
                             <h2 className='headingBold col-lg-11'>From building-from-scratch to time-saving built-in templates</h2>
                             <p className='col-lg-11'>Make productive use of your most precious resource. Don&apos;t let manual input and reporting activities consume your valuable time. Tap into JustPerform capabilities to kickstart processes while customising as you wish.</p>
                             <p className='leadpara2 col-lg-11'><b>Standard pre-built templates let you save time in your data input, dashboard and report building. They also offer automated conversion of your Excel dashboards into PowerPoint for easier consumption.</b></p>
@@ -281,11 +284,11 @@ const ExcelInfinity = () => {
                         <Col lg={10} md={12} className='text-center'>
                             <h2 className='headingBold'>Our customers love JustPerform!</h2>
                             <p className='leadpara'>Our customers rate us highly on Gartner Peer Insights and we reciprocate. Through constant integration of their feedback, we continue to offer them the most user-centric business performance management platform ever.</p>
-                            <p>
-                                <img src='../../images/imgCustomer.jpg' className='img-fluid' />
-                            </p>
                         </Col>
                     </Row>
+
+                    <GartnerCarousel />
+
                 </Container>
             </Section>
 
