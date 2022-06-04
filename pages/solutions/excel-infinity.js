@@ -208,7 +208,7 @@ const ExcelInfinity = () => {
 
 
                     <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={4} md={5} className='text-center order-1 order-lg-2 order-md-1'>
+                        <Col lg={4} md={5} className='text-center order-2 order-lg-2 order-md-1'>
                             <img src='../../images/img-noGovernance.png' className='img-fluid mb-3' />
                         </Col>
                         <Col lg={7} md={6} className='order-1 order-lg-2 order-md-2'>
