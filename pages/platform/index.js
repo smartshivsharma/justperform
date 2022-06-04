@@ -109,7 +109,7 @@ const Platform = () => {
                         <Col lg={11}>
                             <Row className='justify-content-center align-items-center text-center mb-3'>
                                 <Col lg={5} md={5} xs={5}>
-                                    <h2 className='headingLight' style={{ fontWeight: '700' }}>Legacy</h2>
+                                    <h2 className='headingLight' style={{ fontWeight: '700' }}>Legacy </h2>
                                 </Col>
                                 <Col lg={1} md={1} xs={1} className={`${classes.leArrow} ${['text-center']}`}>
                                     <i class="fa fa-angle-right"></i>
