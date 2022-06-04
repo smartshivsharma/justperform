@@ -53,7 +53,7 @@ const FooterContact = () => {
                         {FCONTACT_DATA.map((crd) => {
                             return (
                                 <Col lg={4} md={4} key={crd.id}>
-                                    <Cards className='text-center'
+                                    <Cards className={classes.contactCard}
                                         key={crd.id}
                                         image={crd.image}
                                         title={crd.title}
