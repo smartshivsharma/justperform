@@ -10,10 +10,10 @@ function GartnerCarousel(props) {
     <>
 
       <Row className='justify-content-center align-items-center mt-4'>
-        <Col lg={5}>
+        <Col lg={5} md={6}>
           <img src='../../images/imgCustomer.png' className='img-fluid' />
         </Col>
-        <Col lg={4}>
+        <Col lg={4} md={6}>
           <Carousel variant="dark" indicators={true} controls={false} className='gartnerCarousel'>
             <Carousel.Item>
               <img src='../../images/carousel-gartner1.png' className='img-fluid' />
