@@ -112,7 +112,7 @@ const Platform = () => {
                                     <h2 className='headingLight' style={{ fontWeight: '700' }}>Legacy </h2>
                                 </Col>
                                 <Col lg={1} md={1} xs={1} className={`${classes.leArrow} ${['text-center']}`}>
-                                    <i class="fa fa-angle-right"></i>
+                                    <i className="fa fa-angle-right"></i>
                                 </Col>
                                 <Col lg={5} md={5} xs={5}>
                                     <h2 className='headingLight' style={{ fontWeight: '700' }}>Modern</h2>
