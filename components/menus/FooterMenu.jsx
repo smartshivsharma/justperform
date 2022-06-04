@@ -31,7 +31,7 @@ const FooterMenu = () => {
                                 <li><Link href="../solutions/profitability-analysis">Profitability Analysis</Link></li>
                                 <li><Link href="../solutions/intelligent-forecasting">Intelligent Forecasting</Link></li>
                                 <li><Link href="../solutions/excel-infinity">Excel Infinity</Link></li>
-                                <li><Link href="../solutions/alm-for-sap-solutions">Embeded for SAP EPM</Link></li>
+                                <li><Link href="../solutions/alm-for-sap-solutions"> Embedded for SAP EOM</Link></li>
                             </ul>
                         </Col>
                         <Col lg={3} md={6} xs={6}>

@@ -11,18 +11,18 @@ function GartnerCarousel(props) {
 
       <Row className='justify-content-center align-items-center mt-4'>
         <Col lg={5} md={6}>
-          <img src='../../images/imgCustomer.png' className='img-fluid' />
+          <img src='../../images/imgCustomer2.png' className='img-fluid' />
         </Col>
         <Col lg={4} md={6}>
           <Carousel variant="dark" indicators={true} controls={false} className='gartnerCarousel'>
             <Carousel.Item>
-              <img src='../../images/carousel-gartner1.png' className='img-fluid' />
+              <img src='../../images/carousel-gartner2.png' className='img-fluid' />
             </Carousel.Item>
             <Carousel.Item>
-              <img src='../../images/carousel-gartner1.png' className='img-fluid' />
+              <img src='../../images/carousel-gartner2.png' className='img-fluid' />
             </Carousel.Item>
             <Carousel.Item>
-              <img src='../../images/carousel-gartner1.png' className='img-fluid' />
+              <img src='../../images/carousel-gartner2.png' className='img-fluid' />
             </Carousel.Item>
 
           </Carousel>

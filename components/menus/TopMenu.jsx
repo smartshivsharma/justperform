@@ -126,7 +126,7 @@ const TopMenu = () => {
                                                 <NavDropdown.Item>Excel Infinity</NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/alm-for-sap-solutions" passHref>
-                                                <NavDropdown.Item>Embeded for SAP EPM</NavDropdown.Item>
+                                                <NavDropdown.Item>Embedded for SAP EOM</NavDropdown.Item>
                                             </Link>
                                         </div>
                                     </Col>
