@@ -24,6 +24,10 @@ import ListCards from '../../components/ui/ListCards';
 import Partners from '../../components/ui/Partners';
 
 
+import GartnerCarousel from '../../components/ui/GartnerCarousel';
+
+
+
 const IntelligentForecasting = () => {
 
     const router = useRouter();
@@ -50,17 +54,19 @@ const IntelligentForecasting = () => {
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={6} md={12} className="order-2 order-lg-1">
-                            <h1 className='bannerHeading'>Drive accurate decisions with intelligent forecasts</h1>
-                            <p className='leadpara'>Bring speed, accuracy, and agility to your forecasts by leveraging data with JustPerform’s inbuilt artificial intelligence (AI) and machine learning (ML) algorithms.</p>
+                        <Col lg={5} md={6} className="order-2 order-lg-1 order-md-1">
+                            <h1 className='bannerHeading col-lg-10'>Drive accurate decisions with intelligent forecasts</h1>
+                            <p className='leadpara'>Bring speed, accuracy, and agility to your forecasts by leveraging data with JustPerform&apos;s inbuilt artificial intelligence (AI) and machine learning (ML) algorithms.</p>
                         </Col>
 
-                        <Col lg={6} md={12} className="order-1 order-lg-2">
-                            <img src='../../images/banner-intelligentForecasting.png' className='img-fluid' />
+                        <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
+                            <img src='../../images/banner-intelligentForecasting.png' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
             </Section>
+
+
 
 
 
@@ -86,10 +92,10 @@ const IntelligentForecasting = () => {
                 <Container>
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={6} md={6}>
-                            <h2 className='headingBold'>JustPerformclassNames ingredients for success in intelligent forecasting</h2>
-                            <p className='leadpara mt-4'>From traditional manual input and driver-based methods to predictive approaches, forecasting techniques have been evolving continuously.</p>
-                            <p className='leadpara'>Traditional forecasts can be time-consuming yet remain ineffective, they may also be influenced by assumptions based on human biases.</p>
-                            <p className='leadpara'>TradiForecasting for your organisation needs to be in sync with reality, nimble, and aligned for success in the modern world.</p>
+                            <h2 className='headingBold'>JustPerform&apos;s ingredients for success in intelligent forecasting</h2>
+                            <p className='leadpara mt-4 col-lg-11'>From traditional manual input and driver-based methods to predictive approaches, forecasting techniques have been evolving continuously.</p>
+                            <p className='leadpara col-lg-11'>Traditional forecasts can be time-consuming yet remain ineffective, they may also be influenced by assumptions based on human biases.</p>
+                            <p className='leadpara col-lg-11'>TradiForecasting for your organisation needs to be in sync with reality, nimble, and aligned for success in the modern world.</p>
                         </Col>
                         <Col lg={6} md={6}>
                             <img src='../../images/img-powefulAI.svg' className='img-fluid' />
@@ -117,29 +123,33 @@ const IntelligentForecasting = () => {
 
             <Section className={`${['sectionBg-SkyBlue2']}`}>
                 <Container>
+                   
                     <Row className={`${['align-items-center']} ${['justify-content-center']} ${['g-0']}`}>
                         <Col lg={12} md={12}>
                             <Card className={classes.powerCard}>
                                 <Card.Body className={classes.powerCardBody}>
                                     <Row className='align-items-center'>
-                                        <Col lg={5} md={12} className={`${classes.powerCardImage}`}>
-                                            <img src='../../images/img-cardinte.png' className={`${['img-fluid']}`} />
-                                        </Col>
-                                        <Col lg={7} md={12} className={`${classes.powerCardDetails} ${classes.forecastingCard}`}>
-                                            <div className={classes.vMid}>
-                                                <Card.Title className={classes.powerCardTitle}>Intelligent Forecasting with JustPerform</Card.Title>
-                                                <Card.Text className={classes.powerCardText}>
-                                                    <ul className={classes.list}>
-                                                        <li>Take bias out of assumptions driving forecasts</li>
-                                                        <li>Leverage insights from both internal and external data</li>
-                                                        <li>Remove manual intervention with the help of predictive modelling driven by AI and ML </li>
-                                                        <li>Improve accuracy and confidence in your budgets and forecasts</li>
-                                                        <li>Rapidly change assumptions to see the impact on forecasts and scenarios</li>
-                                                        <li>Make faster, timelier, and better-informed business decisions</li>
-                                                    </ul>
-                                                </Card.Text>
+                                        <Col lg={5} md={12}>
+                                            <div className={`${classes.powerCardImage}`}>
+                                                <img src='../../images/img-cardinte.png' className={`${['img-fluid']}`} />
                                             </div>
-
+                                        </Col>
+                                        <Col lg={7} md={12}>
+                                            <div className={`${classes.powerCardDetails} ${classes.forecastingCard}`}>
+                                                <div className={classes.vMid}>
+                                                    <Card.Title className={`${classes.powerCardTitle} ${['col-lg-10']}`}>Intelligent Forecasting with JustPerform</Card.Title>
+                                                    <Card.Text className={classes.powerCardText}>
+                                                        <ul className={classes.list}>
+                                                            <li>Take bias out of assumptions driving forecasts</li>
+                                                            <li>Leverage insights from both internal and external data</li>
+                                                            <li>Remove manual intervention with the help of predictive modelling driven by AI and ML </li>
+                                                            <li>Improve accuracy and confidence in your budgets and forecasts</li>
+                                                            <li>Rapidly change assumptions to see the impact on forecasts and scenarios</li>
+                                                            <li>Make faster, timelier, and better-informed business decisions</li>
+                                                        </ul>
+                                                    </Card.Text>
+                                                </div>
+                                            </div>
                                         </Col>
                                     </Row>
 
@@ -163,8 +173,8 @@ const IntelligentForecasting = () => {
             <Section className={`${classes.customers} ${['sectionBg-White']}`}>
                 <Container>
                     <Row className='justify-content-center'>
-                        <Col lg={10} md={12} className='text-center'>
-                            <h2 className='headingBold'>Better Forecasting, Driven by Data, Intelligence, and Collaboration</h2>
+                        <Col lg={8} md={12} className='text-center'>
+                            <h2 className='headingBold2'>Better Forecasting, Driven by Data, Intelligence, and Collaboration</h2>
                         </Col>
                     </Row>
 
@@ -172,11 +182,11 @@ const IntelligentForecasting = () => {
                         <Col lg={12} md={12}>
                             <Card className={classes.card2}>
                                 <Card.Body>
-                                    <Row className='align-items-center g-0'>
-                                        <Col md={4} className='text-center'>
-                                            <img src='../../images/img-kickstart.svg' className={`${['img-fluid']}`} />
+                                    <Row className='justify-content-center align-items-center'>
+                                        <Col lg={3} md={4} className="order-2 order-lg-1 order-md-1">
+                                            <img src='../../images/img-kickstart.png' className={`${['img-fluid']}`} />
                                         </Col>
-                                        <Col md={8}>
+                                        <Col lg={7} md={8} className="order-1 order-lg-2 order-md-2">
                                             <h2 className='headingBold'>Kick start with built-in intelligence</h2>
                                             <p className='leadpara'>Move beyond driver-based forecasting to predictive forecasting with intelligent algorithms to avoid human bias.</p>
                                             <p className='leadpara'><b>Start with:</b></p>
@@ -195,11 +205,11 @@ const IntelligentForecasting = () => {
                         <Col lg={12} md={12} className='mt-5'>
                             <Card className={classes.card2}>
                                 <Card.Body>
-                                    <Row className='align-items-center g-0'>
-                                        <Col md={4} className='text-center'>
-                                            <img src='../../images/img-kickstart.svg' className={`${['img-fluid']}`} />
+                                    <Row className='justify-content-center align-items-center'>
+                                        <Col lg={3} md={4} className="order-2 order-lg-1 order-md-1">
+                                            <img src='../../images/img-model.png' className={`${['img-fluid']}`} />
                                         </Col>
-                                        <Col md={8}>
+                                        <Col lg={7} md={8} className="order-1 order-lg-2 order-md-2">
                                             <h2 className='headingBold'>Model with speed </h2>
                                             <p className='leadpara'>An accurate forecast requires high volume, variety, and velocity of internal and external data. Include as many data points and dimensions as you need in your models with no compromise on speed and accuracy. </p>
                                             <p className='leadpara'><b>Build granular and accurate forecasts with:</b></p>
@@ -218,11 +228,11 @@ const IntelligentForecasting = () => {
                         <Col lg={12} md={12} className='mt-5'>
                             <Card className={classes.card2}>
                                 <Card.Body>
-                                    <Row className='align-items-center g-0'>
-                                        <Col md={4} className='text-center'>
-                                            <img src='../../images/img-collaborate.svg' className={`${['img-fluid']}`} />
+                                    <Row className='justify-content-center align-items-center'>
+                                        <Col lg={3} md={4} className="order-2 order-lg-1 order-md-1">
+                                            <img src='../../images/img-collaborate.png' className={`${['img-fluid']}`} />
                                         </Col>
-                                        <Col md={8}>
+                                        <Col lg={7} md={8} className="order-1 order-lg-2 order-md-2">
                                             <h2 className='headingBold'>Collaborate and coordinate in harmony</h2>
                                             <p className='leadpara'>A critical factor in developing successful forecasts is the engagement of all relevant stakeholders in your forecasting. Involve the right users with the right insights at the right time to drive agile forecasting with JustPerform. </p>
                                             <p className='leadpara'><b>Get the benefit of cross-functional collaboration with:</b></p>
@@ -255,11 +265,14 @@ const IntelligentForecasting = () => {
                         <Col lg={10} md={12} className='text-center'>
                             <h2 className='headingBold'>Our customers love JustPerform!</h2>
                             <p className='leadpara'>Our customers rate us highly on Gartner Peer Insights and we reciprocate. Through constant integration of their feedback, we continue to offer them the most user-centric business performance management platform ever.</p>
-                            <p>
+                            {/* <p>
                                 <img src='../../images/imgCustomer.jpg' className='img-fluid' />
-                            </p>
+                            </p> */}
                         </Col>
                     </Row>
+
+                    <GartnerCarousel />
+
                 </Container>
             </Section>
 
