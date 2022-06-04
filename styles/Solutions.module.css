@@ -211,7 +211,7 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
     
   .powerCardDetails, .powerCardRightDetails{ min-height: auto;}
 
-  .forecastingCard{ min-height: auto;} 
+  .forecastingCard{ min-height: auto !important;} 
 
 }
   
