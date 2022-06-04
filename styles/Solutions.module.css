@@ -45,7 +45,7 @@
 
 
 
-  .powerCard{ border: none; background: none;}
+  /* .powerCard{ border: none; background: none;}
   .powerCardImage{ padding-top: 30px; padding-bottom: 30px;  margin-right: -50px;}
   .powerCardImage img{border-radius: 10px;  position: relative; z-index: 1;}
   .powerCardDetails{ padding: 30px 30px 30px 120px; margin-left: -50px; border-radius: 10px; background: #fff; min-height: 400px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);  }
@@ -83,7 +83,51 @@
      top: 50%;
      -ms-transform: translateY(-50%);
      transform: translateY(-50%);
-   }
+   } */
+
+
+
+
+
+.powerCard{ border: none; background: none;}
+.powerCardImage{ padding-top: 30px; padding-bottom: 30px;  margin-right: -50px; margin-left: -15px;}
+.powerCardImage img{border-radius: 10px;  position: relative; z-index: 1;}
+.powerCardDetails{ padding: 30px 30px 30px 120px; margin-left: -50px; margin-right: -15px; border-radius: 10px; background: #fff; min-height: 400px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);  }
+.powerCardTitle{ font-size: 38px; color: #304C64; font-weight: 900;}
+.powerCardText{ font-size: 20px;}
+.powerCardBody{ position: relative; }
+
+
+
+
+
+.powerCardRight{ border: none; background: none;}
+.powerCardRightImage{ padding-top: 30px; padding-bottom: 30px;  margin-left: -50px;  margin-right: -15px;}
+.powerCardRightImage img{border-radius: 10px;  position: relative; z-index: 1;}
+.powerCardRightDetails{ padding: 30px 120px 30px 50px; margin-right: -50px; margin-left: -15px; border-radius: 10px;  background: #fff; min-height: 400px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);}
+
+.powerCardRightTitle{ font-size: 38px; color: #304C64; font-weight: 900;}
+.powerCardRightText{ font-size: 20px;}
+
+.powerCardRightBody{ position: relative;}
+
+
+.vMid {
+   margin: 0; padding-right: 100px; padding-left: 60px;  width: auto;
+   position: absolute;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+ }
+
+.vMidRight {
+   margin: 0; padding-right: 180px;  padding-left: 60px;
+   position: absolute;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+ }
+
 
 
 
@@ -109,16 +153,18 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px){
   
-  .powerCardImage{ margin-right: 0px; text-align: center; padding-top: 0px;}
-  .powerCardDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
+   .powerCardImage{ margin-left: 15px; margin-right: 15px; text-align: center; padding-top: 0px;}
+   .powerCardDetails{ margin-left: -15px; margin-right: -15px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
 
-  .powerCardRightImage{ margin-right: 0px; text-align: center; padding-top: 0px; margin-left: 0px;}
-  .powerCardRightDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
+   .powerCardRightImage{  margin-left: 15px; margin-right: 15px;  text-align: center; padding-top: 0px;}
+   .powerCardRightDetails{ margin-left: -15px; margin-right: -15px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
 
-  .powerCardTitle, .powerCardRightTitle{ font-size: 28px;}
-  .powerCardText, .powerCardRightText{ font-size: 18px; }
 
-  .vMid, .vMidRight{ position: relative; padding-right: 0px; transform: translateY(0%);}
+    .powerCardTitle, .powerCardRightTitle{ font-size: 28px;}
+    .powerCardText, .powerCardRightText{ font-size: 18px; }
+
+    .vMid, .vMidRight{ position: relative; padding-right: 0px; padding-left: 0px; transform: translateY(0%);}
+
 
   .card2{ margin-top: 20px;}
 
@@ -141,16 +187,17 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
- .powerCardImage{ margin-right: 0px; text-align: center; padding-top: 0px;}
- .powerCardDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
+   .powerCardImage{ margin-left: 15px; margin-right: 15px; text-align: center; padding-top: 0px;}
+   .powerCardDetails{ margin-left: 0px; margin-right: 0px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
 
- .powerCardRightImage{ margin-right: 0px; text-align: center; padding-top: 0px; margin-left: 0px;}
- .powerCardRightDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
+   .powerCardRightImage{  margin-left: 15px; margin-right: 15px;  text-align: center; padding-top: 0px;}
+   .powerCardRightDetails{ margin-left: 0px; margin-right: 0px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
 
- .powerCardTitle, .powerCardRightTitle{ font-size: 28px;}
- .powerCardText, .powerCardRightText{ font-size: 18px; }
+   .powerCardTitle, .powerCardRightTitle{ font-size: 28px;}
+   .powerCardText, .powerCardRightText{ font-size: 18px; }
 
- .vMid, .vMidRight{ position: relative; padding-right: 0px; transform: translateY(0%);}
+   .vMid, .vMidRight{ position: relative; padding-right: 0px; transform: translateY(0%);}
+
 
  .companyBanner{ padding-top: 30px; padding-bottom: 30px;}
 
@@ -160,5 +207,10 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
   
+  .vMid, .vMidRight{ position: relative; padding-left: 0px; padding-right: 0px; transform: translateY(0%);}
+    
+  .powerCardDetails, .powerCardRightDetails{ min-height: auto;}
+
+
 }
   

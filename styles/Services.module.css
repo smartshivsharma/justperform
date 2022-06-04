@@ -91,10 +91,10 @@
 
 
    .powerCardImage{ margin-left: 15px; margin-right: 15px; text-align: center; padding-top: 0px;}
-   .powerCardDetails{ margin-left: 0px; margin-right: 0px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
+   .powerCardDetails{ margin-left: -15px; margin-right: -15px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
 
    .powerCardRightImage{  margin-left: 15px; margin-right: 15px;  text-align: center; padding-top: 0px;}
-   .powerCardRightDetails{ margin-left: 0px; margin-right: 0px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
+   .powerCardRightDetails{ margin-left: -15px; margin-right: -15px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
 
 
     .powerCardTitle, .powerCardRightTitle{ font-size: 28px;}
