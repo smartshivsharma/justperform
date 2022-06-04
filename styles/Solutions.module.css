@@ -108,6 +108,7 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
   
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px){
+  
   .powerCardImage{ margin-right: 0px; text-align: center; padding-top: 0px;}
   .powerCardDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
 
@@ -120,6 +121,9 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
   .vMid, .vMidRight{ position: relative; padding-right: 0px; transform: translateY(0%);}
 
   .card2{ margin-top: 20px;}
+
+
+  .expCard{ min-height: auto; padding-top: 0px;}
 
 }
 

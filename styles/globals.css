@@ -2,7 +2,7 @@
 
 
 
-body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important; }
+body{ color: #1A4969 !important; font-family: 'Lato', sans-serif !important;  font-size: 15px;}
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{margin-bottom: 0.7rem !important;}
 
@@ -85,10 +85,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{margin-bottom: 0.7rem !impo
 
 /*********** Heading Styles ************/
 .bannerHeading{font-size: 45px; font-weight: 900;}
-.headingBold{ font-size: 38px; font-weight: 900; color: #304C64;}
-.headingBold2{ font-size: 38px; font-weight: 700;  color: #304C64;}
-.headingLight{font-size: 30px; font-weight: 400;  color: #1A4969;}
+.headingBold{ font-size: 38px; font-weight: 900; }
+.headingBold2{ font-size: 38px; font-weight: 700;}
+.headingBold3{ font-size: 38px; font-weight: 500;}
+.headingLight{font-size: 30px; font-weight: 400; }
 .leadpara{ font-size: 20px;}
+.leadpara2{ font-size: 18px;}
 .leadparaBorderd{
     padding-left: 20px; font-size: 20px;
     border-width: 2px;
@@ -386,6 +388,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 @media only screen and (min-device-width:320px) and (max-device-width:767px){
   .logo { background-size: contain; width: 240px;  height: 34px;}
   .navbar-toggler{padding: 0px !important; border: none !important;}
+  .navbar {padding-top: 0.5rem; padding-bottom: 0.5rem;}
 
   .navbar-expand .navbar-nav { flex-direction: column !important; width: 100% !important;}
   #main-nav .nav-link { display: block; padding: 0.8rem 1rem;}
@@ -407,11 +410,10 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
   .custCarousel .carousel-control-prev { left: -30px;}
   .custCarousel .carousel-control-next {right: -30px;}
 
-.bannerHeading{font-size: 36px; font-weight: 900;}
-.headingBold{ font-size: 28px; font-weight: 900;}
-.headingBold2{ font-size: 28px; font-weight: 700;}
+.bannerHeading{font-size: 36px;}
+.headingBold, .headingBold2, .headingBold3{ font-size: 28px;}
 .headingLight{font-size: 24px; font-weight: 400;}
-.leadpara{ font-size: 18px;}
+.leadpara, .leadpara2{ font-size: 18px;}
 .leadparaBorderd{font-size: 18px;}
 
 
@@ -434,11 +436,10 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px){
- .bannerHeading{font-size: 36px; font-weight: 900;}
-.headingBold{ font-size: 28px; font-weight: 900;}
-.headingBold2{ font-size: 28px; font-weight: 700;}
-.headingLight{font-size: 24px; font-weight: 400;}
-.leadpara{ font-size: 18px;}
+ .bannerHeading{font-size: 36px;}
+.headingBold, .headingBold2, .headingBold3{ font-size: 28px;}
+.headingLight{font-size: 24px;}
+.leadpara, .leadpara2{ font-size: 18px;}
 .leadparaBorderd{font-size: 18px;}
   
 
@@ -447,6 +448,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
   .logo { background-size: contain; width: 240px;  height: 34px;}
   .navbar-toggler{padding: 0px !important; border: none !important;}
+  .navbar {padding-top: 0.5rem; padding-bottom: 0.5rem;}
 
   .navbar-expand .navbar-nav { flex-direction: column !important; width: 100% !important;}
   #main-nav .nav-link { display: block; padding: 0.8rem 1rem;}

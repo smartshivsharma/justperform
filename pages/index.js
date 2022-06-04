@@ -16,6 +16,8 @@ import Partners from '../components/ui/Partners';
 import LeftImageDesc from '../components/ui/LeftImageDesc';
 import RightImageDesc from '../components/ui/RightImageDesc';
 
+import GartnerCarousel from '../components/ui/GartnerCarousel';
+
 
 
 const DUMMY_DATA_EMP = [
@@ -242,7 +244,7 @@ const HomePage = () => {
             </Col>
           </Row>
 
-          <Row className='justify-content-center align-items-center mt-4'>
+          {/* <Row className='justify-content-center align-items-center mt-4'>
             <Col lg={5}>
               <img src='../../images/imgCustomer.png' className='img-fluid' />
             </Col>
@@ -261,7 +263,11 @@ const HomePage = () => {
               </Carousel>
 
             </Col>
-          </Row>
+          </Row> */}
+
+
+          <GartnerCarousel />
+          
 
         </Container>
       </Section>
