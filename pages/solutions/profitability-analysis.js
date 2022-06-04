@@ -35,6 +35,10 @@ const ProfitabilityAnalysis = () => {
         router.push('../book-demo');
     }
 
+    function mailtoHandler() {
+        router.push('mailto:contact@justperform.com');
+      }
+    
 
     return (
         <>
@@ -57,7 +61,7 @@ const ProfitabilityAnalysis = () => {
                         <Col lg={5} md={6} className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>Keep score on profitability like never before</h1>
                             <p className='leadpara'>Perform detailed analysis of your profitability measures across products, projects, customers, and channels. Act quickly with accurate insights for immediate improvement.</p>
-                            <Button variant='primary' onClick={buttonHandler}>Book a Demo</Button>
+                            <Button variant='primary' onClick={mailtoHandler}>Book a Demo</Button>
                         </Col>
 
                         <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">

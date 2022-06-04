@@ -32,6 +32,10 @@ const Consolidation = () => {
         router.push('../book-demo');
     }
 
+    function mailtoHandler() {
+        router.push('mailto:contact@justperform.com');
+    }
+
 
     return (
         <>
@@ -48,14 +52,14 @@ const Consolidation = () => {
 
 
 
-            <Section className={`${['sectionBg-White']}`}>
+            <Section className={`${['sectionBg-White']} ${['pb-0']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={6} md={6} className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>Let your finance users breathe again.</h1>
                             <p className='leadpara'>Get easier, faster, more accurate consolidation for all your internal and external reporting needs.
-                Streamline your consolidation process with the purpose-built Consolidation Pro app. Simplify your communication with audit-friendly self-service reporting.</p>
-                            <Button variant='primary' onClick={buttonHandler}>Book a Demo</Button>
+                                Streamline your consolidation process with the purpose-built Consolidation Pro app. Simplify your communication with audit-friendly self-service reporting.</p>
+                            <Button variant='primary' onClick={mailtoHandler}>Book a Demo</Button>
                         </Col>
 
                         <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
