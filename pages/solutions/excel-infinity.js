@@ -184,10 +184,10 @@ const ExcelInfinity = () => {
 
 
                     <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={4} md={5} className='text-center order-2 order-lg-1 order-md-2'>
+                        <Col lg={4} md={5} className='text-center order-2 order-lg-1 order-md-1'>
                             <img src='../../images/img-fragmented.png' className='img-fluid mb-3' />
                         </Col>
-                        <Col lg={7} md={6}  className='order-1 order-lg-2 order-md-1'>
+                        <Col lg={7} md={6}  className='order-1 order-lg-2 order-md-2'>
                             <h2 className='headingBold col-lg-8'>From fragmented tasks to complete collaboration</h2>
                             <p className='col-lg-11'>Those flurries of messages you&apos;ve been exchanging to collaborate on Excel sheets? The&apos;re all history when you have JustPerform. Inbuilt collaboration capabilities and guided workflows mean you no longer need to go outside Excel to collaborate inside Excel.</p>
                             <p className='leadpara2 col-lg-10'><b>Guided workflows with detailed steps and activities for each user enable streamlined Excel-native co-ordination and collaboration.</b></p>
@@ -208,10 +208,10 @@ const ExcelInfinity = () => {
 
 
                     <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={4} md={5} className='text-center order-1 order-lg-2 order-md-2'>
+                        <Col lg={4} md={5} className='text-center order-1 order-lg-2 order-md-1'>
                             <img src='../../images/img-noGovernance.png' className='img-fluid mb-3' />
                         </Col>
-                        <Col lg={7} md={6} className='order-1 order-lg-2 order-md-1'>
+                        <Col lg={7} md={6} className='order-1 order-lg-2 order-md-2'>
                             <h2 className='headingBold'>From no governance to fine-grain authorisations</h2>
                             <p className='col-lg-11'>Still spending your valuable time on creating multiple sheets just to make sure individual users see only the data they should - then spending yet more time to consolidate all the sheets again afterwards? Secure your sensitive information by allowing people to view and perform only what they need to.</p>
                             <p className='leadpara2 col-lg-11'><b>JustPerform&apos;s inbuilt fine grain authorisations allow you to give specific action access only to the relevant person and make your tracking effortless.</b></p>
