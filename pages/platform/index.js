@@ -107,11 +107,14 @@ const Platform = () => {
 
                     <Row className='justify-content-center mt-5'>
                         <Col lg={11}>
-                            <Row className='text-center'>
-                                <Col lg={6} md={6}>
+                            <Row className='justify-content-center align-items-center text-center mb-3'>
+                                <Col lg={5} md={5} xs={5}>
                                     <h2 className='headingLight' style={{ fontWeight: '700' }}>Legacy</h2>
                                 </Col>
-                                <Col lg={6} md={6}>
+                                <Col lg={1} md={1} xs={1} className={`${classes.leArrow} ${['text-center']}`}>
+                                    <i class="fa fa-angle-right"></i>
+                                </Col>
+                                <Col lg={5} md={5} xs={5}>
                                     <h2 className='headingLight' style={{ fontWeight: '700' }}>Modern</h2>
                                 </Col>
                             </Row>
@@ -144,33 +147,33 @@ const Platform = () => {
                             <LegacyModern
                                 legacyTitle='Disjointed planning, financial close, and reporting efforts'
                                 modernTitle='One unified solution for all your EPM use cases'
-                                image='../../images/icon-modern1.png'
+                                image='../../images/icon-modern1.svg'
                             />
 
                             <LegacyModern
                                 legacyTitle='Rigid outdated tech constraints'
                                 modernTitle='Flexible business user-driven performance management'
-                                image='../../images/icon-modern2.png'
+                                image='../../images/icon-modern2.svg'
                             />
 
 
                             <LegacyModern
                                 legacyTitle='Fragmented performance handling in silos'
                                 modernTitle='Smart centralised and collaborative performance management'
-                                image='../../images/icon-modern3.png'
+                                image='../../images/icon-modern3.svg'
                             />
 
 
                             <LegacyModern
                                 legacyTitle='Missing governance and audit trails'
                                 modernTitle='High traceability with fine grain authorisations'
-                                image='../../images/icon-modern4.png'
+                                image='../../images/icon-modern4.svg'
                             />
 
                             <LegacyModern
                                 legacyTitle='Chores of non-value-add tasks like coding and configuration'
                                 modernTitle='Effective business process design, analysing and decision-making'
-                                image='../../images/icon-modern5.png'
+                                image='../../images/icon-modern5.svg'
                             />
 
 

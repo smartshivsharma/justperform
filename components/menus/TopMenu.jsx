@@ -108,7 +108,7 @@ const TopMenu = () => {
                                     <Col lg={12}>
                                         <div className='dropNavBoxRight'>
                                             <Link href="../solutions/" passHref>
-                                                <NavDropdown.Item className='navTitle'>SOLUTIONS</NavDropdown.Item>
+                                                <NavDropdown.Item className='navTitle'>SOLUTIONS </NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/extended-planning-and-analysis" passHref>
                                                 <NavDropdown.Item>Extended Planning & Analysis</NavDropdown.Item>

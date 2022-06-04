@@ -30,7 +30,7 @@
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px){
 
-  .leArrow{ transform: rotate(90deg);}
+  .leArrow{ transform: rotate(90deg); font-size: 28px;}
   .legacyBx{ font-size: 16px; min-height: 70px;}
   .modernCard{ font-size: 16px; margin-bottom: 30px;}
   .modernCardImg{ padding-left: 0px; }
