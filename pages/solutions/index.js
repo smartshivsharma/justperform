@@ -65,12 +65,12 @@ const Solutions = () => {
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={5} md={6} className='order-2 order-lg-1 order-md-1'>
                             <h1 className='bannerHeading'>Bring speed and scalability to your performance</h1>
-                            <p className='leadpara'>Eliminate silos. Enable all departments to work in unison to meet their business goals. Choose JustPerform as your single platform to streamline your business performance management.</p>
+                            <p className='leadpara col-lg-11'>Eliminate silos. Enable all departments to work in unison to meet their business goals. Choose JustPerform as your single platform to streamline your business performance management.</p>
                             <p><Button variant="primary" onClick={buttonHandler}>BOOK A DEMO</Button></p>
                         </Col>
 
-                        <Col lg={7} md={6} className='order-1 order-lg-2 order-md-2'>
-                            <img src='../../images/banner-plateform.svg' className='img-fluid' />
+                        <Col lg={6} md={6} className='order-1 order-lg-2 order-md-2'>
+                            <img src='../../images/banner-solutions.png' className='img-fluid mb-3' />
                         </Col>
                     </Row>
                 </Container>
@@ -81,13 +81,13 @@ const Solutions = () => {
 
             <Section className={`${['sectionBg-IrisBlue']} ${['pb-0']}`}>
                 <Container>
-                    <Row className='align-items-center justify-content-between'>
-                        <Col md={6}>
-                            <h2 className='headingBold text-white'>100+ JustPerform Apps to guide you to success</h2>
+                    <Row className='align-items-start justify-content-start'>
+                        <Col lg={5} md={12}>
+                            <h2 className='headingBold2 text-white'>100+ JustPerform Apps to guide you to success</h2>
                             <p className='leadpara text-white mt-3'>JustPerform apps use scenarios based on industry best practices. Pick the ones relevant to your enterprise. Use them to kickstart your planning, budgeting, financial close and reporting processes, instead of limiting yourself to a lift and shift of existing processes. </p>
                             {/* <p className='mt-3'><Button variant='light' className='btnLight'>LEARM MORE</Button></p> */}
                         </Col>
-                        <Col md={6}>
+                        <Col lg={5} md={8} className="offset-lg-1 offset-md-2">
                             <img src='../../images/img-apsGuide.png' className={`${classes.cardImage} ${['img-fluid']}`} />
                         </Col>
                     </Row>
@@ -125,6 +125,8 @@ const Solutions = () => {
 
                 </Container>
             </Section>
+
+
 
 
             <Section className={`${classes.platformBanner} ${classes.useCaseSec} ${['sectionBg-White']}`}>
@@ -191,9 +193,9 @@ const Solutions = () => {
 
             <Section className={`${['sectionBg-SkyBlue2']} ${['pb-0']}`}>
                 <Container>
-                    <Row className='justify-content-center text-center'>
-                        <Col lg={7} md={12}>
-                            <h2 className='headingBold'>Experience the true power of xP&A</h2>
+                    <Row className='justify-content-center'>
+                        <Col lg={12} md={12} className='text-center'>
+                            <h2 className='headingBold2'>Experience the true power of xP&A</h2>
                             <h3 className='headingLight'>Have all your departments plan on one flexible, scalable platform for a single source of truth.</h3>
                         </Col>
                     </Row>
@@ -355,6 +357,9 @@ const Solutions = () => {
                     <Row className='justify-content-center text-center'>
                         <Col lg={12} md={12}>
                             <h2 className='headingBold'>From automotive to agriculture, health care to hospitality.</h2>
+
+                        </Col>
+                        <Col lg={10} className='text-center'>
                             <p className='leadpara'>JustPerform delivers tailor made planning and budgeting models with industry recognised key drivers and KPIs to drive agile planning.</p>
                         </Col>
                     </Row>

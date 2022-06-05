@@ -296,7 +296,7 @@ const ExtendedPlanning = () => {
                     </Row>
 
                     <Row className={`${['justify-content-center']} ${['mt-4']}`}>
-                        <Col lg={8} md={12} className='text-center'>
+                        <Col lg={10} md={12} className='text-center'>
                             <Card className={classes.gartnerCard}>
                                 <Card.Body>
                                     {/* <img src='../../images/imgCustomer.jpg' className='img-fluid' /> */}
