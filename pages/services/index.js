@@ -67,7 +67,7 @@ const Services = () => {
 
 
             {/** service banner for desktop */}
-            <div>
+
             <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
                 <Container fluid className={classes.bannerContainer}>
                     <Row className='justify-content-end align-items-center g-0'>
@@ -83,8 +83,8 @@ const Services = () => {
                     </Row>
                 </Container>
             </Section>
-            </div>
-            
+
+
 
             {/** service banner for Mobile 
             <div className='d-lg-none'>

@@ -276,15 +276,35 @@ const Platform = () => {
 
 
 
-            <Section className={`${classes.roadMapSub} ${['sectionBg-IrisBlue']} ${['pb-0']} ${['pt-0']}`}>
+            {/* <Section className={`${classes.roadMapSub} ${['sectionBg-IrisBlue']} ${['pb-0']} ${['pt-0']}`}>
                 <Container fluid className='p-0'>
                     <Row className='align-items-center justify-content-start g-0'>
                         <Col lg={6} md={12}>
-                            {/* <img src='../../images/imgNextGen.png' className='img-fluid' /> */}
                             <Image src={ImgNextGen} layout='responsive' className='img-fluid' />
                         </Col>
                         <Col lg={5} md={12}>
                             <div className={classes.nextgenText}>
+                                <h2 className='headingBold text-white'>The Next Gen Platform to Future Proof Your Business Performance Management</h2>
+                                <p className='leadpara text-white mt-3'>Stay ahead of your competition by leveraging artificial intelligence and machine learning in your planning and reporting. Boost your accuracy and speed of decision making with automated insights and recommendations from AI and ML powered models.</p>
+                                <p className='mt-3'><Button variant='light' className='btnLight'>LEARM MORE</Button></p>
+                            </div>
+                        </Col>
+                    </Row>
+
+                </Container>
+            </Section> */}
+
+
+
+
+            <Section className={`${['sectionBg-IrisBlue']} ${classes.fullBanner}`}>
+                <Container fluid className={classes.bannerContainer}>
+                    <Row className='justify-content-start align-items-center g-0'>
+                        <Col lg={5} className='order-1 order-lg-1 order-md-1'>
+                            <div className={classes.fullBannerImage}></div>
+                        </Col>
+                        <Col lg={4} md={12} className={`${classes.colBanner} ${['order-2 order-lg-2 order-md-2 offset-lg-1']} `}>
+                            <div className={classes.bannerText}>
                                 <h2 className='headingBold text-white'>The Next Gen Platform to Future Proof Your Business Performance Management</h2>
                                 <p className='leadpara text-white mt-3'>Stay ahead of your competition by leveraging artificial intelligence and machine learning in your planning and reporting. Boost your accuracy and speed of decision making with automated insights and recommendations from AI and ML powered models.</p>
                                 <p className='mt-3'><Button variant='light' className='btnLight'>LEARM MORE</Button></p>
