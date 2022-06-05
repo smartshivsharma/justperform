@@ -25,7 +25,7 @@ import MarketPlace from '../../public/images/imgMarketPlace.svg'
 import Integration from '../../public/images/imgIntegration.png'
 import CollectData from '../../public/images/imgCollectData.png'
 
-import ImgNextGen from '../../public/images/imgNextGen.png'
+// import ImgNextGen from '../../public/images/imgNextGen.png'
 
 import JustperformClound from '../../public/images/logo-JustperformClound.svg'
 

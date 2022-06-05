@@ -50,7 +50,7 @@ const Company = () => {
             /> */}
 
 
-            <Section className={`${['sectionBg-SkyBlue2']} ${classes.companyBanner}`}>
+            {/* <Section className={`${['sectionBg-SkyBlue2']} ${classes.companyBanner}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
                         <Col lg={5} md={6}  className="order-2 order-lg-1 order-md-1">
@@ -60,6 +60,23 @@ const Company = () => {
 
                         <Col lg={7} md={6} className="order-1 order-lg-2 order-md-2">
                             <img src='../../images/banner-company.png' className='img-fluid' />
+                        </Col>
+                    </Row>
+                </Container>
+            </Section> */}
+
+
+            <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
+                <Container fluid className={classes.bannerContainer}>
+                    <Row className='justify-content-end align-items-center g-0'>
+                        <Col lg={4} md={12} className={`${classes.colBanner} ${['order-2 order-lg-1 order-md-2']} `}>
+                            <div className={classes.bannerText}>
+                                <h1 className='bannerHeading'>We empower you for business performance</h1>
+                                <p className='leadpara'>You merit real solutions for business performance management from a company that constantly strives to simplify business users&apos; lives and empower organizations. That&apos;s JustPerform. Who else!</p>
+                            </div>
+                        </Col>
+                        <Col lg={5} className='offset-lg-1 order-1 order-lg-2 order-md-1'>
+                            <div className={classes.serviceBannerImage}></div>
                         </Col>
                     </Row>
                 </Container>
@@ -133,7 +150,7 @@ const Company = () => {
                         </Col>
                     </Row>
 
-                    
+
 
                     {/* <PowerCardLeft
                         image='../../images/img-recog.png'

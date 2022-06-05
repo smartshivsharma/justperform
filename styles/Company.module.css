@@ -5,6 +5,15 @@
 
 .companyBanner{ padding-top: 0; padding-bottom: 0;}
 
+.serviceBanner{ padding-top: 0px; padding-bottom: 0;  }
+
+.serviceBannerImage{ height: 520px; background: #F6FCFF url(../public/images/banner-company.png) no-repeat center; background-size: cover;}
+
+.bannerContainer{ padding: 0;}
+
+.bannerText{ position: relative; /*margin-top: 158px;*/}
+
+
 
 .expCard{ margin-bottom: 15px; min-height: 200px; padding-top: 30px; border: none; border-radius: 0px; box-shadow: none; background: none;}
 .expCardTitle{font-size: 20px; font-weight: 900; margin-top: 10px;}
@@ -73,6 +82,10 @@
 
    .vMid, .vMidRight{ position: relative; padding-right: 0px; transform: translateY(0%);}
 
+
+   .bannerText{ padding: 30px 15px;}
+   .serviceBannerImage{ height: 350px;}
+
 }
  
 @media only screen and (min-device-width:320px) and (max-device-width:767px) and (orientation:portrait){
@@ -102,10 +115,16 @@
 
   .companyBanner{ padding-top: 30px; padding-bottom: 30px;}
 
+  .bannerText{ padding: 30px;}
+    .serviceBannerImage{ height: 350px;}
+
 }
  
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
    
+  .bannerText{ margin-left: -33%; margin-top: 20px; }
+   .serviceBannerImage{ height: 350px;}
+
 }
  
   
