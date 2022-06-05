@@ -100,7 +100,7 @@ const Company = () => {
                     <Row className='align-items-start justify-content-between'>
                         <Col lg={4} md={12}>
                             <h2 className='bannerHeading'>Where it all began</h2>
-                            <p className='leadparaBorderd mt-5'><b style={{fontWeight:'900'}}>"JustPerform is all about simplifying business users&apos; lives. We empower them with financial intelligence and the most guided, intuitive user experience ever. The easier it is for users, the better the agility and the results."</b></p>
+                            <p className='leadparaBorderd mt-5'><b style={{fontWeight:'900'}}>&quot;JustPerform is all about simplifying business users&apos; lives. We empower them with financial intelligence and the most guided, intuitive user experience ever. The easier it is for users, the better the agility and the results.&quot;</b></p>
                         </Col>
                         <Col lg={7} md={12}>
                             <p className='leadpara'>Today, businesses need agility, accuracy, and scalability like never before. But technological innovation must still offer a better experience to business users.</p>
