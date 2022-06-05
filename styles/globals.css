@@ -50,7 +50,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{margin-bottom: 0.7rem !impo
 .dropNavBoxRight .navTitle{font-weight: 900; margin-bottom: 8px; color: #00ABBD !important;}
 
 
-
+.navActive .dropdown-toggle { color: #000 !important; font-weight: 500 !important; border-bottom: solid 2px #00ABBD !important;}/***** later remove this and add some meaning*******/
 
 
 .page{ min-height: 600px;}
@@ -215,8 +215,8 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 .custCarousel .carousel-control-prev { left: -40px;}
 
 
-.custCarousel  .carousel-control-next-icon{ background-image: none; text-decoration: none !important; opacity: 1;}
-.custCarousel  .carousel-control-prev-icon{background-image: none; text-decoration: none !important; text-decoration: none !important; opacity: 1;}
+.custCarousel .carousel-control-next-icon{ background-image: none; text-decoration: none !important; opacity: 1 !important;}
+.custCarousel .carousel-control-prev-icon{background-image: none; text-decoration: none !important; text-decoration: none !important; opacity: 1 !important;}
 
 .carousel-control-next-icon:after{ /*font-family: 'Line Awesome Free'; content: "\f061";*/ font-family:'FontAwesome';  content: "\f178"; 
   font-size: 20px; color: #fff; 
@@ -277,6 +277,10 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 .tabPaging{ text-align: right; position: absolute; right: 30px; font-size: 20px;}
 .tabPaging .las{ font-size: 22px; color:#00ABBD; vertical-align: middle;}
+
+.tabNext, .tabPrev{ background: none !important; padding: 0px !important;}
+.tabNext:hover, .tabNext:focus, .tabPrev:hover, .tabPrev:focus{ background: none !important; padding: 0px !important; box-shadow: none !important;}
+
 
 
 

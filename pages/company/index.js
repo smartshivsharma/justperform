@@ -66,17 +66,17 @@ const Company = () => {
             </Section> */}
 
 
-            <Section className={`${['sectionBg-SkyBlue2']} ${classes.serviceBanner}`}>
+            <Section className={`${['sectionBg-SkyBlue2']} ${classes.aboutBanner}`}>
                 <Container fluid className={classes.bannerContainer}>
                     <Row className='justify-content-end align-items-center g-0'>
                         <Col lg={4} md={12} className={`${classes.colBanner} ${['order-2 order-lg-1 order-md-2']} `}>
                             <div className={classes.bannerText}>
-                                <h1 className='bannerHeading'>We empower you for business performance</h1>
-                                <p className='leadpara'>You merit real solutions for business performance management from a company that constantly strives to simplify business users&apos; lives and empower organizations. That&apos;s JustPerform. Who else!</p>
+                                <h1 className='bannerHeading col-lg-11'>We empower you for business performance</h1>
+                                <p className='leadpara col-lg-11'>You merit real solutions for business performance management from a company that constantly strives to simplify business users&apos; lives and empower organizations. That&apos;s JustPerform. Who else!</p>
                             </div>
                         </Col>
                         <Col lg={5} className='offset-lg-1 order-1 order-lg-2 order-md-1'>
-                            <div className={classes.serviceBannerImage}></div>
+                            <div className={classes.aboutBannerImage}></div>
                         </Col>
                     </Row>
                 </Container>
@@ -95,12 +95,12 @@ const Company = () => {
             </Section>
 
 
-            <Section className={`${['sectionBg-SkyBlue2']} ${classes.smStrip}`}>
+            <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='align-items-start justify-content-between'>
                         <Col lg={4} md={12}>
                             <h2 className='bannerHeading'>Where it all began</h2>
-                            <p className='leadparaBorderd mt-5'><b>JustPerform is all about simplifying business users&apos; lives. We empower them with financial intelligence and the most guided, intuitive user experience ever. The easier it is for users, the better the agility and the results.</b></p>
+                            <p className='leadparaBorderd mt-5'><b style={{fontWeight:'900'}}>"JustPerform is all about simplifying business users&apos; lives. We empower them with financial intelligence and the most guided, intuitive user experience ever. The easier it is for users, the better the agility and the results."</b></p>
                         </Col>
                         <Col lg={7} md={12}>
                             <p className='leadpara'>Today, businesses need agility, accuracy, and scalability like never before. But technological innovation must still offer a better experience to business users.</p>
@@ -119,7 +119,7 @@ const Company = () => {
 
 
 
-            <Section className={`${['sectionBg-White']}`}>
+            <Section className={`${['sectionBg-SkyBlue']}`}>
                 <Container>
                     <Row className='justify-content-center text-center'>
                         <Col md={12}>
@@ -128,7 +128,7 @@ const Company = () => {
                         </Col>
                     </Row>
 
-                    <Row className='justify-content-center align-items-center mt-5 mb-5'>
+                    {/* <Row className='justify-content-center align-items-center mt-5 mb-5'>
                         <Col lg={6} md={8}>
                             <img src='../../images/img-customerValue.svg' className='img-fluid' />
                         </Col>
@@ -148,7 +148,41 @@ const Company = () => {
                             <h3 className={classes.expCardTitle}>Simplicity</h3>
                             <p className={classes.expCardText}>We take pride in simplifying even the most complex to optimise results </p>
                         </Col>
-                    </Row>
+                    </Row> */}
+
+                    <Row className='row-cols-lg-5 row-cols-md-5 row-cols-1 row-cols-sm-1 justify-content-center align-items-center mt-3 g-0'>
+                        <Col>
+                            <div className={`${classes.aboutValue} ${classes.value1}`}>
+                                <h3 className={classes.valTitle}>Innovation</h3>
+                                <p className={classes.valDesc}>We continuously explore and develop better ways to get things done</p>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className={`${classes.aboutValue} ${classes.value2}`}>
+                                <h3 className={classes.valTitle}>Transparency</h3>
+                                <p className={classes.valDesc}>We are honest, open, and accountable to both customers and ourselves</p>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className={`${classes.aboutValue} ${classes.value3}`}>
+                                <h3 className={classes.valTitle}>Inclusivity</h3>
+                                <p className={classes.valDesc}>We embrace differences to build a united vision of empowering business users </p>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className={`${classes.aboutValue} ${classes.value4}`}>
+                                <h3 className={classes.valTitle}>Excellence</h3>
+                                <p className={classes.valDesc}>We&apos;ll only settle for the best, for JustPerform and for you, our customer</p>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className={`${classes.aboutValue} ${classes.value5}`}>
+                                <h3 className={classes.valTitle}>Simplicity</h3>
+                                <p className={classes.valDesc}>We continuously explore and develop better ways to get things done</p>
+                            </div>
+                        </Col>
+                    </Row>    
+
 
 
 
@@ -159,23 +193,35 @@ const Company = () => {
                     /> */}
 
 
-                    <Row className={`${['align-items-center']} ${['justify-content-center']} ${['g-0']}`}>
+
+
+                </Container>
+            </Section>
+
+
+
+
+            <Section className={`${['sectionBg-White']}`}>
+                <Container>
+                    <Row className={`${['align-items-center']} ${['justify-content-center']} ${['g-0']}  ${['mt-4']}`}>
                         <Col lg={12} md={12}>
                             <Card className={classes.powerCard}>
                                 <Card.Body className={classes.powerCardBody}>
                                     <Row className='align-items-center'>
-                                        <Col lg={5} md={12} className={`${classes.powerCardImage}`}>
-                                            <img src='../../images/img-recog.png' className={`${['img-fluid']}`} />
-                                        </Col>
-                                        <Col lg={7} md={12} className={classes.powerCardDetails}>
-                                            <div className={classes.vMid}>
-
-                                                <Card.Title className={classes.powerCardTitle}>Recognition from top analysts</Card.Title>
-                                                <Card.Text className={classes.powerCardText}>
-                                                    BPM Partners, a vendor neutral top research & consulting EPM firm recognised JustPerform as a highly rated platform in customer satisfaction ratings.
-                                                </Card.Text>
+                                        <Col lg={5} md={12}>
+                                            <div className={`${classes.powerCardImage}`}>
+                                                <img src='../../images/img-recog.png' className={`${['img-fluid']}`} />
                                             </div>
-
+                                        </Col>
+                                        <Col lg={7} md={12}>
+                                            <div className={classes.powerCardDetails}>
+                                                <div className={classes.vMid}>
+                                                    <Card.Title className={classes.powerCardTitle}>Recognition from top analysts</Card.Title>
+                                                    <Card.Text className={classes.powerCardText}>
+                                                        BPM Partners, a vendor neutral top research & consulting EPM firm recognised JustPerform as a highly rated platform in customer satisfaction ratings.
+                                                    </Card.Text>
+                                                </div>
+                                            </div>
                                         </Col>
                                     </Row>
 
@@ -184,28 +230,31 @@ const Company = () => {
 
                         </Col>
                     </Row>
-
                 </Container>
             </Section>
 
 
 
+            <div className={classes.bannerMeet}>
+                <Section>
+                    <Container>
+                        <Row className='justify-content-center text-center'>
+                            <Col md={12}>
+                                <div className={classes.bannerMeetText}>
+                                    <h2 className={classes.bannerMeetHeading}>Meet the Just&apos;Performers</h2>
+                                    <p className={classes.bannerMeetSubHeading}>JustPerform thrives by nurturing an environment that gets the best of everyone. With passion, perseverance, and purpose, we don&apos;t just work: we celebrate the journey of empowering business users.</p>
 
-            <Section className={`${['sectionBg-Blue']}`}>
-                <Container>
-                    <Row className='justify-content-center text-center text-white'>
-                        <Col md={12}>
-                            <h2 className='headingBold'>Meet the Just&apos;Performers</h2>
-                            <p className='leadpara mt-4'>JustPerform thrives by nurturing an environment that gets the best of everyone. With passion, perseverance, and purpose, we don&apos;t just work: we celebrate the journey of empowering business users.</p>
+                                    <p className={`${classes.bannerMeetLeadPara} ${['mt-4']}`}>“It&apos;s a privilege to be part of the JustPerform team and the vision of &apos;simplifying business user lives&apos;. Seeing the positive impact of our work for our customers pushes me to give my best in everything I do.” </p>
 
-                            <p className='leadpara'>It&apos;s a privilege to be part of the JustPerform team and the vision of &apos;simplifying business user lives&apos;. Seeing the positive impact of our work for our customers pushes me to give my best in everything I do. </p>
+                                    <p className={classes.bannerMeetLeadPara}>“JustPerform is one of the most welcoming companies that I have worked in. It encourages innovation and values individuals for their uniqueness. With its energy, focus, commitment, and fun, it&apos;s the best thing that ever happened to me!” </p>
+ 
+                                </div>
 
-                            <p className='leadpara'>JustPerform is one of the most welcoming companies that I have worked in. It encourages innovation and values individuals for their uniqueness. With its energy, focus, commitment, and fun, it&apos;s the best thing that ever happened to me! </p>
-
-                        </Col>
-                    </Row>
-                </Container>
-            </Section>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Section>
+            </div>
 
 
 
@@ -227,10 +276,7 @@ const Company = () => {
                                     <Card.Text className={classes.expCardText}>
                                         We are the ones building the platform customers love. We are innovative, passionate, and user centric.
                                     </Card.Text>
-                                </Card.Body>
-                                {/* <Card.Footer className={classes.expCardFooter}>
-                                    <Link href="javascript:void(0)"><a>LEARN MORE <i className="fa fa-long-arrow-right" aria-hidden="true"></i></a></Link>
-                                </Card.Footer> */}
+                                </Card.Body>                 
                             </Card>
                         </Col>
                         <Col md={4}>
@@ -298,7 +344,7 @@ const Company = () => {
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='justify-content-center text-center'>
-                        <Col lg={9} md={12}>
+                        <Col lg={12} md={12}>
                             <h2 className='bannerHeading'>Be a JustPerform partner</h2>
                             <p className='leadpara'>Experience customer delight for yourself by using JustPerform to solve the planning, financial close, and reporting challenges of your own clients. Improve the productivity of your teams, accelerate your projects, and wow your clients with JustPerform&apos;s streamlined performance management.</p>
                             <Button variant='primary' className='mt-2'>Become a Partner</Button>
@@ -313,10 +359,10 @@ const Company = () => {
                 <Container>
                     <Row className='justify-content-center'>
                         <Col lg={9} md={12} className='text-center'>
-                            <h3 className='headingBold'>These major players simplify and speed up statutory reporting with JustPerform </h3>
+                            <h3 className='headingBold2'>These major players simplify and speed up statutory reporting with JustPerform </h3>
                             {/* <h2 className='headingLight'>These leading companies use JustPerform</h2> */}
                         </Col>
-                        <Col lg={12} md={12} className='text-center'>
+                        <Col lg={12} md={12} className='text-center mt-4'>
                             {/* Partners Component*/}
                             <Partners />
                         </Col>

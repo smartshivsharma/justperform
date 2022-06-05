@@ -5,13 +5,38 @@
 
 .companyBanner{ padding-top: 0; padding-bottom: 0;}
 
-.serviceBanner{ padding-top: 0px; padding-bottom: 0;  }
+.aboutBanner{ padding-top: 0px; padding-bottom: 0;  }
 
-.serviceBannerImage{ height: 520px; background: #F6FCFF url(../public/images/banner-company.png) no-repeat center; background-size: cover;}
+.aboutBannerImage{ height: 520px; background: #F6FCFF url(../public/images/banner-company.png) no-repeat center; background-size: cover;}
 
 .bannerContainer{ padding: 0;}
 
 .bannerText{ position: relative; /*margin-top: 158px;*/}
+
+
+
+.bannerMeet{ height: 925px; background: url(../public/images/banner-meet.png) no-repeat center; background-size: cover;}
+.bannerMeetText{ color: #002856 !important;}
+.bannerMeetHeading{ font-size: 45px; font-weight: 900;}
+.bannerMeetSubHeading{ font-size: 25px; font-weight: 400;}
+.bannerMeetLeadPara{ font-size: 20px; font-weight: 400;}
+
+
+
+.aboutValue{ height: 385px; color: #fff;}
+.value1, .value2, .value3, .value4, .value5{padding: 20px 20px 10px 20px;}
+
+.value1{ background: url(../public/images/img-aboutValue1.png) no-repeat center; background-size: cover; }
+.value2{ background: url(../public/images/img-aboutValue2.png) no-repeat center; background-size: cover; }
+.value3{ background: url(../public/images/img-aboutValue3.png) no-repeat center; background-size: cover; }
+.value4{ background: url(../public/images/img-aboutValue4.png) no-repeat center; background-size: cover; }
+.value5{ background: url(../public/images/img-aboutValue5.png) no-repeat center; background-size: cover; }
+
+
+.valTitle{ font-size: 22px; font-weight: 900; margin-bottom: 8px !important; }
+.valDesc{ font-size: 14.5px; font-weight: 400; margin-bottom: 8px;}
+
+
 
 
 
@@ -25,21 +50,31 @@
 
 
 
-
-
-.powerCard{ border: none;}
-.powerCardImage{ padding-top: 30px; padding-bottom: 30px;  margin-right: -50px;}
+.powerCard{ border: none; background: none;}
+.powerCardImage{ padding-top: 30px; padding-bottom: 30px;  margin-right: -50px; margin-left: -15px;}
 .powerCardImage img{border-radius: 10px;  position: relative; z-index: 1;}
-.powerCardDetails{ padding: 30px 30px 30px 120px; margin-left: -50px; border-radius: 10px; min-height: 400px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);  }
-
+.powerCardDetails{ padding: 30px 30px 30px 120px; margin-left: -50px; margin-right: -15px; border-radius: 10px; background: #fff; min-height: 460px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);  }
 .powerCardTitle{ font-size: 38px; color: #304C64; font-weight: 900;}
 .powerCardText{ font-size: 20px;}
+.powerCardBody{ position: relative; }
 
-.powerCardBody{ position: relative;}
+
+
+
+
+.powerCardRight{ border: none; background: none;}
+.powerCardRightImage{ padding-top: 30px; padding-bottom: 30px;  margin-left: -50px;  margin-right: -15px;}
+.powerCardRightImage img{border-radius: 10px;  position: relative; z-index: 1;}
+.powerCardRightDetails{ padding: 30px 120px 30px 50px; margin-right: -50px; margin-left: -15px; border-radius: 10px;  background: #fff; min-height: 460px; position: relative; box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.2);}
+
+.powerCardRightTitle{ font-size: 38px; color: #304C64; font-weight: 900;}
+.powerCardRightText{ font-size: 20px;}
+
+.powerCardRightBody{ position: relative;}
 
 
 .vMid {
-   margin: 0; padding-right: 20px;  width: auto;
+   margin: 0; padding-right: 100px; padding-left: 60px;  width: auto;
    position: absolute;
    top: 50%;
    -ms-transform: translateY(-50%);
@@ -47,7 +82,7 @@
  }
 
 .vMidRight {
-   margin: 0; padding-right: 100px; 
+   margin: 0; padding-right: 180px;  padding-left: 60px;
    position: absolute;
    top: 50%;
    -ms-transform: translateY(-50%);
@@ -71,20 +106,31 @@
   
 
 @media only screen and (min-device-width:320px) and (max-device-width:767px){
-   .powerCardImage{ margin-right: 0px; text-align: center; padding-top: 0px;}
-   .powerCardDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
+  .powerCardImage{ margin-left: 15px; margin-right: 15px; text-align: center; padding-top: 0px;}
+  .powerCardDetails{ margin-left: -15px; margin-right: -15px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
 
-   .powerCardRightImage{ margin-right: 0px; text-align: center; padding-top: 0px; margin-left: 0px;}
-   .powerCardRightDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
+  .powerCardRightImage{  margin-left: 15px; margin-right: 15px;  text-align: center; padding-top: 0px;}
+  .powerCardRightDetails{ margin-left: -15px; margin-right: -15px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
+
 
    .powerCardTitle, .powerCardRightTitle{ font-size: 28px;}
    .powerCardText, .powerCardRightText{ font-size: 18px; }
 
-   .vMid, .vMidRight{ position: relative; padding-right: 0px; transform: translateY(0%);}
+   .vMid, .vMidRight{ position: relative; padding-right: 0px; padding-left: 0px; transform: translateY(0%);}
+
 
 
    .bannerText{ padding: 30px 15px;}
-   .serviceBannerImage{ height: 350px;}
+   .aboutBannerImage{ height: 350px;}
+
+
+   .bannerMeet{ height: 1300px; background: url(../public/images/banner-meet-xs.png) no-repeat right; background-size: cover;}
+   .bannerMeetHeading{ font-size: 35px;}
+  .bannerMeetSubHeading{ font-size: 20px;}
+  .bannerMeetLeadPara{ font-size: 18px;}
+
+
+
 
 }
  
@@ -99,31 +145,55 @@
 
  
 @media only screen and (min-device-width:768px) and (max-device-width:1024px){
+
+  .bannerMeetHeading{ font-size: 35px;}
+  .bannerMeetSubHeading{ font-size: 20px;}
+  .bannerMeetLeadPara{ font-size: 18px;}
+
+  .valTitle{ font-size: 18px;}
+  .valDesc{ font-size:12px; }
+
+  
 }
  
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){
-  .powerCardImage{ margin-right: 0px; text-align: center; padding-top: 0px;}
-  .powerCardDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
+  .powerCardImage{ margin-left: 15px; margin-right: 15px; text-align: center; padding-top: 0px;}
+  .powerCardDetails{ margin-left: 0px; margin-right: 0px; padding: 50px 30px 30px 30px; margin-top: -60px; min-height: auto;}
 
-  .powerCardRightImage{ margin-right: 0px; text-align: center; padding-top: 0px; margin-left: 0px;}
-  .powerCardRightDetails{ margin-left: 0px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
+  .powerCardRightImage{  margin-left: 15px; margin-right: 15px;  text-align: center; padding-top: 0px;}
+  .powerCardRightDetails{ margin-left: 0px; margin-right: 0px; padding: 50px 30px 30px 30px; margin-top:-60px; min-height: auto;}
 
   .powerCardTitle, .powerCardRightTitle{ font-size: 28px;}
   .powerCardText, .powerCardRightText{ font-size: 18px; }
 
   .vMid, .vMidRight{ position: relative; padding-right: 0px; transform: translateY(0%);}
 
+
   .companyBanner{ padding-top: 30px; padding-bottom: 30px;}
 
   .bannerText{ padding: 30px;}
-    .serviceBannerImage{ height: 350px;}
+    .aboutBannerImage{ height: 350px;}
+
+
+    .bannerMeet{ height: 950px;}
+
+    .value1, .value2, .value3, .value4, .value5{padding: 20px 10px 10px 10px;}
 
 }
  
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
    
+  .vMid, .vMidRight{ position: relative; padding-left: 0px; padding-right: 0px; transform: translateY(0%);}
+    
+  .powerCardDetails, .powerCardRightDetails{ min-height: auto;}
+
+
   .bannerText{ margin-left: -33%; margin-top: 20px; }
-   .serviceBannerImage{ height: 350px;}
+   .aboutBannerImage{ height: 350px;}
+
+   .bannerMeet{ height: 900px;}
+
+   .value1, .value2, .value3, .value4, .value5{padding: 20px 20px 10px 20px;}
 
 }
  

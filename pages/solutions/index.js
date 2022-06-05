@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import Head from 'next/head';
@@ -30,6 +31,10 @@ const Solutions = () => {
     function buttonHandler() {
         router.push('../book-demo');
     }
+
+
+    const [currentTab, setCurrentTab] = useState(0);
+
 
 
     return (
@@ -199,135 +204,141 @@ const Solutions = () => {
                             <h3 className='headingLight'>Have all your departments plan on one flexible, scalable platform for a single source of truth.</h3>
                         </Col>
                     </Row>
-                    <Row className='mt-3'>
-                        {/* <Col md={12}>
-                            <img src='../../images/tabComponent.png' className='img-fluid' />
-                        </Col> */}
+
+
+
+                    {/* <Row>
+                            <Col>
+                                <Tabs activeKey={currentTab} id="controlled-tab-example">
+                                    <Tab eventKey={0} title="Home" disabled={currentTab !== 0}>
+                                        Home
+                                    </Tab>
+                                    <Tab eventKey={1} title="Profile" disabled={currentTab !== 1}>
+                                        Profile
+                                    </Tab>
+                                    <Tab eventKey={2} title="Contacts" disabled={currentTab !== 2}>
+                                        Contacts
+                                    </Tab>
+                                </Tabs>
+                            </Col>
+                        </Row>
+
+                        <Button
+                            className="success"
+                            disabled={currentTab === 0}
+                            onClick={() => setCurrentTab((prev) => prev - 1)}
+                        >
+                            Prev
+                        </Button>
+                        <Button
+                            className="success"
+                            disabled={currentTab === 2}
+                            onClick={() => setCurrentTab((prev) => prev + 1)}
+                        >
+                            Next
+                        </Button>
+
+                        <p>Current tab index is {currentTab}</p> */}
+
+
+
+                    <Row className={`${['align-items-center']} ${['justify-content-center']} ${['g-0']}  ${['mt-4']}`}>
                         <Col lg={12} md={12}>
                             <Card className={classes.powerCard}>
                                 <Card.Body className={classes.powerCardBody}>
+
                                     <Row className='align-items-center'>
-                                        <Col lg={5} md={12} className={`${classes.powerCardImage}`}>
-                                            <img src='../../images/img-recog.png' className={`${['img-fluid']}`} />
+                                        <Col lg={4} md={12}>
+                                            <div className={`${classes.powerCardImage}`}>
+                                                <img src='../../images/img-reliable.png' className={`${['img-fluid']}`} />
+                                            </div>
                                         </Col>
-                                        <Col lg={7} md={12} className={classes.powerCardDetails}>
+                                        <Col lg={8} md={12}>
+                                            <div className={classes.powerCardDetails}>
+                                                <div className={classes.vMid1}>
+                                                    <Tabs activeKey={currentTab} /*defaultActiveKey={currentTab}*/>
+                                                        <Tab eventKey={0} title="Finance">
+                                                            <div className="tab-item-wrapper">
+                                                                <h2 className='headingBold'>Finance</h2>
+                                                                <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
+                                                                <Button variant='primary'>Learn More</Button>
+                                                            </div>
 
-                                            <Tabs defaultActiveKey="0" >
-                                                <Tab eventKey="0" title="Finance" >
-                                                    <div className="tab-item-wrapper">
-                                                        <h2 className='headingBold'>Finance</h2>
-                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
-                                                        <Button variant='primary'>Learn More</Button>
-                                                    </div>
+                                                        </Tab>
+
+                                                        <Tab eventKey={1} title="Sales">
+                                                            <div className="tab-item-wrapper">
+                                                                <h2 className='headingBold'>Sales</h2>
+                                                                <p className='leadpara'>Plan your accounts, territories, sales targets and incentivise performance based on strategic key revenue drivers. Discover sales insights to drive accurate sales forecasts and targets.</p>
+                                                                <Button variant='primary'>Learn More</Button>
+                                                            </div>
+
+                                                        </Tab>
+
+                                                        <Tab eventKey={2} title="Supply Chain">
+                                                            <div className="tab-item-wrapper">
+                                                                <h2 className='headingBold'>Supply Chain</h2>
+                                                                <p className='leadpara'>Improve accuracy in your supply forecasts. Constantly maintain efficiency as you meet demand. Leverage scenario planning to prepare for any possible outcome and reduce supply-demand gaps.</p>
+                                                                <Button variant='primary'>Learn More</Button>
+                                                            </div>
+
+                                                        </Tab>
+
+                                                        <Tab eventKey={3} title="HR">
+                                                            <div className="tab-item-wrapper">
+                                                                <h2 className='headingBold'>HR</h2>
+                                                                <p className='leadpara'>Align your workforce needs with your current and future business goals. Perform demand and supply analysis, identify existing gaps, and take corrective actions.</p>
+                                                                <Button variant='primary'>Learn More</Button>
+                                                            </div>
+
+                                                        </Tab>
+
+                                                        <Tab eventKey={4} title="Marketing"  onClick={() => setCurrentTab((prev) => prev - 1)}>
+                                                            <div className="tab-item-wrapper">
+                                                                <h2 className='headingBold'>Marketing</h2>
+                                                                <p className='leadpara'>Identify key marketing drivers to optimise budget allocation and spending. Improve the return on your marketing spend with flexible modelling to identify optimisation areas.</p>
+                                                                <Button variant='primary'>Learn More</Button>
+                                                            </div>
+
+                                                        </Tab>
+                                                    </Tabs>
+
                                                     <div className='tabPaging'>
                                                         <ul className='list-inline'>
                                                             <li className='list-inline-item'>
-                                                                <i className="las la-arrow-left"></i>
+                                                                <Button className="tabPrev" disabled={currentTab === 0} onClick={() => setCurrentTab((prev) => prev - 1)}>
+                                                                    <i className="las la-arrow-left"></i>
+                                                                </Button>
                                                             </li>
                                                             <li className='list-inline-item'>
-                                                                <b>01</b> of 05
+                                                                <b>{currentTab + 1}</b> of 05
                                                             </li>
                                                             <li className='list-inline-item'>
-                                                                <i className="las la-arrow-right"></i>
+
+                                                                <Button className="tabNext" disabled={currentTab === 4} onClick={() => setCurrentTab((prev) => prev + 1)}>
+                                                                    <i className="las la-arrow-right"></i>
+                                                                </Button>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                </Tab>
 
-                                                <Tab eventKey="1" title="Sales" >
-                                                    <div className="tab-item-wrapper">
-                                                        <h2 className='headingBold'>Sales</h2>
-                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
-                                                        <Button variant='primary'>Learn More</Button>
-                                                    </div>
-                                                    <div className='tabPaging'>
-                                                        <ul className='list-inline'>
-                                                            <li className='list-inline-item'>
-                                                                <i className="las la-arrow-left"></i>
-                                                            </li>
-                                                            <li className='list-inline-item'>
-                                                                <b>02</b> of 05
-                                                            </li>
-                                                            <li className='list-inline-item'>
-                                                                <i className="las la-arrow-right"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </Tab>
-
-                                                <Tab eventKey="2" title="Supply Chain">
-                                                    <div className="tab-item-wrapper">
-                                                        <h2 className='headingBold'>Supply Chain</h2>
-                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
-                                                        <Button variant='primary'>Learn More</Button>
-                                                    </div>
-                                                    <div className='tabPaging'>
-                                                        <ul className='list-inline'>
-                                                            <li className='list-inline-item'>
-                                                                <i className="las la-arrow-left"></i>
-                                                            </li>
-                                                            <li className='list-inline-item'>
-                                                                <b>03</b> of 05
-                                                            </li>
-                                                            <li className='list-inline-item'>
-                                                                <i className="las la-arrow-right"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </Tab>
-
-                                                <Tab eventKey="3" title="HR">
-                                                    <div className="tab-item-wrapper">
-                                                        <h2 className='headingBold'>HR</h2>
-                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
-                                                        <Button variant='primary'>Learn More</Button>
-                                                    </div>
-                                                    <div className='tabPaging'>
-                                                        <ul className='list-inline'>
-                                                            <li className='list-inline-item'>
-                                                                <i className="las la-arrow-left"></i>
-                                                            </li>
-                                                            <li className='list-inline-item'>
-                                                                <b>04</b> of 05
-                                                            </li>
-                                                            <li className='list-inline-item'>
-                                                                <i className="las la-arrow-right"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </Tab>
-
-                                                <Tab eventKey="4" title="Marketing">
-                                                    <div className="tab-item-wrapper">
-                                                        <h2 className='headingBold'>Marketing</h2>
-                                                        <p className='leadpara'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero vitae quia unde ex ducimus qui reiciendis dolore, cumque possimus.</p>
-                                                        <Button variant='primary'>Learn More</Button>
-                                                    </div>
-                                                    <div className='tabPaging'>
-                                                        <ul className='list-inline'>
-                                                            <li className='list-inline-item'>
-                                                                <i className="las la-arrow-left"></i>
-                                                            </li>
-                                                            <li className='list-inline-item'>
-                                                                <b>05</b> of 05
-                                                            </li>
-                                                            <li className='list-inline-item'>
-                                                                <i className="las la-arrow-right"></i>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </Tab>
-                                            </Tabs>
-
+                                                </div>
+                                            </div>
                                         </Col>
                                     </Row>
+
+
+
 
                                 </Card.Body>
                             </Card>
 
                         </Col>
-
                     </Row>
+
+
+
+
                 </Container>
             </Section>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import { Nav, Button, NavDropdown, Container, Row, Col } from 'react-bootstrap';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 
 const TopMenu = () => {
@@ -11,18 +11,23 @@ const TopMenu = () => {
 
     function contactNavHandler() {
         router.push('../contact-us');
+        setIsActive(false); 
     }
 
     function loginNavHandler() {
         router.push('../login');
+        setIsActive(false); 
     }
 
     function mailtoHandler() {
         router.push('mailto:contact@justperform.com');
+        setIsActive(false); 
     }
 
 
     /**************** show menu on mouse hover********************* */
+
+
     const [show, setShow] = useState(false);
     const showDropdown = (e) => {
         setShow(!show);
@@ -31,6 +36,14 @@ const TopMenu = () => {
         setShow(false);
     }
 
+
+  const dropdownRef = useRef(null);
+  const [isActive, setIsActive] = useState(false);
+  const dropDownActive = () => setIsActive(true);
+//   const dropDownActive = () => setIsActive(!isActive);
+
+
+  const dropDownInactive = () => setIsActive(false);  
 
 
 
@@ -59,7 +72,7 @@ const TopMenu = () => {
                 </Link> */}
 
                 <Link href="../platform/" passHref>
-                    <Nav.Link >Platform</Nav.Link>
+                    <Nav.Link onClick={dropDownInactive}>Platform</Nav.Link>
                 </Link>
                 {/* <NavDropdown title="Platform">
                     <Container>
@@ -92,7 +105,9 @@ const TopMenu = () => {
                 </NavDropdown> for second version*/}
 
 
-                <NavDropdown title="Solutions" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown} onClick={showDropdown} >
+
+                <NavDropdown title="Solutions" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown} onClick={showDropdown} ref={dropdownRef} 
+                className={`menu ${isActive ? 'navActive' : 'inactive'}`}>
                     <Container>
                         <Row>
                             <Col lg={6} style={{ backgroundColor: '#E8F1F7' }}>
@@ -108,25 +123,25 @@ const TopMenu = () => {
                                     <Col lg={12}>
                                         <div className='dropNavBoxRight'>
                                             <Link href="../solutions/" passHref>
-                                                <NavDropdown.Item className='navTitle'>SOLUTIONS </NavDropdown.Item>
+                                                <NavDropdown.Item className='navTitle' onClick={dropDownActive}>SOLUTIONS </NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/extended-planning-and-analysis" passHref >
-                                                <NavDropdown.Item>Extended Planning & Analysis</NavDropdown.Item>
+                                                <NavDropdown.Item onClick={dropDownActive}>Extended Planning & Analysis</NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/consolidation" passHref>
-                                                <NavDropdown.Item>Consolidation</NavDropdown.Item>
+                                                <NavDropdown.Item onClick={dropDownActive}>Consolidation</NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/profitability-analysis" passHref>
-                                                <NavDropdown.Item >Profitabilty Analysis</NavDropdown.Item>
+                                                <NavDropdown.Item onClick={dropDownActive}>Profitabilty Analysis</NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/intelligent-forecasting" passHref>
-                                                <NavDropdown.Item>Intelligent Forecasting</NavDropdown.Item>
+                                                <NavDropdown.Item onClick={dropDownActive}>Intelligent Forecasting</NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/excel-infinity" passHref>
-                                                <NavDropdown.Item>Excel Infinity</NavDropdown.Item>
+                                                <NavDropdown.Item onClick={dropDownActive}>Excel Infinity</NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/alm-for-sap-solutions" passHref>
-                                                <NavDropdown.Item>Embedded for SAP EOM</NavDropdown.Item>
+                                                <NavDropdown.Item onClick={dropDownActive}>Embedded for SAP EOM</NavDropdown.Item>
                                             </Link>
                                         </div>
                                     </Col>
@@ -158,7 +173,7 @@ const TopMenu = () => {
 
 
                 <Link href="../services/" passHref>
-                    <Nav.Link>Services</Nav.Link>
+                    <Nav.Link onClick={dropDownInactive}>Services</Nav.Link>
                 </Link>
 
 
@@ -194,7 +209,7 @@ const TopMenu = () => {
 
 
                 <Link href="../company/" passHref>
-                    <Nav.Link>Company</Nav.Link>
+                    <Nav.Link onClick={dropDownInactive}>Company</Nav.Link>
                 </Link>
                 {/* <NavDropdown title="Company" id='navCompany'>
                     <Container>
@@ -225,7 +240,7 @@ const TopMenu = () => {
 
 
                 <Link href="../free-trial" passHref>
-                    <Nav.Link>Free Trial</Nav.Link>
+                    <Nav.Link onClick={dropDownInactive}>Free Trial</Nav.Link>
                 </Link>
 
 
