@@ -419,7 +419,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 .leadpara, .leadpara2{ font-size: 18px;}
 .leadparaBorderd{font-size: 18px;}
 
-
+.accordion-button::after{ margin-top: -10px !important; margin-left: 6px !important;}
 
 }
 
