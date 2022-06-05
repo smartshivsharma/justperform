@@ -23,6 +23,8 @@
     box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2); 
 }
 
+
+
 .ft15{font-size: 15px;}
 .leaBorderText{font-size: 15px; min-height: 80px;}
 
@@ -128,8 +130,10 @@
    transform: translateY(-50%);
  }
 
+ 
 
-
+ .vMidRight1{ position: relative; padding-right: 60px;  padding-left: 60px;}
+ .vMid1{ position: relative; padding-right: 100px; padding-left: 60px;}
 
  
   
@@ -138,6 +142,21 @@
 
 
 .forecastingCard{ min-height: 600px; display: block; position: relative;}
+
+
+.xpaCardBody{ padding: 5px 20px; font-weight: 600; font-size: 17px; min-height: 66px; position: relative;}
+
+.xpaCardImg{ text-align: center;}
+
+.xpaCardBody .xpavMid{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
 
 ul.list {margin-left: 0px; list-style-type: none; position: relative;}
 ul.list li{ margin-bottom: 15px;}
@@ -165,11 +184,16 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
 
     .vMid, .vMidRight{ position: relative; padding-right: 0px; padding-left: 0px; transform: translateY(0%);}
 
+    .vMidRight1{  padding-right: 0px; padding-left: 0px;}
+    .vMid1{  padding-right: 0px; padding-left: 0px;}
+
 
   .card2{ margin-top: 20px;}
 
 
   .expCard{ min-height: auto; padding-top: 0px;}
+  
+  .xpaCardImg{ text-align: left;}
 
 }
 
@@ -203,6 +227,8 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
 
  .card2{ margin-top: 20px;}
 
+ .xpaCardImg{ text-align: left;}
+
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
@@ -212,6 +238,8 @@ ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-
   .powerCardDetails, .powerCardRightDetails{ min-height: auto;}
 
   .forecastingCard{ min-height: auto !important;} 
+
+  .xpaCardBody{ min-height: 90px;}
 
 }
   

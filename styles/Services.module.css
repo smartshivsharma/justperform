@@ -79,6 +79,8 @@
 
 
 
+
+
  ul.list {margin-left: 0px; list-style-type: none; position: relative;}
  ul.list li{ margin-bottom: 15px;}
  ul.list li::before{ font-family: 'Line Awesome Free'; content: "\f058"; padding-right: 10px; color: #00ABBD; margin-bottom: 4px; display: inline-block; position: absolute; left: 0px;}

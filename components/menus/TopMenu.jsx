@@ -92,7 +92,7 @@ const TopMenu = () => {
                 </NavDropdown> for second version*/}
 
 
-                <NavDropdown title="Solutions" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown} onClick={showDropdown}>
+                <NavDropdown title="Solutions" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown} onClick={showDropdown} >
                     <Container>
                         <Row>
                             <Col lg={6} style={{ backgroundColor: '#E8F1F7' }}>
@@ -110,7 +110,7 @@ const TopMenu = () => {
                                             <Link href="../solutions/" passHref>
                                                 <NavDropdown.Item className='navTitle'>SOLUTIONS </NavDropdown.Item>
                                             </Link>
-                                            <Link href="../solutions/extended-planning-and-analysis" passHref>
+                                            <Link href="../solutions/extended-planning-and-analysis" passHref >
                                                 <NavDropdown.Item>Extended Planning & Analysis</NavDropdown.Item>
                                             </Link>
                                             <Link href="../solutions/consolidation" passHref>

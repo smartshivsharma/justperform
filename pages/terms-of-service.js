@@ -11,7 +11,7 @@ const TermsOfService = () => {
 
     return (
         <>
-            <Section className={`${['sectionBg-SkyBlue2']}`}>
+            <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='mt-4 mb-3'>
                         <Col md={12}>
