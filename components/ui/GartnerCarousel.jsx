@@ -15,13 +15,13 @@ function GartnerCarousel(props) {
         </Col>
         <Col lg={4} md={6}>
           <Carousel variant="dark" indicators={true} controls={false} className='gartnerCarousel'>
-            <Carousel.Item>
+            <Carousel.Item className='text-center'>
               <img src='../../images/carousel-gartner2.png' className='img-fluid' />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='text-center'>
               <img src='../../images/carousel-gartner2.png' className='img-fluid' />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='text-center'>
               <img src='../../images/carousel-gartner2.png' className='img-fluid' />
             </Carousel.Item>
 

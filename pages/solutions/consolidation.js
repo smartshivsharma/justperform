@@ -23,6 +23,9 @@ import ListCards from '../../components/ui/ListCards';
 
 import Partners from '../../components/ui/Partners';
 
+import GartnerCarousel from '../../components/ui/GartnerCarousel';
+
+
 
 const Consolidation = () => {
 
@@ -55,11 +58,11 @@ const Consolidation = () => {
             <Section className={`${['sectionBg-White']} ${['pb-0']}`}>
                 <Container>
                     <Row className='justify-content-between align-items-center'>
-                        <Col lg={6} md={6} className="order-2 order-lg-1 order-md-1">
+                        <Col lg={5} md={6} className="order-2 order-lg-1 order-md-1">
                             <h1 className='bannerHeading'>Let your finance users breathe again.</h1>
-                            <p className='leadpara'>Get easier, faster, more accurate consolidation for all your internal and external reporting needs.
-                                Streamline your consolidation process with the purpose-built Consolidation Pro app. Simplify your communication with audit-friendly self-service reporting.</p>
-                            <Button variant='primary' onClick={mailtoHandler}>Book a Demo</Button>
+                            <p className='leadpara mt-3'>Get easier, faster, more accurate consolidation for all your internal and external reporting needs.</p>
+                            <p className='leadpara'>Streamline your consolidation process with the purpose-built Consolidation Pro app. Simplify your communication with audit-friendly self-service reporting.</p>
+                            <Button variant='primary' className='mb-4' onClick={mailtoHandler}>Book a Demo</Button>
                         </Col>
 
                         <Col lg={6} md={6} className="order-1 order-lg-2 order-md-2">
@@ -74,10 +77,10 @@ const Consolidation = () => {
             <Section className={`${['sectionBg-Gradient']}`}>
                 <Container>
                     <Row className='align-items-center justify-content-center'>
-                        <Col md={4}>
+                        <Col lg={5} md={4}>
                             <img src='../../images/img-ebook.png' className='img-fluid' />
                         </Col>
-                        <Col md={6}>
+                        <Col lg={7} md={6}>
                             <h2 className='headingLight text-white'>How to bring speed, accuracy and auditability to your consolidation?</h2>
                             <p className='mt-3 pb-0'>
                                 <Button variant='light' className='btnLight'>DOWNLOAD E-BOOK</Button>
@@ -93,12 +96,12 @@ const Consolidation = () => {
             <Section className={`${['sectionBg-White']}`}>
                 <Container>
                     <Row className='align-items-center justify-content-between'>
-                        <Col md={6}>
+                        <Col lg={5} md={6}>
                             <h2 className='headingBold'>It&apos;s time to end the inefficiencies and the headaches.</h2>
-                            <p className='leadpara mt-3'>Consolidation has been a struggle for many companies for too long. Laborious merges from multiple entities of data across account structures are often riddled with complexities. Validation, intercompany eliminations, currency conversion, and reporting can be a nightmare for finance users.</p>
-                            <p className='leadpara'>Let JustPerform meet these challenges and streamline your consolidation with speed, accuracy, and auditability.</p>
+                            <p className='leadpara mt-3 col-lg-11'>Consolidation has been a struggle for many companies for too long. Laborious merges from multiple entities of data across account structures are often riddled with complexities. Validation, intercompany eliminations, currency conversion, and reporting can be a nightmare for finance users.</p>
+                            <p className='leadpara col-lg-11'>Let JustPerform meet these challenges and streamline your consolidation with speed, accuracy, and auditability.</p>
                         </Col>
-                        <Col md={5}>
+                        <Col lg={6} md={6}>
                             <img src='../../images/img-infe.png' className='img-fluid' />
                         </Col>
                     </Row>
@@ -111,11 +114,11 @@ const Consolidation = () => {
             <Section className={`${classes.leadingCompanies} ${['sectionBg-SkyBlue']}`}>
                 <Container>
                     <Row className='justify-content-center'>
-                        <Col lg={9} md={12} className='text-center'>
-                            <h3 className='headingBold'>These major players simplify and speed up statutory reporting with JustPerform</h3>
+                        <Col lg={10} md={12} className='text-center'>
+                            <h3 className='headingBold2'>These major players simplify and speed up statutory reporting with JustPerform</h3>
                             {/* <h2 className='headingLight'>These leading companies use JustPerform</h2> */}
                         </Col>
-                        <Col lg={12} md={12} className='text-center'>
+                        <Col lg={12} md={12} className='text-center mt-4'>
                             {/* Partners Component*/}
                             <Partners />
                         </Col>
@@ -132,7 +135,7 @@ const Consolidation = () => {
                         <Col lg={10} md={12} className='text-center'>
                             <h3 className='headingBold text-white'>From financial close and management reporting to disclosure management, JustPerform is your single destination.</h3>
                         </Col>
-                        <Col lg={12} md={12} className='text-center mt-4'>
+                        <Col lg={10} md={12} className='text-center mt-4'>
                             <img src='../../images/img-financialClose.png' className='img-fluid' />
                         </Col>
                     </Row>
@@ -164,34 +167,34 @@ const Consolidation = () => {
 
 
                     <Row className='mt-5 align-items-center justify-content-between'>
-                        <Col md={6} className='order-2 order-lg-1 order-md-1'>
+                        <Col lg={6} md={6} className='order-1 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>Financial Close</h2>
                             <p className='leadparaBorderd'>Let IFRS and Multi-GAAP compliant apps with inbuilt financial intelligence accelerate your financial close.</p>
-                            <Button variant='primary' className='mt-3'>LEARN MORE</Button>
+                            <Button variant='primary' className='mt-3 mb-3'>LEARN MORE</Button>
                         </Col>
-                        <Col md={5} className='text-center order-1 order-lg-2 order-md-2'>
-                            <img src='../../images/img-financialClose2.png' className='img-fluid mb-3' />
+                        <Col lg={5} md={6} className='text-center order-2 order-lg-2 order-md-2'>
+                            <img src='../../images/img-financialClose2.png' className='img-fluid' />
                         </Col>
                     </Row>
 
                     <Row className='align-items-center justify-content-between mt-5'>
-                        <Col md={5} className='text-center'>
+                        <Col lg={6} md={6} className='text-center order-2 order-lg-1 order-md-1'>
                             <img src='../../images/img-managementReport.png' className='img-fluid mb-3' />
                         </Col>
-                        <Col md={6}>
+                        <Col lg={5} md={6} className='order-1 order-lg-2 order-md-2'>
                             <h2 className='headingBold'>Management Reporting</h2>
                             <p className='leadparaBorderd'>Get a comprehensive view of business performance with no compromise on flexibility in reporting and speed of management decision making.</p>
-                            <Button variant='primary' className='mt-3'>LEARN MORE</Button>
+                            <Button variant='primary' className='mt-3 mb-3'>LEARN MORE</Button>
                         </Col>
                     </Row>
 
                     <Row className='mt-5 align-items-center justify-content-between mt-5'>
-                        <Col md={6} className='order-2 order-lg-1 order-md-1'>
+                        <Col lg={6} md={6} className='order-1 order-lg-1 order-md-1'>
                             <h2 className='headingBold'>Disclosure Management</h2>
                             <p className='leadparaBorderd'>Simplify this &apos;last mile of finance&apos; by streamlining the reporting contribution at department level. Eliminate tedious effort in preparing notes to accounts by using a robust, user-friendly disclosure management framework.</p>
-                            <Button variant='primary' className='mt-3'>LEARN MORE</Button>
+                            <Button variant='primary' className='mt-3 mb-3'>LEARN MORE</Button>
                         </Col>
-                        <Col md={5} className='text-center order-1 order-lg-2 order-md-2'>
+                        <Col lg={5} md={6} className='text-center order-2 order-lg-2 order-md-2'>
                             <img src='../../images/img-disclouser.png' className='img-fluid mb-3' />
                         </Col>
                     </Row>
@@ -222,8 +225,8 @@ const Consolidation = () => {
                         </Col>
 
                     </Row>
-                    <Row className='justify-content-between align-items-center mt-5'>
-                        <Col lg={6} md={12} className='order-2 order-lg-1 order-md-2'>
+                    <Row className='justify-content-between align-items-center mt-4'>
+                        <Col lg={7} md={12} className='order-1 order-lg-1 order-md-1'>
                             <Accordion defaultActiveKey="0">
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>
@@ -260,8 +263,8 @@ const Consolidation = () => {
                                 </Accordion.Item>
                             </Accordion>
                         </Col>
-                        <Col lg={6} md={12} className='text-center order-1 order-lg-2 order-md-1'>
-                            <img src='../../images/img-accord.svg' className='img-fluid mb-3' />
+                        <Col lg={4} md={12} className='text-center order-2 order-lg-2 order-md-2'>
+                            <img src='../../images/img-accord.png' className='img-fluid mt-4 col-lg-12 col-md-6' />
                         </Col>
                     </Row>
                 </Container>
@@ -278,11 +281,15 @@ const Consolidation = () => {
                         <Col lg={10} md={12} className='text-center'>
                             <h2 className='headingBold'>Our customers love JustPerform!</h2>
                             <p className='leadpara'>Our customers rate us highly on Gartner Peer Insights and we reciprocate. Through constant integration of their feedback, we continue to offer them the most user-centric business performance management platform ever.</p>
-                            <p>
+                            {/* <p>
                                 <img src='../../images/imgCustomer.jpg' className='img-fluid' />
-                            </p>
+                            </p> */}
                         </Col>
                     </Row>
+
+
+                    <GartnerCarousel />
+
                 </Container>
             </Section>
 

@@ -474,7 +474,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){
   .logo { background-size: contain; width: 240px;  height: 34px;}
   
-  #main-nav .nav-link{ font-size: 13px; /*padding-left: 6px; padding-right: 6px;*/padding-left: 12px; padding-right: 12px; }
+  #main-nav .nav-link{ font-size: 13px; /*padding-left: 6px; padding-right: 6px;*/padding-left: 12px; padding-right: 12px; margin-right: 2px; }
 
   .offcanvas{overflow: scroll;}
   .offcanvas-backdrop.show { opacity: 0; display: none;}
