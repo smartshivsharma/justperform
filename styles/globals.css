@@ -236,6 +236,8 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 
 .carousel-control-next, .carousel-control-prev{ opacity: 1 !important;}
+.carousel-control-next:hover, .carousel-control-prev:hover{ opacity: 0.5 !important;}
+
 
 
 
