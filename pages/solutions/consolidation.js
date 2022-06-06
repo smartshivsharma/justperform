@@ -225,7 +225,7 @@ const Consolidation = () => {
                         </Col>
 
                     </Row>
-                    <Row className='justify-content-between align-items-center mt-4'>
+                    <Row className='justify-content-between align-items-start mt-4 mb-4'>
                         <Col lg={7} md={12} className='order-1 order-lg-1 order-md-1'>
                             <Accordion defaultActiveKey="0">
                                 <Accordion.Item eventKey="0">
@@ -263,7 +263,7 @@ const Consolidation = () => {
                                 </Accordion.Item>
                             </Accordion>
                         </Col>
-                        <Col lg={4} md={12} className='text-center order-2 order-lg-2 order-md-2'>
+                        <Col lg={4} md={12} className='text-center order-2 order-lg-2 order-md-2 mt-4'>
                             <img src='../../images/img-accord.png' className='img-fluid mt-4 col-lg-12 col-md-6' />
                         </Col>
                     </Row>

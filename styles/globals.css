@@ -187,7 +187,7 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 /*********** carousels ************/
 
 
-.bannerCarousel {position: relative; height: 600px;  margin-top:78px; }
+.bannerCarousel {position: relative; height: 600px;  margin-top:40px; }
 .bannerCarousel .carousel-indicators{bottom: -50px;}
 .bannerCarousel .carousel-indicators [data-bs-target] {
   /*background-color: #00ABBD;*/   width: 97px !important;   height: 4px !important; background: transparent !important; border-top: solid 4px #AECDE1 !important; opacity: 1;
