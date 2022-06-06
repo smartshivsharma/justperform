@@ -235,6 +235,9 @@ ul.list li::before{   padding-right: 10px; color: #00ABBD; margin-bottom: 4px; d
 
 
 
+.carousel-control-next, .carousel-control-prev{ opacity: 1 !important;}
+
+
 
 /*********** Accordians ************/
 .accordion-button{ font-family: 'Lato', sans-serif  !important; font-size: 18px  !important; font-weight: 900  !important; color: #1A4969  !important; border-radius: 10px  !important; }
